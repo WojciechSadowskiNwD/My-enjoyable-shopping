@@ -1,0 +1,27 @@
+div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  right: 15px;
+  width: 80%;
+  background-color: rgb(255, 31, 31);
+  background-color: orange;
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 5px;
+  padding-top: 10px;
+  line-height: 130%;
+  margin-top: 40vh;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 5px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: -1px 5px 51px 4px rgb(0, 0, 0);
+}/*# sourceMappingURL=Logo.module.css.map */

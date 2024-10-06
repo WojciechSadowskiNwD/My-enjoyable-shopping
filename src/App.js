@@ -1,15 +1,12 @@
-
-
-
+import Logo from './components/Logo';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Start App</h1>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Logo />
+		</div>
+	);
 }
-
 
 
 
