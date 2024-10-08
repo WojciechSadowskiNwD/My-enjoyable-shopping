@@ -1,0 +1,43 @@
+.mobileNav {
+  display: flex;
+}
+.mobileNav .burger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  font-size: 46px;
+  color: #d1d1d1;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 235235;
+}
+.mobileNav .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  padding: 25% 0 25% 0;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.92);
+  transform: translateX(100%);
+  transition: 0.3s;
+  z-index: 100;
+}
+.mobileNav .links a {
+  font-family: "EB Garamond", system-ui;
+  font-style: normal;
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mobileNav .isOpen {
+  transform: translateX(0%);
+}/*# sourceMappingURL=BurgerNav.module.css.map */

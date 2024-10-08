@@ -7,7 +7,6 @@ div {
 	position: absolute;
 	right: 15px;
 	width: 80%;
-	background-color: rgb(255, 31, 31);
 	background-color: orange;
 	font-family: "EB Garamond", system-ui;
 	font-optical-sizing: auto;
@@ -28,4 +27,6 @@ div {
 	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	-moz-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
+
+	z-index: 1;
 }
