@@ -1,0 +1,31 @@
+.downArrow {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 48px;
+  padding: 20px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.downArrow i {
+  margin: 20% 20% 0;
+  margin-left: auto;
+  margin-right: auto;
+  animation: arrow_motion 2s ease-in-out infinite;
+  transition: 0.3s;
+}
+
+@keyframes arrow_motion {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=downArrow.module.css.map */

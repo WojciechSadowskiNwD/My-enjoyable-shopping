@@ -21,4 +21,9 @@ body {
   background-repeat: no-repeat; /* Nie powtarzaj obrazka */
   color: #fff;
   background-color: #333;
+  z-index: 0;
+}
+
+.homepage {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
