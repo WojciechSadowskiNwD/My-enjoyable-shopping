@@ -4,29 +4,41 @@ div {
 }
 
 .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
+	top: 400px;
 	right: 15px;
-	width: 80%;
+	width: 32%;
+	min-width: 250px;
+	height: 80px;
 	background-color: orange;
-	font-family: "EB Garamond", system-ui;
-	font-optical-sizing: auto;
-	font-style: normal;
-	padding: 5px;
-    padding-top: 10px;
-    line-height: 130%;
-	margin-top: 40vh;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 26px;
+	
+	// padding: 5px;
+    // padding-top: 10px;
+    // line-height: 130%;
+	// margin-top: 40vh;
 	border-radius: 5px;
-
-	font-family: "Comfortaa", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-
+	// text-align: center;
+	
+	
 	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	-moz-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
-
+	
 	z-index: 1;
+	
+	h1 {
+		font-family: "Comfortaa", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		text-transform: uppercase;
+		font-size: 26px;
+		padding-left: 20px;
+		// font-family: "EB Garamond", system-ui;
+		// font-optical-sizing: auto;
+		// font-style: normal;
+
+	}
 }
