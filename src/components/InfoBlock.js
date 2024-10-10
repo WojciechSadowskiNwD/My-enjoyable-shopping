@@ -1,12 +1,21 @@
-import styles from './InfoBlock.module.scss';
+import { useState } from "react";
+import styles from "./InfoBlock.module.scss";
 
+function InfoBlock({children}) {
+	const [isVisible, setIsvisible] = useState(true);
 
-function InfoBlock(){
-    return (
-        <div className={styles.infoBlock}>
-            <p>Hello dear visitor. We are happy to introduce you to the amazing opportunities that come with our great app!</p>
-        </div>
-    )
+    
+	return (
+		<div
+			className={`${styles.infoBlock} ${styles.hidden_left} ${
+				isVisible ? styles.visible : ""
+			} `}
+		>
+			<p>
+				{children}
+			</p>
+		</div>
+	);
 }
 
 export default InfoBlock;

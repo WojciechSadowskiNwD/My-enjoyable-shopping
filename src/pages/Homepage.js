@@ -2,19 +2,34 @@ import BurgerNav from "../components/BurgerNav";
 import Logo from "../components/Logo";
 import DownArrow from "../components/DownArrow";
 import InfoBlock from "../components/InfoBlock";
+import Headline from "../components/Headline";
 
 function Homepage() {
 	return (
-		<section className="homepage">
+		<main className="homepage">
+			<section>
 				<BurgerNav />
 				<Logo />
 				<DownArrow />
-				<InfoBlock />
-		</section>
+			</section>
+			<section className="homepage_body">
+				<Headline />
+				<InfoBlock>
+				Hello dear visitor. We are happy to introduce you to the amazing opportunities that come with our great app!
+				</InfoBlock>
+				<InfoBlock>
+				At the thought of going shopping, does the annoying association come into your head that you will have to sit down once again and create a boring shopping list from scratch, on a simple piece of paper, which, on top of that, can be easily lost?
+				</InfoBlock>
+
+			</section>
+		</main>
 	);
 }
 
 export default Homepage;
+
+
+
 
 // #1
 // Witaj drogi visitor. Z przyjemnością przedstawiamy niesamowite możliwości jakie przychodzą z naszą wspaniałą aplikacją!

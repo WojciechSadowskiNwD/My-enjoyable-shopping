@@ -1,8 +1,42 @@
 .infoBlock {
-    display: block;
-    width: 100vw;
-    height: 200px;
-    font-size: 32px;
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 90vw;
+    font-size: 22px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    font-family: "EB Garamond", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+
+    background-color: #f1f1f1;
     color: black;
+
+    p{
+        padding: 10px;
+    }
+}
+
+// Exposed components from left and right after user scroll action
+.hidden_left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+// Back component to visible state
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
