@@ -34,9 +34,11 @@ body {
 }
 
 .homepage_body {
-	width: 100%;
-	height: 1500px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 	background-image: url('../img/BackgroundDownBig.jpg');
 	background-size: cover;       /* Obrazek wypełnia cały widoczny obszar */
 	background-position: 55%;  /* Centrowanie obrazka */
