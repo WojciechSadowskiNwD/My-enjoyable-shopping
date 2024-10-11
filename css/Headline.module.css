@@ -1,0 +1,21 @@
+.headline {
+  font-size: 32px;
+  padding: 12px;
+  margin-bottom: 40px;
+  background: rgb(133, 85, 0);
+  background: linear-gradient(327deg, rgb(133, 85, 0) 0%, rgb(255, 165, 0) 30%, rgb(255, 172, 0) 67%, rgb(177, 122, 0) 100%);
+  box-shadow: 1px 1px 133px 26px rgb(0, 0, 0);
+}
+.headline h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 29px;
+  letter-spacing: 0.6px;
+  word-spacing: 3px;
+  padding-left: 20px;
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}/*# sourceMappingURL=Headline.module.css.map */

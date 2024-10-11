@@ -1,0 +1,46 @@
+.subscribe_form_box {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.subscribe_form_box .subscribe_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 15px;
+  background-color: rgba(0, 151, 20, 0.7);
+}
+.subscribe_form_box .subscribe_form label {
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.subscribe_form_box .subscribe_form input[type=text] {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 90%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  color: #333;
+  margin-bottom: 20px;
+}
+.subscribe_form_box .subscribe_form button {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 180px;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=SubscribeForm.module.css.map */

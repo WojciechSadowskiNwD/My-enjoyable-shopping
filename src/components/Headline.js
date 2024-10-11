@@ -1,9 +1,9 @@
 import styles from './Headline.module.scss';
 
-export default function Headline() {
+export default function Headline({children}) {
 	return (
 		<div className={styles.headline}>
-			<h2>About App</h2>
+			<h2>{children}</h2>
 		</div>
 	)
 }

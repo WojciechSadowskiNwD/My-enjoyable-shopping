@@ -27,18 +27,37 @@
   transform: translateX(100%);
   transition: 0.3s;
   z-index: 100;
+  /* Each link will have a slight delay */
 }
 .mobileNav .links a {
-  font-family: "EB Garamond", system-ui;
-  font-style: normal;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
   text-align: center;
+  letter-spacing: 2px;
   font-size: 34px;
-  letter-spacing: 1px;
   word-spacing: 2px;
   color: orange;
   text-decoration: none;
+  transform: translateX(50px);
+  transform: translateX(150px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
   cursor: pointer;
 }
+.mobileNav .links a:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.mobileNav .links a:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.mobileNav .links a:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.mobileNav .links a:nth-child(4) {
+  transition-delay: 0.4s;
+}
 .mobileNav .isOpen {
+  transform: translateX(0%);
+}
+.mobileNav .isOpen a {
   transform: translateX(0%);
 }/*# sourceMappingURL=BurgerNav.module.css.map */

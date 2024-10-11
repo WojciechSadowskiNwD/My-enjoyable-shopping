@@ -3,6 +3,37 @@ import Logo from "../components/Logo";
 import DownArrow from "../components/DownArrow";
 import InfoBlock from "../components/InfoBlock";
 import Headline from "../components/Headline";
+import SubscribeForm from "../components/SubscribeForm";
+import Accordion from "../components/Accordion";
+
+const faqs = [
+	{
+		title: "Is it free?",
+		text: "Our entire application is in beta testing phase. For this currently everyone can enjoy the possibility to use it in full access.",
+	},
+	{
+		title: "How to run the application?",
+		text: "Just click the “Try the application” button as a guest if you are here for the first time. You can also launch it by logging in.",
+	},
+	{
+		title: "Can I order a personalized version of this app?",
+		text: "Of course it is! All you have to do is click “Order Premium” in the navigation menu. There you will find all the necessary information you need.",
+	},
+	{
+		title: "How I can establish cooperation?",
+		text: "For this, there is a “Contact” section available in the navigation menu. Once clicked, you will see all available forms of contact with the developer of this application.",
+	},
+	{
+		title: "What stack was used for this application?",
+		text: "In this case, it was mainly based on: HTML, JS, React.js library, React Router, Context API, scss (modules). The code used hooks useState, useEffect, useRef, useContext, and many others...",
+	},
+	{
+		title: "Is it a copy of another application?",
+		text: "Absolutely not. This is a 100% author's project to show that the creator can be creative and can handle many problems well. There are many interesting mechanisms in the application, each presenting further practical skills that can be used in real commercial projects.",
+	},
+];
+
+
 
 function Homepage() {
 	return (
@@ -13,23 +44,29 @@ function Homepage() {
 				<DownArrow />
 			</section>
 			<section className="homepage_body">
-				<Headline />
-				<InfoBlock>
-				Hello dear visitor. We are happy to introduce you to the amazing opportunities that come with our great app!
+				<Headline>About this App</Headline>
+				<InfoBlock direction="hidden_left">
+					Hello dear visitor. We are happy to introduce you to the amazing
+					opportunities that come with our great app!
 				</InfoBlock>
-				<InfoBlock>
-				At the thought of going shopping, does the annoying association come into your head that you will have to sit down once again and create a boring shopping list from scratch, on a simple piece of paper, which, on top of that, can be easily lost?
+				<InfoBlock direction="hidden_right">IMG 1</InfoBlock>
+				<InfoBlock direction="hidden_left">
+					At the thought of going shopping, does the annoying association come
+					into your head that you will have to sit down once again and create a
+					boring shopping list from scratch, on a simple piece of paper, which,
+					on top of that, can be easily lost?
 				</InfoBlock>
-
+				<InfoBlock direction="hidden_right">IMG 2</InfoBlock>
+				<Headline>FAQ</Headline>
+				<Accordion data={faqs} />
+				<Headline>Stay up to date</Headline>
+				<SubscribeForm />
 			</section>
 		</main>
 	);
 }
 
 export default Homepage;
-
-
-
 
 // #1
 // Witaj drogi visitor. Z przyjemnością przedstawiamy niesamowite możliwości jakie przychodzą z naszą wspaniałą aplikacją!
@@ -55,7 +92,3 @@ export default Homepage;
 // Zalogowani użytkownicy mogą zapisywać swoje listy i do nich wracać w dowolnej chwili.
 // Logged-in users can save their lists and return to them at any time.
 
-// #6
-// Bądź na bieżąco z naszymi aktualnościami w których dowiesz się jakie są następne plany dotyczące jej rozwoju. Niebawem będziesz mógł dodawać wybrane przez siebie przepisy kulinarne do własnego schowka. Jednym kliknięciem dodasz wszystkie składniki z przepisu do listy zakupowej, niebawem będzie to możliwe!
-
-// Stay tuned to our news in which you will find out what the next plans are for its development. Soon you will be able to add the recipes of your choice to your own clipboard. With one click you will be able to add all the ingredients from a recipe to your shopping list, soon it will be possible!

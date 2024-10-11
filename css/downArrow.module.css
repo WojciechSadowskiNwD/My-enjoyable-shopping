@@ -1,11 +1,12 @@
 .downArrow {
   position: absolute;
-  bottom: 25px;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
   font-size: 48px;
   padding: 20px;
+  padding: 0px 10px 10px 10px;
   width: 100px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -28,4 +29,4 @@
   100% {
     transform: translateY(0);
   }
-}/*# sourceMappingURL=downArrow.module.css.map */
+}/*# sourceMappingURL=DownArrow.module.css.map */

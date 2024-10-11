@@ -23,6 +23,8 @@ body {
 	z-index: 0;
   }
 
+ 
+
 
 
 // HOMEPAGE STYLES
@@ -33,10 +35,11 @@ body {
 
 .homepage_body {
 	width: 100%;
-	height: 900px;
+	height: 1500px;
 	position: relative;
 	background-image: url('../img/BackgroundDownBig.jpg');
 	background-size: cover;       /* Obrazek wypełnia cały widoczny obszar */
 	background-position: 55%;  /* Centrowanie obrazka */
 	background-repeat: no-repeat; /* Nie powtarzaj obrazka */
+	overflow: hidden;
 }
