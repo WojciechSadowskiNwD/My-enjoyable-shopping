@@ -5,59 +5,81 @@
 	margin-bottom: 50px;
 	background-color: rgba(0, 0, 0, 0.7);
 
-    .accordion_margin {
-        margin-bottom: 20px;
-    }
-
-    .accordion {
+	.target {
         display: flex;
+        flex-direction: column;
+		margin-bottom: 10px;
+		// background-color: rgba(50, 136, 0, .3);
+	}
+
+	.accordion {
+		display: flex;
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;
-		overflow: hidden;
+		padding: 10px;
 		font-size: 22px;
 		color: #000;
 		background-color: rgba(255, 255, 255, 0.8);
-    }
+		overflow: hidden;
+	}
 
 	.accordion_top {
-        height: 80px;
-        border-bottom: 1px solid rgb(0, 0, 0, .3);
+		height: 80px;
+		border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+        z-index: 100;
 
 		.title {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            align-self: center;
-            flex-grow: 1;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			align-self: center;
+			flex-grow: 1;
 			font-family: "Comfortaa", sans-serif;
 			font-weight: 400;
-            padding: 10px;
+			padding: 10px;
 			font-style: normal;
 		}
-        .icon {
-            display: flex;
-            align-self: center;
-            padding-right: 10px;
-            font-size: 30px;
-            font-weight: bold;
-        }
+		.icon {
+			display: flex;
+			align-self: center;
+			padding-right: 10px;
+			font-size: 30px;
+			font-weight: bold;
+		}
 	}
-    .accordion_bottom {
-        margin-bottom: 20px;
-        transition: .3s;
+	.accordion_height0 {
+		height: 0px;
+        margin: 0 0 10px 10px;
+		opacity: 0;
+		transform: translateY(-150%);
+		overflow: hidden;
+		transition: 0.3s;
 
-        .text {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            align-self: center;
-            flex-grow: 1;
+		.text {
+			opacity: 0;
+		}
+	}
+
+	.accordion_bottom {
+		height: 200px;
+		transform: translateY(0);
+		opacity: 1;
+		transition: 0.3s;
+        z-index: 11;
+
+		.text {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			align-self: center;
+			flex-grow: 1;
+			opacity: 1;
 			font-family: "Comfortaa", sans-serif;
 			font-weight: 400;
-            padding: 20px 10px 20px 10px;
+			padding: 20px 10px 20px 10px;
 			font-style: normal;
-            font-size: 18px;
-        }
-    }
+			font-size: 18px;
+		}
+	}
 }

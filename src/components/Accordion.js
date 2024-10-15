@@ -26,14 +26,14 @@ export default function Accordion({ data }) {
 
 function AccordionItem({ title, text, isOpen, onToggle }) {
 	return (
-		<div className={styles.accordion_margin}>
+		<div className={styles.target}>
 			<div className={`${styles.accordion} ${styles.accordion_top}`} onClick={onToggle}>
 				<p className={styles.title}>{title}</p>
 				<p className={styles.icon}>+</p>
 			</div>
-			{isOpen && <div className={`${styles.accordion} ${styles.accordion_bottom}`}>
+			<div className={`${styles.accordion_height0} ${isOpen ? `${styles.accordion} ${styles.accordion_bottom}` : ''} `}>
                 <p className={styles.text}>{text}</p>
-            </div>}
+            </div>
 		</div>
 	);
 }
