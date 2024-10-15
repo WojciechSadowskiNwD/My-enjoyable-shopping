@@ -5,6 +5,7 @@ import InfoBlock from "../components/InfoBlock";
 import Headline from "../components/Headline";
 import SubscribeForm from "../components/SubscribeForm";
 import Accordion from "../components/Accordion";
+import Footer from "../components/Footer";
 
 const faqs = [
 	{
@@ -33,40 +34,49 @@ const faqs = [
 	},
 ];
 
-
-
 function Homepage() {
 	return (
-		<main className="homepage">
-			<section>
-				<BurgerNav />
-				<Logo />
-				<DownArrow />
-			</section>
-			<section className="homepage_body">
-				<Headline>About this App</Headline>
-				<InfoBlock direction="hidden_left">
-					Hello dear visitor. We are happy to introduce you to the amazing
-					opportunities that come with our great app!
-				</InfoBlock>
-				<InfoBlock direction="hidden_right">IMG 1</InfoBlock>
-				<InfoBlock direction="hidden_left">
-					At the thought of going shopping, does the annoying association come
-					into your head that you will have to sit down once again and create a
-					boring shopping list from scratch, on a simple piece of paper, which,
-					on top of that, can be easily lost?
-				</InfoBlock>
-				<InfoBlock direction="hidden_right">IMG 2</InfoBlock>
-				<Headline>FAQ</Headline>
-				<Accordion data={faqs} />
-				<Headline>Stay up to date</Headline>
-				<SubscribeForm />
-			</section>
-		</main>
+		<div className="homepage">
+			<main className="homepage_top">
+				<section>
+					<BurgerNav />
+					<Logo />
+					<DownArrow />
+				</section>
+				<section className="homepage_body">
+					<Headline>About this App</Headline>
+					<InfoBlock direction="hidden_left">
+						Hello dear visitor. We are happy to introduce you to the amazing
+						opportunities that come with our great app!
+					</InfoBlock>
+					<InfoBlock direction="hidden_right">IMG 1</InfoBlock>
+					<InfoBlock direction="hidden_left">
+						At the thought of going shopping, does the annoying association come
+						into your head that you will have to sit down once again and create
+						a boring shopping list from scratch, on a simple piece of paper,
+						which, on top of that, can be easily lost?
+					</InfoBlock>
+					<InfoBlock direction="hidden_right">IMG 2</InfoBlock>
+					<Headline>FAQ</Headline>
+					<Accordion data={faqs} />
+					<Headline>Stay up to date</Headline>
+					<SubscribeForm />
+				</section>
+			</main>
+			<Footer/>
+		</div>
 	);
 }
 
 export default Homepage;
+
+
+
+
+
+
+
+
 
 // #1
 // Witaj drogi visitor. Z przyjemnością przedstawiamy niesamowite możliwości jakie przychodzą z naszą wspaniałą aplikacją!
@@ -91,4 +101,3 @@ export default Homepage;
 // #5
 // Zalogowani użytkownicy mogą zapisywać swoje listy i do nich wracać w dowolnej chwili.
 // Logged-in users can save their lists and return to them at any time.
-
