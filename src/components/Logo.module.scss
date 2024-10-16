@@ -1,6 +1,7 @@
 div {
 	display: flex;
-	justify-content: flex-end;width: 100%;
+	justify-content: flex-end;
+	width: 100%;
 }
 
 .logo {
@@ -10,20 +11,25 @@ div {
 	position: absolute;
 	top: 400px;
 	right: 15px;
-	width: 32%;
-	min-width: 250px;
-	height: 80px;
+	width: 50%;
+	min-width: 350px;
+	height: 100px;
 	background-color: orange;
 	border-radius: 5px;
 
-	
-	
 	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	-moz-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
-	
+
 	z-index: 1;
-	
+
+	.img_logo {
+		margin-left: -25px;
+		width: 120px;
+		height: 120px;
+	}
+
+
 	h1 {
 		font-family: "Comfortaa", sans-serif;
 		font-weight: 400;

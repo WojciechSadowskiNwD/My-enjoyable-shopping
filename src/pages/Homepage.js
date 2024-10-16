@@ -7,6 +7,7 @@ import SubscribeForm from "../components/SubscribeForm";
 import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import StatsCounters from "../components/StatsCounters";
+import BtnStart from "../components/BtnStart";
 
 const faqs = [
 	{
@@ -58,6 +59,7 @@ function Homepage() {
 						which, on top of that, can be easily lost?
 					</InfoBlock>
 					<InfoBlock direction="hidden_right">IMG 2</InfoBlock>
+					<BtnStart />
 					<StatsCounters />
 					<Headline>FAQ</Headline>
 					<Accordion data={faqs} />

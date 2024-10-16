@@ -1,0 +1,30 @@
+.btn_start {
+	margin-bottom: 50px;
+	padding: 15px 30px;
+	border-radius: 15px;
+	border: none;
+	background-color: orange;
+	background: linear-gradient(
+		327deg,
+		rgba(133, 85, 0, 1) 0%,
+		rgba(255, 165, 0, 1) 20%,
+		rgba(255, 172, 0, 1) 80%,
+		rgba(177, 122, 0, 1) 90%
+	);
+	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
+	-moz-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
+	box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
+	transition: 0.3s;
+	cursor: pointer;
+
+	a {
+		font-family: "Comfortaa", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 26px;
+		letter-spacing: 0.5px;
+		word-spacing: 2px;
+		text-decoration: none;
+		color: #fff;
+	}
+}

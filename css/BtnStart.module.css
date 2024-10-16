@@ -1,0 +1,21 @@
+.btn_start {
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: orange;
+  background: linear-gradient(327deg, rgb(133, 85, 0) 0%, rgb(255, 165, 0) 20%, rgb(255, 172, 0) 80%, rgb(177, 122, 0) 90%);
+  box-shadow: -1px 5px 51px 4px rgb(0, 0, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn_start a {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=BtnStart.module.css.map */
