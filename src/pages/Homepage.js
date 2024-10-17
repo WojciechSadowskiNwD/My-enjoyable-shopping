@@ -7,7 +7,7 @@ import SubscribeForm from "../components/SubscribeForm";
 import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import StatsCounters from "../components/StatsCounters";
-import BtnStart from "../components/BtnStart";
+import ButtonLink from "../components/ButtonLink";
 
 const faqs = [
 	{
@@ -59,7 +59,7 @@ function Homepage() {
 						which, on top of that, can be easily lost?
 					</InfoBlock>
 					<InfoBlock direction="hidden_right">IMG 2</InfoBlock>
-					<BtnStart />
+					<ButtonLink>Let's Start App</ButtonLink>
 					<StatsCounters />
 					<Headline>FAQ</Headline>
 					<Accordion data={faqs} />
@@ -76,7 +76,8 @@ export default Homepage;
 
 
 
-
+// INSPIRACJA
+// Fajnie wygląda prezentacja pinteriesta na widok mobilny, w szczególności te kolekcje świetnie poukładanych zdjęć ponakładanych delikatnie na siebie i z przyciętymi rogami!! Pięknie to wygląda.
 
 
 

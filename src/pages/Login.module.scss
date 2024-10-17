@@ -1,0 +1,132 @@
+.login_background {
+	position: relative;
+	height: 1500px;
+	position: relative;
+	background-image: url("../img/shopping_bag_small.jpg");
+	background-size: cover; /* Obrazek wypełnia cały widoczny obszar */
+	background-position: 55%; /* Centrowanie obrazka */
+	background-repeat: no-repeat; /* Nie powtarzaj obrazka */
+	color: #fff;
+	background-color: #333;
+	z-index: 0;
+
+	.bg_shadow {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.6);
+
+		.form {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			width: 350px;
+			height: 500px;
+			padding-top: 10px;
+			padding-left: 10px;
+			border-radius: 25px;
+			border: 1.6px solid #ffffffba;
+			background-color: #3333337f;
+
+			h2,
+			p {
+				font-family: "Comfortaa", sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				text-transform: uppercase;
+				font-size: 20px;
+				text-align: center;
+				line-height: 40px;
+				margin: 15px;
+				color: orange;
+			}
+
+			p {
+				margin-top: -12px;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="password"] {
+				padding: 10px;
+				font-size: 22px;
+				border-radius: 5px;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				margin: 10px;
+			}
+			// section checkbox_boxes margin-top
+			.section_margin {
+				margin-top: 10px;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.checkbox_box {
+				display: flex;
+				flex-direction: row;
+				width: 92%;
+				margin: 10px;
+				font-family: "Comfortaa", sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 16px;
+
+				input[type="checkbox"] {
+					min-width: 20px;
+					width: 20px;
+					min-height: 20px;
+					height: 20px;
+					margin-left: 10px;
+					margin-right: 15px;
+				}
+
+				a {
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+
+			.button_parameters {
+				position: absolute;
+				bottom: -5px;
+			}
+		}
+		// firsth form margin-top
+		.top_margin {
+			margin-top: 70px;
+		}
+		// wysokość formularza rejestracji
+		.register_size {
+			height: 750px;
+		}
+	}
+}
+
+.logoDetails {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-49%); //zwróć uwagę - take note !
+	top: 25px;
+	height: 70px;
+
+	.imgSize {
+		margin-left: -42px;
+		width: 120px;
+		height: 120px;
+	}
+
+	h1 {
+		font-size: 16px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+// kolor napisów brandowy czyli orange
+// można tę miniaturkę logo też umieścić
+// Może karta jak ten liść ze ściętymi rogami lewy dolny oraz górny prawy
