@@ -62,3 +62,24 @@ body {
 	min-width: 310px;
 	min-height: 250px;
 }
+
+// Style dla logo w podstronie
+.logoDetails {
+	top: 30px;
+	left: 0;
+	height: 70px;
+	margin-left: 53%;
+	transform: translateX(-50%);
+
+	.imgSize {
+		margin-left: -42px;
+		width: 120px;
+		height: 120px;
+	}
+
+	h1 {
+		font-size: 20px;
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+}

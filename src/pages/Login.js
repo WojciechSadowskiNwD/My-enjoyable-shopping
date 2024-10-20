@@ -11,7 +11,7 @@ function Login() {
 			<div className={styles.bg_shadow}>
 				<Logo
 					logoStyles={logoStyles.logo}
-					details={styles.logoDetails}
+					details="logoDetails"
 					imgSize={styles.imgSize} 
 				/>
 

@@ -1,0 +1,79 @@
+.order_background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/shopping_bag_small.jpg");
+  background-size: cover;
+  background-position: 55%;
+  background-repeat: no-repeat;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  z-index: 0;
+}
+.order_background .bg_shadow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.order_background .bg_shadow .order_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.order_background .bg_shadow h2 {
+  text-transform: uppercase;
+  color: orange;
+}
+.order_background .bg_shadow .text_info {
+  width: 80%;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: rgba(31, 31, 31, 0.7215686275);
+}
+.order_background .bg_shadow .order_square {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 80%;
+  margin: 20px;
+  padding: 15px;
+  padding-bottom: 25px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f5d5a8, #e6b67a 40%, #c4904e 70%, #8c5e2b 100%);
+  box-shadow: 7px 14px 57px 12px rgb(0, 0, 0);
+}
+.order_background .bg_shadow .order_square h3 {
+  font-size: 22px;
+  margin-top: 15px;
+  text-align: center;
+}
+.order_background .bg_shadow .order_square .order_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.order_background .bg_shadow .order_square .order_icons i {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  color: #8c5e2b;
+}
+.order_background .bg_shadow .order_square p {
+  font-size: 18px;
+  padding: 5px;
+  color: #5e401d;
+}/*# sourceMappingURL=OrderPremium.module.css.map */

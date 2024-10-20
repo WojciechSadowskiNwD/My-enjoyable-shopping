@@ -90,7 +90,7 @@ function Homepage() {
 export default Homepage;
 
 
-// INSPIRACJA
+// INSPIRACJA -- IMAGES
 // Fajnie wygląda prezentacja pinteriesta na widok mobilny, w szczególności te kolekcje świetnie poukładanych zdjęć ponakładanych delikatnie na siebie i z przyciętymi rogami!! Pięknie to wygląda.
 
 // #1

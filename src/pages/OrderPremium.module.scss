@@ -1,0 +1,102 @@
+.order_background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+	height: 100%;
+    // height: 800px;
+	background-image: url("../img/shopping_bag_small.jpg");
+	background-size: cover;
+	background-position: 55%;
+	background-repeat: no-repeat;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #fff;
+	z-index: 0;
+
+	.bg_shadow {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+        width: 100%;
+        height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+
+        .order_title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 150px;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+		h2 {
+            text-transform: uppercase;
+            color: orange;
+		}
+
+		.text_info {
+			width: 80%;
+			padding: 20px;
+			font-size: 18px;
+			border-radius: 15px;
+			background-color: #1f1f1fb8;
+		}
+        
+        .order_square {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 80%;
+            // height: 300px;
+            margin: 20px;
+            padding: 15px;
+            padding-bottom: 25px;
+            border-radius: 15px;
+            // background-color: #2d0000b4;
+            // border: 1px solid #fff;
+
+            background: linear-gradient(
+        145deg,
+        #f5d5a8, /* jasny beż - środek ciasteczka */
+        #e6b67a 40%, /* złocisty odcień - pieczone brzegi */
+        #c4904e 70%, /* ciemniejszy brąz - brzegi */
+        #8c5e2b 100% /* najciemniejszy brąz - wypieczone części */
+    );
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* lekkie cieniowanie */
+    -webkit-box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
+    box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
+
+            h3 {
+                font-size: 22px;
+                margin-top: 15px;
+                text-align: center;
+            }
+            .order_icons{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+                i {
+                    font-size: 32px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    margin-left: 10px;
+                    color: #8c5e2b;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                padding: 5px;
+                color: #5e401d;
+            }
+
+        }
+	}
+}
