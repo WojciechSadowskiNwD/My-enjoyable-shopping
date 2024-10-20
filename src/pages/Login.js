@@ -3,6 +3,7 @@ import styles from "./Login.module.scss";
 import logoStyles from "../components/Logo.module.scss";
 import ButtonLink from "../components/ButtonLink";
 import { Link } from "react-router-dom";
+import PreviousPage from "../components/PreviousPage";
 
 function Login() {
 	return (
@@ -11,13 +12,14 @@ function Login() {
 				<Logo
 					logoStyles={logoStyles.logo}
 					details={styles.logoDetails}
-					imgSize={styles.imgSize}
+					imgSize={styles.imgSize} 
 				/>
 
 				<form className={`${styles.form} ${styles.top_margin}`}>
 					<h2>Do you have an account?</h2>
 					<input type="text" placeholder="Login" />
 					<input type="password" placeholder="Password" />
+					<label className={styles.forgot_password}>I forgot my password</label>
 					<ButtonLink parameters={styles.button_parameters}>Login</ButtonLink>
 				</form>
 				<form className={`${styles.form} ${styles.register_size}`}>
@@ -48,15 +50,10 @@ function Login() {
 						Register
 					</ButtonLink>
 				</form>
+				<PreviousPage />
 			</div>
 		</div>
 	);
 }
 
 export default Login;
-
-// Do you have an account?
-// login form
-
-// First time here?
-// registration form

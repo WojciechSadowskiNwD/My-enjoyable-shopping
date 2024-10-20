@@ -8,6 +8,9 @@ import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import StatsCounters from "../components/StatsCounters";
 import ButtonLink from "../components/ButtonLink";
+// import img1 from "../img/products_chicken.png";
+import img1 from "../img/ai-generated-8261519_1280.png";
+import img2 from "../img/Bag_vegetables-_640.png";
 
 const faqs = [
 	{
@@ -19,7 +22,7 @@ const faqs = [
 		text: "Just click the “Try the application” button as a guest if you are here for the first time. You can also launch it by logging in.",
 	},
 	{
-		title: "Can I order a personalized version of this app?",
+		title: "Can I order a personalized v. app?",
 		text: "Of course it is! All you have to do is click “Order Premium” in the navigation menu. There you will find all the necessary information you need.",
 	},
 	{
@@ -39,35 +42,47 @@ const faqs = [
 function Homepage() {
 	return (
 		<div className="homepage">
-			<main className="homepage_top">
-				<section>
-					<BurgerNav />
-					<Logo />
-					<DownArrow />
-				</section>
-				<section className="homepage_body">
-					<Headline>About this App</Headline>
-					<InfoBlock direction="hidden_left">
-						Hello dear visitor. We are happy to introduce you to the amazing
-						opportunities that come with our great app!
-					</InfoBlock>
-					<InfoBlock direction="hidden_right">IMG 1</InfoBlock>
-					<InfoBlock direction="hidden_left">
-						At the thought of going shopping, does the annoying association come
-						into your head that you will have to sit down once again and create
-						a boring shopping list from scratch, on a simple piece of paper,
-						which, on top of that, can be easily lost?
-					</InfoBlock>
-					<InfoBlock direction="hidden_right">IMG 2</InfoBlock>
-					<ButtonLink>Let's Start App</ButtonLink>
-					<StatsCounters />
-					<Headline>FAQ</Headline>
-					<Accordion data={faqs} />
-					<Headline>Stay up to date</Headline>
-					<SubscribeForm />
-				</section>
-			</main>
-			<Footer/>
+			<header className="header">
+				<BurgerNav />
+				<Logo />
+				<DownArrow />
+			</header>
+			<section className="main">
+				<Headline>About this App</Headline>
+				<InfoBlock direction="hidden_left">
+					Hello dear visitor. We are happy to introduce you to the amazing
+					opportunities that come with our great app!
+				</InfoBlock>
+				<InfoBlock direction="hidden_right" type="images">
+					<img
+						className="infoBlock_img"
+						src={img1}
+						alt="A few colorfull photos showing the appearance of the application"
+					/>
+				</InfoBlock>
+				<InfoBlock direction="hidden_left">
+					At the thought of going shopping, does the annoying association come
+					into your head that you will have to sit down once again and create a
+					boring shopping list from scratch, on a simple piece of paper, which,
+					on top of that, can be easily lost?
+				</InfoBlock>
+				<InfoBlock direction="hidden_right" type="images">
+					<img
+						className="infoBlock_img"
+						src={img2}
+						alt="A few colorfull photos showing the appearance of the application"
+					/>
+				</InfoBlock>
+				<ButtonLink>Let's Start App</ButtonLink>
+				<StatsCounters />
+			</section>
+			<section className="main">
+				<Headline>FAQ</Headline>
+				<Accordion data={faqs} />
+				<Headline>Stay up to date</Headline>
+				<SubscribeForm />
+			</section>
+			<Footer />
 		</div>
 	);
 }
@@ -75,13 +90,8 @@ function Homepage() {
 export default Homepage;
 
 
-
 // INSPIRACJA
 // Fajnie wygląda prezentacja pinteriesta na widok mobilny, w szczególności te kolekcje świetnie poukładanych zdjęć ponakładanych delikatnie na siebie i z przyciętymi rogami!! Pięknie to wygląda.
-
-
-
-
 
 // #1
 // Witaj drogi visitor. Z przyjemnością przedstawiamy niesamowite możliwości jakie przychodzą z naszą wspaniałą aplikacją!

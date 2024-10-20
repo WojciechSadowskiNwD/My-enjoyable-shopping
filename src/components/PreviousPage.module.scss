@@ -1,0 +1,36 @@
+.button_back {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	bottom: 0;
+	left: 10px;
+	width: 120px;
+	padding: 10px;
+	margin-bottom: 10px;
+
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	// background-color: #33333382;
+	color: #fff;
+    transition: .3s;
+    cursor: pointer;
+
+	.arrow_icon {
+		font-size: 22px;
+	}
+
+	p {
+		margin-left: 10px;
+		font-size: 20px;
+        letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+
+
+.button_back:hover {
+    color: orange;
+}

@@ -3,8 +3,8 @@
 	justify-content: center;
 	align-items: start;
 	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 30px;
 	background-color: rgba(0, 0, 0, 0.3);
 
 	.subscribe_form {
@@ -13,33 +13,33 @@
 		align-items: center;
 		width: 90%;
 		padding: 15px;
-        
-		background-color: rgb(0, 151, 20, 0.7);
+		background-color: rgba(0, 123, 17, 0.65);
 
 		label {
+			margin-bottom: 25px;
+			padding-top: 5px;
             font-family: "Comfortaa", sans-serif;text-align: center;
-			font-weight: 200;
 			font-style: normal;
-			font-size: 22px;
-			margin-bottom: 20px;
+			font-weight: 200;
+			font-size: 21px;
 		}
 		input[type="text"] {
-            font-family: "Comfortaa", sans-serif;
-			font-weight: 400;
-			font-style: normal;
 			width: 90%;
+			margin-bottom: 20px;
 			padding: 10px;
+            font-family: "Comfortaa", sans-serif;
+			font-style: normal;
+			font-weight: 400;
 			font-size: 24px;
 			border: none;
 			color: #333;
-			margin-bottom: 20px;
 		}
 		button {
-			font-family: "Comfortaa", sans-serif;
-			font-weight: 400;
-			font-style: normal;
 			width: 180px;
 			padding: 12px;
+			font-family: "Comfortaa", sans-serif;
+			font-style: normal;
+			font-weight: 400;
 			font-size: 18px;
 			border-radius: 25px;
 			text-transform: uppercase;

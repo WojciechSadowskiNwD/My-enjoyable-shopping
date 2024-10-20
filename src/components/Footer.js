@@ -27,7 +27,7 @@ export default function Footer() {
 			</div>
             <div className={styles.footer_bottom}>
                 <div className={styles.overline}></div>
-                <p>Dev. Wojciech Sadowski - &copy; {`${month}.${year}`}</p>
+                <p>Dev. Wojciech Sadowski - &copy; {`${month}.${year}`}</p> 
             </div>
 		</footer>
 	);

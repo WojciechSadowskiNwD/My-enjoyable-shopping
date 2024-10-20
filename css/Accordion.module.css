@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 92%;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  background-color: rgba(0, 0, 0, 0.7);
+  margin: 60px 0px 60px 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.473);
 }
 .accordion_box .target {
   display: flex;
@@ -13,13 +13,13 @@
 }
 .accordion_box .accordion {
   display: flex;
-  width: 95%;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  font-size: 22px;
+  font-size: 20px;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.81);
   overflow: hidden;
 }
 .accordion_box .accordion_top {
@@ -46,8 +46,8 @@
   font-weight: bold;
 }
 .accordion_box .accordion_height0 {
+  min-height: 0px;
   height: 0px;
-  margin: 0 0 10px 10px;
   opacity: 0;
   transform: translateY(-150%);
   overflow: hidden;
@@ -57,7 +57,8 @@
   opacity: 0;
 }
 .accordion_box .accordion_bottom {
-  height: 200px;
+  min-height: 160px;
+  overflow-y: scroll;
   transform: translateY(0);
   opacity: 1;
   transition: 0.3s;
@@ -75,4 +76,10 @@
   padding: 20px 10px 20px 10px;
   font-style: normal;
   font-size: 18px;
+}
+.accordion_box .accordion_height_L {
+  min-height: 190px;
+}
+.accordion_box .accordion_height_XL {
+  min-height: 250px;
 }/*# sourceMappingURL=Accordion.module.css.map */

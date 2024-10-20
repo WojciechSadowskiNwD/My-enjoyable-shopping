@@ -81,18 +81,17 @@ const StatsCounters = () => {
 		>
 			<div className={styles.counter_item}>
 				<p>Customer downloads</p>
-				<i class="fa-solid fa-cart-arrow-down"></i>
+				<i className={`fa-solid fa-cart-arrow-down ${styles.gradient_color}`}></i>
 				<p>{downloadsCount}</p>
 			</div>
 			<div className={styles.counter_item}>
 				<p>Positive comments</p>
-				{/* <i class="fa-solid fa-star"></i> */}
-				<i class="fa-regular fa-star"></i>
+				<i className={`fa-regular fa-star ${styles.gradient_color}`}></i>
 				<p>{commentsCount}</p>
 			</div>
 			<div className={styles.counter_item}>
 				<p>Funds raised</p>
-				<i class="fa-solid fa-sack-dollar"></i>
+				<i class={`fa-solid fa-sack-dollar ${styles.gradient_color}`}></i>
 				<p>{moneyCount} $</p>
 			</div>
 		</div>

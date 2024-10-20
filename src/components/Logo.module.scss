@@ -9,33 +9,33 @@ div {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 400px;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 15px;
-	width: 50%;
-	min-width: 350px;
-	height: 100px;
+	width: 80%;
+	min-width: 310px;
+	height: 90px;
+	height: 80px;
 	background-color: orange;
 	border-radius: 5px;
 
 	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	-moz-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
-
 	z-index: 1;
 
 	.img_logo {
-		margin-left: -38px;
-		width: 150px;
-		height: 150px;
+		margin-left: -32px;
+		width: 130px;
+		height: 130px;
 	}
-
 
 	h1, a {
 		font-family: "Comfortaa", sans-serif;
 		font-weight: 400;
 		font-style: normal;
 		text-transform: uppercase;
-		font-size: 26px;
+		font-size: 22px;
 		padding-left: 5px;
 		padding-right: 10px;
 		color: #fff;
