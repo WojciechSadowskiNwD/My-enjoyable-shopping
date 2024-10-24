@@ -1,7 +1,7 @@
 import BurgerNav from "../components/BurgerNav";
 import Logo from "../components/Logo";
 import DownArrow from "../components/DownArrow";
-import InfoBlock from "../components/InfoBlock";
+import SlideInfoBlock from "../components/SlideInfoBlock";
 import Headline from "../components/Headline";
 import SubscribeForm from "../components/SubscribeForm";
 import Accordion from "../components/Accordion";
@@ -49,30 +49,30 @@ function Homepage() {
 			</header>
 			<section className="main">
 				<Headline>About this App</Headline>
-				<InfoBlock direction="hidden_left">
+				<SlideInfoBlock direction="hidden_left">
 					Hello dear visitor. We are happy to introduce you to the amazing
 					opportunities that come with our great app!
-				</InfoBlock>
-				<InfoBlock direction="hidden_right" type="images">
+				</SlideInfoBlock>
+				<SlideInfoBlock direction="hidden_right" type="images">
 					<img
 						className="infoBlock_img"
 						src={img1}
 						alt="A few colorfull photos showing the appearance of the application"
 					/>
-				</InfoBlock>
-				<InfoBlock direction="hidden_left">
+				</SlideInfoBlock>
+				<SlideInfoBlock direction="hidden_left">
 					At the thought of going shopping, does the annoying association come
 					into your head that you will have to sit down once again and create a
 					boring shopping list from scratch, on a simple piece of paper, which,
 					on top of that, can be easily lost?
-				</InfoBlock>
-				<InfoBlock direction="hidden_right" type="images">
+				</SlideInfoBlock>
+				<SlideInfoBlock direction="hidden_right" type="images">
 					<img
 						className="infoBlock_img"
 						src={img2}
 						alt="A few colorfull photos showing the appearance of the application"
 					/>
-				</InfoBlock>
+				</SlideInfoBlock>
 				<ButtonLink>Let's Start App</ButtonLink>
 				<StatsCounters />
 			</section>

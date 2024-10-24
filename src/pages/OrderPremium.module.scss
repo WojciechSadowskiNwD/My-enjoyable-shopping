@@ -2,7 +2,6 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	// height: 800px;
 	height: 100%;
 	background-image: url("../img/shopping_bag_small.jpg");
 	background-size: cover;
@@ -15,6 +14,7 @@
 	z-index: 0;
 
 	.bg_shadow {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -23,34 +23,15 @@
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.6);
 
-		.order_title {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			margin-top: 150px;
-			margin-bottom: 20px;
-			padding: 10px;
-			width: 100%;
-			background-color: rgba(0, 0, 0, 0.7);
+		.size_title_section {
+			font-size: 17px;
 		}
 
 		h2 {
 			text-transform: uppercase;
 			color: orange;
 		}
-		// top text block
-		.text_info {
-			width: 80%;
-			padding: 20px;
-			padding-left: 25px;
-			padding-right: 25px;
-			font-size: 20px;
-			margin-bottom: 15px;
-			border-radius: 15px;
-			text-align: center;
-			word-spacing: 1.3px;
-			background-color: #1f1f1f7f;
-		}
+		
 
 		// OBRACANE KARTY:
 		// Podstawowy wymiar karty
@@ -120,6 +101,7 @@
 					}
 				}
 			}
+
 			.photo_shadow {
 				background-position: center;
 				background-size: cover;
@@ -246,7 +228,15 @@
 			opacity: 0;
 		}
 	}
+	
 }
+
+// Empty space under the last Order Card:
+.hollow {
+	width: 100%;
+	height: 50px;
+}
+
 
 // ANIMATIONS:
 @keyframes icon_rocking {

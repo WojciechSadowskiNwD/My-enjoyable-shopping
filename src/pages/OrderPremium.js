@@ -1,5 +1,7 @@
+import InfoBlock from "../components/InfoBlock";
 import Logo from "../components/Logo";
 import PreviousPage from "../components/PreviousPage";
+import SectionTitle from "../components/SectionTitle";
 import styles from "./OrderPremium.module.scss";
 
 function OrderPremium() {
@@ -7,19 +9,16 @@ function OrderPremium() {
 		<div className={styles.order_background}>
 			<div className={styles.bg_shadow}>
 				<Logo details="logoDetails" />
-				<div className={styles.order_title}>
-					<h2>Order Premium</h2>
-				</div>
-				{/* ONE SIĘ BĘDĄ OBRACAĆ JAK KARTY Z REWERSU W REAKCJI NA SCROLL USERA */}
+				<SectionTitle fontSize={styles.size_title_section}>
+					Order Premium
+				</SectionTitle>
+				<InfoBlock>
+					Here you have the opportunity to order a personalized version of this
+					application of this app in three possible variants. Flip the selected
+					card and see what you gain!
+				</InfoBlock>
 
-				<div className={styles.text_info}>
-					<p>
-					Here you have the opportunity to order a personalized version of this application
-					of this app in three possible variants. Flip the selected card and see what you gain!
-					</p>
-				</div>
-
-				{/* PIERWSZA KARTA */}
+				{/* First Card */}
 				<div className={styles.order_card}>
 					<div className={`${styles.card_front}`}>
 						<div className={styles.card_front_content}>
@@ -63,7 +62,7 @@ function OrderPremium() {
 					</div>
 				</div>
 
-				{/* DRUGA KARTA */}
+				{/* Second Card */}
 				<div className={styles.order_card}>
 					<div className={`${styles.card_front}`}>
 						<div className={styles.card_front_content}>
@@ -107,14 +106,15 @@ function OrderPremium() {
 					</div>
 				</div>
 
-				{/* TRZECIA KARTA */}
+				{/* Third Card */}
 				<div className={styles.order_card}>
 					<div className={`${styles.card_front}`}>
 						<div className={styles.card_front_content}>
 							<h3>Maximum Pack</h3>
 							<p>
-								Everything as in point 1 & 2. Everything as in point 1 and 2. 
-								In addition, you can order additional 3 smaller functionalities and more icons that can be changed on each card.
+								Everything as in point 1 & 2. Everything as in point 1 and 2. In
+								addition, you can order additional 3 smaller functionalities and
+								more icons that can be changed on each card.
 							</p>
 							<span>
 								<i class="fa-solid fa-arrow-rotate-left"></i>
@@ -144,20 +144,17 @@ function OrderPremium() {
 							</span>
 							<span className={styles.content_row}>
 								<i class="fa-solid fa-circle-check"></i>
-								<p>Additional editable icons for colored cards and more categories</p>
+								<p>
+									Additional editable icons for colored cards and more
+									categories
+								</p>
 							</span>
 						</div>
 						<button className={styles.btn_order}>Order</button>
 					</div>
 				</div>
-
-
-
-
-				
-				{/* <div className={styles.order_square}></div>
-				<div className={styles.order_square}></div> */}
-				{/* <PreviousPage /> */}
+				<div className={styles.hollow}></div>
+				<PreviousPage />
 			</div>
 		</div>
 	);

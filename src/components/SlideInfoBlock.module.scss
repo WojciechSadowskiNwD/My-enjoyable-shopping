@@ -1,0 +1,45 @@
+.slideInfoBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    min-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 10px 10px 20px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    font-family: "EB Garamond", system-ui;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+    background-color: #f1f1f1dc;
+    opacity: 0;
+    transition: transform 1.3s ease-out, opacity 1.7s ease-out;
+
+    p{
+        padding: 10px;
+    }
+
+}
+// Jeżeli infoBlock jest obrazkiem, zastosuj inne style:
+.images {
+    border-radius: 0px;
+    background: none;
+}
+
+// Exposed components from left and right after user scroll action
+.hidden_left {
+    transform: translateX(-100%);
+}
+.hidden_right {
+    transform: translateX(100%);
+}
+// Back component to visible state
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 800px;
+  height: 100%;
   background-image: url("../img/shopping_bag_small.jpg");
   background-size: cover;
   background-position: 55%;
@@ -14,6 +14,7 @@
   z-index: 0;
 }
 .order_background .bg_shadow {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,32 +23,18 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.order_background .bg_shadow .order_title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 150px;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+.order_background .bg_shadow .size_title_section {
+  font-size: 17px;
 }
 .order_background .bg_shadow h2 {
   text-transform: uppercase;
   color: orange;
 }
-.order_background .bg_shadow .text_info {
-  width: 80%;
-  padding: 20px;
-  font-size: 18px;
-  border-radius: 15px;
-  background-color: rgba(31, 31, 31, 0.7215686275);
-}
 .order_background .bg_shadow .order_card {
   position: relative;
   margin: 20px 50px;
-  width: 85%;
-  height: 420px;
+  width: 87%;
+  height: 520px;
   perspective: 800px;
 }
 .order_background .bg_shadow .order_card .card_front {
@@ -60,38 +47,47 @@
   overflow: hidden;
   transition: 0.8s;
 }
-.order_background .bg_shadow .order_card .card_front .card_content {
+.order_background .bg_shadow .order_card .card_front .card_front_content {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
 }
-.order_background .bg_shadow .order_card .card_front .card_content h3 {
-  font-size: 24px;
+.order_background .bg_shadow .order_card .card_front .card_front_content span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  gap: 50px;
+}
+.order_background .bg_shadow .order_card .card_front .card_front_content h3,
+.order_background .bg_shadow .order_card .card_front .card_front_content i,
+.order_background .bg_shadow .order_card .card_front .card_front_content p {
   z-index: 1;
 }
-.order_background .bg_shadow .order_card .card_front .card_content i {
-  font-size: 55px;
-  z-index: 1;
-  color: #5e401d;
+.order_background .bg_shadow .order_card .card_front .card_front_content h3 {
+  font-size: 26px;
+}
+.order_background .bg_shadow .order_card .card_front .card_front_content i {
+  font-size: 35px;
   animation: icon_rocking 3s ease-in-out infinite;
+  color: #5e401d;
   transition: 0.3s;
 }
-.order_background .bg_shadow .order_card .card_front .card_content p {
-  font-size: 22px;
+.order_background .bg_shadow .order_card .card_front .card_front_content p {
   font-size: 20px;
   font-weight: bold;
-  z-index: 1;
 }
-.order_background .bg_shadow .order_card .first_img {
+.order_background .bg_shadow .order_card .photo_shadow {
   background-position: center;
   background-size: cover;
   background-image: url("../img/ai-generated-8261519_1280.png");
-  filter: opacity(0.15);
+  filter: opacity(0.07);
   transition: 0.8s;
 }
 .order_background .bg_shadow .order_card .card_back {
@@ -112,6 +108,30 @@
   box-shadow: 7px 14px 57px 12px rgb(0, 0, 0);
   opacity: 0;
   transition: 0.8s;
+}
+.order_background .bg_shadow .order_card .card_back .text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px;
+}
+.order_background .bg_shadow .order_card .card_back .text_content .top_paragraph {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 25px;
+}
+.order_background .bg_shadow .order_card .card_back .content_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+}
+.order_background .bg_shadow .order_card .card_back .content_row i {
+  font-size: 23px;
+  margin-right: 5px;
+  color: rgb(98, 138, 18);
 }
 .order_background .bg_shadow .order_card .card_back h3 {
   font-size: 22px;
@@ -134,7 +154,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 58%;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -163,6 +183,11 @@
 .order_background .bg_shadow .order_card:hover .first_img {
   transform: rotateY(180deg);
   opacity: 0;
+}
+
+.hollow {
+  width: 100%;
+  height: 50px;
 }
 
 @keyframes icon_rocking {
