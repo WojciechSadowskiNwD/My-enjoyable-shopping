@@ -1,27 +1,8 @@
-@charset "UTF-8";
-.login_background {
-  position: relative;
-  height: 1500px;
-  position: relative;
-  background-image: url("../img/shopping_bag_small.jpg");
-  background-size: cover; /* Obrazek wypełnia cały widoczny obszar */
-  background-position: 55%; /* Centrowanie obrazka */
-  background-repeat: no-repeat; /* Nie powtarzaj obrazka */
-  color: #fff;
-  background-color: #333;
-  z-index: 0;
-}
-.login_background .bg_shadow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.login_background .bg_shadow .form {
+.form {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
   width: 95%;
   height: 500px;
@@ -32,8 +13,8 @@
   border: 1.6px solid rgba(255, 255, 255, 0.7294117647);
   background-color: rgba(51, 51, 51, 0.4980392157);
 }
-.login_background .bg_shadow .form h2,
-.login_background .bg_shadow .form p {
+.form h2,
+.form p {
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -44,12 +25,12 @@
   margin: 15px;
   color: orange;
 }
-.login_background .bg_shadow .form p {
+.form p {
   margin-top: -12px;
 }
-.login_background .bg_shadow .form input[type=text],
-.login_background .bg_shadow .form input[type=email],
-.login_background .bg_shadow .form input[type=password] {
+.form input[type=text],
+.form input[type=email],
+.form input[type=password] {
   width: 85%;
   margin: 10px auto 10px auto;
   padding: 10px;
@@ -58,12 +39,12 @@
   border: none;
   background-color: rgba(255, 255, 255, 0.7725490196);
 }
-.login_background .bg_shadow .form .section_margin {
+.form .section_margin {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
-.login_background .bg_shadow .form .forgot_password {
+.form .forgot_password {
   margin-top: 10px;
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
@@ -71,10 +52,10 @@
   font-size: 18px;
   cursor: pointer;
 }
-.login_background .bg_shadow .form .forgot_password:hover {
+.form .forgot_password:hover {
   text-decoration: underline;
 }
-.login_background .bg_shadow .form .checkbox_box {
+.form .checkbox_box {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -84,7 +65,7 @@
   font-style: normal;
   font-size: 15px;
 }
-.login_background .bg_shadow .form .checkbox_box input[type=checkbox] {
+.form .checkbox_box input[type=checkbox] {
   min-width: 20px;
   width: 20px;
   min-height: 20px;
@@ -93,18 +74,20 @@
   margin-right: 15px;
   cursor: pointer;
 }
-.login_background .bg_shadow .form .checkbox_box a {
+.form .checkbox_box a {
   color: #fff;
   cursor: pointer;
 }
-.login_background .bg_shadow .form .button_parameters {
+.form .button_parameters {
   position: absolute;
   margin-left: 73%;
   bottom: 0px;
 }
-.login_background .bg_shadow .top_margin {
-  margin-top: 70px;
+
+.login_margin {
+  margin-top: 150px;
 }
-.login_background .bg_shadow .register_size {
+
+.register_size {
   height: 750px;
 }/*# sourceMappingURL=Login.module.css.map */

@@ -2,9 +2,9 @@
 	width: 100%;
 	min-height: 50vh;
 	background-image: url("../img/BackgroundDownBig.jpg");
-	background-size: cover; /* Obrazek wypełnia cały widoczny obszar */
-	background-position: 55%; /* Centrowanie obrazka */
-	background-repeat: no-repeat; /* Nie powtarzaj obrazka */
+	background-size: 200%;
+	background-position: 45%;
+	background-repeat: no-repeat;
 	font-family: "EB Garamond", system-ui;
 	font-optical-sizing: auto;
 	font-style: normal;
@@ -17,7 +17,7 @@
 		padding: 40px;
 		line-height: 1.2;
 		font-size: 23px;
-		letter-spacing: 1px;
+		letter-spacing: 1px; 
 		word-spacing: 3px;
 		text-align: center;
 		background-color: rgba(0, 0, 0, 0.9);
@@ -40,7 +40,9 @@
 		align-items: center;
 		width: 80%;
 		padding-top: 10px;
+		padding-top: 20px;
 		padding-bottom: 20px;
+		padding-bottom: 35px;
 
 		h3 {
 			padding-top: 10px;

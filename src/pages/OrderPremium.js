@@ -1,3 +1,4 @@
+import Hollow from "../components/Hollow";
 import InfoBlock from "../components/InfoBlock";
 import Logo from "../components/Logo";
 import PreviousPage from "../components/PreviousPage";
@@ -6,10 +7,10 @@ import styles from "./OrderPremium.module.scss";
 
 function OrderPremium() {
 	return (
-		<div className={styles.order_background}>
-			<div className={styles.bg_shadow}>
+		<div className="pages_bgc">
+			<div className="bg_shadow">
 				<Logo details="logoDetails" />
-				<SectionTitle fontSize={styles.size_title_section}>
+				<SectionTitle>
 					Order Premium
 				</SectionTitle>
 				<InfoBlock>
@@ -153,7 +154,8 @@ function OrderPremium() {
 						<button className={styles.btn_order}>Order</button>
 					</div>
 				</div>
-				<div className={styles.hollow}></div>
+				
+				<Hollow height="70px"/>
 				<PreviousPage />
 			</div>
 		</div>

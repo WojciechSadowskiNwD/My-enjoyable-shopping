@@ -1,51 +1,72 @@
-.aboutUS_background {
+.white_background {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	// height: 100%;
-	height: 1500px;
-	background-image: url("../img/shopping_bag_small.jpg");
-	background-size: cover;
-	background-position: 55%;
-	background-repeat: no-repeat;
-	font-family: "Comfortaa", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: #fff;
-	z-index: 0;
+	height: 370px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	background-color: #ffffffd2;
+	border-bottom: 7px solid orange;
 
-	.bg_shadow {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: start;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.6);
+	.team_img { 
+		width: 95%;
+		height: 230px;
+		background-image: url("../img/men-4451375_640.png");
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+}
 
-		.white_background {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 370px;
-			margin-bottom: 30px;
-			background-color: #ffffffd2;
+.portfolio_link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	height: 50px;
+	text-align: center;
 
-			.team_img {
-				width: 95%;
-				height: 230px;
-				background-image: url("../img/men-4451375_640.png");
-				background-size: cover;
-				background-position: 50%;
-				background-repeat: no-repeat;
-			}
-		}
+	.link_cursor {
+		position: absolute;
+		left: 28%;
+		top: 10px;
+		font-size: 26px;
+		transform: rotate(90deg);
+		color: orange;
+		animation: finger_motion 3s ease-in-out infinite;
+	}
 
-		.infoBlock_position {
-			margin-left: 50%;
-			transform: translateX(-50%);
-		}
-	} //bg>shadow
+	a {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80px;
+		font-size: 18px;
+		color: #fff;
+		text-decoration: none;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		color: orange;
+	}
+}
+
+
+// ANIMATIONS:
+@keyframes finger_motion {
+	0% {
+		transform: rotate(90deg) translateY(0);
+	}
+	50% {
+		transform: rotate(90deg) translateY(5px);
+	}
+	100% {
+		transform: rotate(90deg) translateY(0);
+	}
 }

@@ -1,43 +1,16 @@
-.order_background {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/shopping_bag_small.jpg");
-  background-size: cover;
-  background-position: 55%;
-  background-repeat: no-repeat;
-  font-family: "Comfortaa", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #fff;
-  z-index: 0;
-}
-.order_background .bg_shadow {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.order_background .bg_shadow .size_title_section {
-  font-size: 17px;
-}
-.order_background .bg_shadow h2 {
+h2 {
   text-transform: uppercase;
   color: orange;
 }
-.order_background .bg_shadow .order_card {
+
+.order_card {
   position: relative;
   margin: 20px 50px;
   width: 87%;
   height: 520px;
   perspective: 800px;
 }
-.order_background .bg_shadow .order_card .card_front {
+.order_card .card_front {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -47,7 +20,7 @@
   overflow: hidden;
   transition: 0.8s;
 }
-.order_background .bg_shadow .order_card .card_front .card_front_content {
+.order_card .card_front .card_front_content {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -58,39 +31,39 @@
   padding: 20px;
   text-align: center;
 }
-.order_background .bg_shadow .order_card .card_front .card_front_content span {
+.order_card .card_front .card_front_content span {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 90%;
   gap: 50px;
 }
-.order_background .bg_shadow .order_card .card_front .card_front_content h3,
-.order_background .bg_shadow .order_card .card_front .card_front_content i,
-.order_background .bg_shadow .order_card .card_front .card_front_content p {
+.order_card .card_front .card_front_content h3,
+.order_card .card_front .card_front_content i,
+.order_card .card_front .card_front_content p {
   z-index: 1;
 }
-.order_background .bg_shadow .order_card .card_front .card_front_content h3 {
+.order_card .card_front .card_front_content h3 {
   font-size: 26px;
 }
-.order_background .bg_shadow .order_card .card_front .card_front_content i {
+.order_card .card_front .card_front_content i {
   font-size: 35px;
   animation: icon_rocking 3s ease-in-out infinite;
   color: #5e401d;
   transition: 0.3s;
 }
-.order_background .bg_shadow .order_card .card_front .card_front_content p {
+.order_card .card_front .card_front_content p {
   font-size: 20px;
   font-weight: bold;
 }
-.order_background .bg_shadow .order_card .photo_shadow {
+.order_card .photo_shadow {
   background-position: center;
   background-size: cover;
   background-image: url("../img/ai-generated-8261519_1280.png");
   filter: opacity(0.07);
   transition: 0.8s;
 }
-.order_background .bg_shadow .order_card .card_back {
+.order_card .card_back {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -109,48 +82,48 @@
   opacity: 0;
   transition: 0.8s;
 }
-.order_background .bg_shadow .order_card .card_back .text_content {
+.order_card .card_back .text_content {
   display: flex;
   flex-direction: column;
   justify-content: start;
   padding: 10px;
 }
-.order_background .bg_shadow .order_card .card_back .text_content .top_paragraph {
+.order_card .card_back .text_content .top_paragraph {
   text-align: center;
   padding-bottom: 15px;
   font-size: 20px;
   line-height: 25px;
 }
-.order_background .bg_shadow .order_card .card_back .content_row {
+.order_card .card_back .content_row {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
   margin: 5px;
 }
-.order_background .bg_shadow .order_card .card_back .content_row i {
+.order_card .card_back .content_row i {
   font-size: 23px;
   margin-right: 5px;
   color: rgb(98, 138, 18);
 }
-.order_background .bg_shadow .order_card .card_back h3 {
+.order_card .card_back h3 {
   font-size: 22px;
   margin-top: 15px;
   text-align: center;
 }
-.order_background .bg_shadow .order_card .card_back .order_icons {
+.order_card .card_back .order_icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.order_background .bg_shadow .order_card .card_back .order_icons i {
+.order_card .card_back .order_icons i {
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 25px;
   margin-left: 10px;
   color: #8c5e2b;
 }
-.order_background .bg_shadow .order_card .card_back .btn_order {
+.order_card .card_back .btn_order {
   margin-left: auto;
   margin-right: auto;
   width: 58%;
@@ -164,30 +137,28 @@
   color: #5e401d;
   cursor: pointer;
 }
-.order_background .bg_shadow .order_card p {
+.order_card p {
   font-size: 18px;
   padding: 7px;
   color: #5e401d;
 }
-.order_background .bg_shadow .order_card .turnover {
+.order_card .turnover {
   transform: rotateY(-180deg);
 }
-.order_background .bg_shadow .order_card:hover .card_back {
+
+.order_card:hover .card_back {
   transform: rotate(0);
   opacity: 1;
 }
-.order_background .bg_shadow .order_card:hover .card_front {
-  transform: rotateY(180deg);
-  opacity: 0;
-}
-.order_background .bg_shadow .order_card:hover .first_img {
+
+.order_card:hover .card_front {
   transform: rotateY(180deg);
   opacity: 0;
 }
 
-.hollow {
-  width: 100%;
-  height: 50px;
+.order_card:hover .first_img {
+  transform: rotateY(180deg);
+  opacity: 0;
 }
 
 @keyframes icon_rocking {

@@ -1,0 +1,38 @@
+.glass {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 95%;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1.6px solid rgba(255, 255, 255, 0.7294117647);
+  background-color: rgba(51, 51, 51, 0.4980392157);
+}
+.glass .contact_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px 25px 10px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.glass .contact_box h3 {
+  font-size: 19px;
+  padding-bottom: 15px;
+}
+.glass .contact_box p {
+  font-size: 17px;
+  text-transform: none;
+  color: orange;
+}
+.glass .section_margin {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}/*# sourceMappingURL=Contact.module.css.map */

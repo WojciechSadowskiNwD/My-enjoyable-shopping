@@ -1,9 +1,10 @@
-import styles from './SectionTitle.module.scss';
+import styles from "./SectionTitle.module.scss";
 
-export default function SectionTitle({children, fontSize=''}) {
-    return (
-        <div className={`${styles.section_title} ${fontSize}`}>
-					<h2>{children}</h2>
-				</div>
-    )
+export default function SectionTitle({children}) {
+	
+	return (
+		<div className={styles.section_title}>
+			<h2>{children}</h2>
+		</div>
+	);
 }

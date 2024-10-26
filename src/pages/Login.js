@@ -4,18 +4,19 @@ import logoStyles from "../components/Logo.module.scss";
 import ButtonLink from "../components/ButtonLink";
 import { Link } from "react-router-dom";
 import PreviousPage from "../components/PreviousPage";
+import Hollow from "../components/Hollow";
 
 function Login() {
 	return (
-		<div className={styles.login_background}>
-			<div className={styles.bg_shadow}>
-				<Logo
+		<div className="pages_bgc">
+			<div className="bg_shadow">
+				<Logo 
 					logoStyles={logoStyles.logo}
 					details="logoDetails"
-					imgSize={styles.imgSize} 
+					imgSize={styles.imgSize}
 				/>
 
-				<form className={`${styles.form} ${styles.top_margin}`}>
+				<form className={`${styles.form} ${styles.login_margin}`}>
 					<h2>Do you have an account?</h2>
 					<input type="text" placeholder="Login" />
 					<input type="password" placeholder="Password" />
@@ -50,6 +51,7 @@ function Login() {
 						Register
 					</ButtonLink>
 				</form>
+				<Hollow height="80px"/>
 				<PreviousPage />
 			</div>
 		</div>

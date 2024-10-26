@@ -9,7 +9,7 @@ export default function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<h2>My enjoyable shopping</h2>
-
+ 
 			<div className={styles.bg_shadow}>
                 <div className={styles.footer_box}>
 					<h3>Quick links</h3>
@@ -20,9 +20,9 @@ export default function Footer() {
 				</div>
 				<div className={styles.footer_box}>
 					<h3>Find us on</h3>
-                    <Link to="/">Facebook</Link>
-                    <Link to="/">Twitter</Link>
-                    <Link to="/">LinkedIn</Link>
+                    <Link to="https://www.facebook.com/">Facebook</Link>
+                    <Link to="https://x.com/?lang=pl">Platform X</Link>
+                    <Link to="https://www.linkedin.com/">LinkedIn</Link>
 				</div>
 			</div>
             <div className={styles.footer_bottom}>
