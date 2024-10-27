@@ -8,7 +8,6 @@ import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import StatsCounters from "../components/StatsCounters";
 import ButtonLink from "../components/ButtonLink";
-// import img1 from "../img/products_chicken.png";
 import img1 from "../img/ai-generated-8261519_1280.png";
 import img2 from "../img/Bag_vegetables-_640.png";
 
@@ -42,8 +41,8 @@ const faqs = [
 function Homepage() {
 	return (
 		<div className="homepage">
+			<BurgerNav />
 			<header className="header">
-				<BurgerNav />
 				<Logo />
 				<DownArrow />
 			</header>
@@ -88,7 +87,6 @@ function Homepage() {
 }
 
 export default Homepage;
-
 
 // INSPIRACJA -- IMAGES
 // Fajnie wygląda prezentacja pinteriesta na widok mobilny, w szczególności te kolekcje świetnie poukładanych zdjęć ponakładanych delikatnie na siebie i z przyciętymi rogami!! Pięknie to wygląda.

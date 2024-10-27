@@ -1,9 +1,15 @@
 .mobileNav {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	overflow: hidden;
+	transition: background-color 0.3s ease;
+	z-index: 101;
 
 	.burger {
-		position: absolute;
+		position: relative;
 		right: 15px;
 		top: 15px;
 		width: 50px;
@@ -13,60 +19,73 @@
 		border: none;
 		background: none;
 		cursor: pointer;
+		z-index: 106;
+	}
+
+	.top_nav_bar {
+		width: 100%;
+		height: 80px;
+		display: flex;
+		justify-content: flex-end;
+		background-color: transparent;
+		transition: background-color 0.3s ease;
+		z-index: 103;
+	}
+
+	.scrolled {
+		background-color: rgba(0, 0, 0, 0.75);
 		z-index: 101;
 	}
 
 	.links {
+		position: fixed;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		width: 100vw;
 		height: 100vh;
-		padding: 25% 0 25% 0;
+		padding: 25% 0;
 		text-transform: uppercase;
 		background-color: rgba(0, 0, 0, 0.92);
 		transform: translateX(100%);
 		transition: 0.3s;
-		z-index: 100;
+		z-index: 102;
 
 		a {
 			font-family: "Anton", sans-serif;
 			font-weight: 400;
 			text-align: center;
-            letter-spacing: 2px; 
 			font-size: 34px;
+			letter-spacing: 2px;
 			word-spacing: 2px;
 			color: orange;
 			text-decoration: none;
-            transform: translateX(50px);
-            transform: translateX(150px);
-            transition: transform 0.5s ease, opacity 0.5s ease;
+			transform: translateX(150px);
+			transition: transform 0.5s ease, opacity 0.5s ease;
 			cursor: pointer;
 		}
-        /* Each link will have a slight delay */
-    a:nth-child(1) {
-        transition-delay: 0.1s;
-      }
-  
-      a:nth-child(2) {
-        transition-delay: 0.2s;
-      }
-  
-      a:nth-child(3) {
-        transition-delay: 0.3s;
-      }
-  
-      a:nth-child(4) {
-        transition-delay: 0.4s;
-      }
+		/* Each link will have a slight delay */
+		a:nth-child(1) {
+			transition-delay: 0.1s;
+		}
 
+		a:nth-child(2) {
+			transition-delay: 0.2s;
+		}
+
+		a:nth-child(3) {
+			transition-delay: 0.3s;
+		}
+
+		a:nth-child(4) {
+			transition-delay: 0.4s;
+		}
 	}
 	.isOpen {
 		transform: translateX(0%);
 
-
-        a{
-            transform: translateX(0%);
-        }
+		a {
+			transform: translateX(0%);
+		}
 	}
 }
