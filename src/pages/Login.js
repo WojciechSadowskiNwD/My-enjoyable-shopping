@@ -17,15 +17,15 @@ function Login() {
 				/>
 
 				<form className={`${styles.form} ${styles.login_margin}`}>
-					<h2>Do you have an account?</h2>
+					<h2 className={styles.padding_bottom}>Do you have an account?</h2>
 					<input type="text" placeholder="Login" />
 					<input type="password" placeholder="Password" />
 					<label className={styles.forgot_password}>I forgot my password</label>
-					<ButtonLink parameters={styles.button_parameters}>Login</ButtonLink>
+					<ButtonLink>Login</ButtonLink>
 				</form>
 				<form className={`${styles.form} ${styles.register_size}`}>
 					<h2>First time here?</h2>
-					<p>Create account</p>
+					<p className={styles.padding_bottom}>Create account</p>
 					<input type="email" placeholder="Email" />
 					<input type="text" placeholder="Name" />
 					<input type="text" placeholder="Surname" />
@@ -53,7 +53,7 @@ function Login() {
 				</form>
 				<Hollow height="80px"/>
 				<PreviousPage />
-			</div>
+			</div> 
 		</div>
 	);
 }

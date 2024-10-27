@@ -98,4 +98,10 @@ body {
   font-size: 20px;
   padding-left: 10px;
   padding-right: 5px;
+}
+
+.button_position {
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */

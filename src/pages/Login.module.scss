@@ -29,6 +29,9 @@
 	p {
 		margin-top: -12px;
 	}
+	.padding_bottom {
+		padding-bottom: 15px;
+	}
 
 	input[type="text"],
 	input[type="email"],
@@ -37,6 +40,7 @@
 		margin: 10px auto 10px auto;
 		padding: 10px;
 		font-size: 20px;
+		font-size: 18px;
 		border-radius: 5px;
 		border: none;
 		background-color: #ffffffc5;
@@ -85,12 +89,6 @@
 			cursor: pointer;
 		}
 	}
-
-	.button_parameters {
-		position: absolute;
-		margin-left: 73%; 
-		bottom: 0px;
-	}
 }
 // first 'login form' section, margin-top
 .login_margin {
@@ -99,4 +97,29 @@
 // section height 'registration form'
 .register_size {
 	height: 750px;
+}
+
+
+
+
+// RWD STYLES:
+@media (min-width: 390px) {
+	.form {
+		width: 92%;
+
+		h2 {
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			width: 82%;
+			font-size: 20px;
+		}
+		.checkbox_box {
+			width: 85%;
+		}
+	}
 }

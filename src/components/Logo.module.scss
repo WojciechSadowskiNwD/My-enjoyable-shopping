@@ -41,3 +41,11 @@ div {
 		color: #fff;
 	}
 }
+
+
+// RWD STYLES:
+@media (min-width: 390px) {
+	.logo{
+		transform: translateX(-5%) translateY(-50%);
+	}
+}

@@ -35,4 +35,10 @@ div {
   padding-left: 5px;
   padding-right: 10px;
   color: #fff;
+}
+
+@media (min-width: 390px) {
+  .logo {
+    transform: translateX(-5%) translateY(-50%);
+  }
 }/*# sourceMappingURL=Logo.module.css.map */

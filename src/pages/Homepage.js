@@ -72,7 +72,7 @@ function Homepage() {
 						alt="A few colorfull photos showing the appearance of the application"
 					/>
 				</SlideInfoBlock>
-				<ButtonLink>Let's Start App</ButtonLink>
+				<ButtonLink positionClass="button_position">Let's Start App</ButtonLink>
 				<StatsCounters />
 			</section>
 			<section className="main">

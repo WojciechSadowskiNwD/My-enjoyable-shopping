@@ -6,4 +6,4 @@ export default function Headline({children}) {
 			<h2>{children}</h2>
 		</div>
 	)
-}
+} 

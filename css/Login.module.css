@@ -28,6 +28,9 @@
 .form p {
   margin-top: -12px;
 }
+.form .padding_bottom {
+  padding-bottom: 15px;
+}
 .form input[type=text],
 .form input[type=email],
 .form input[type=password] {
@@ -35,6 +38,7 @@
   margin: 10px auto 10px auto;
   padding: 10px;
   font-size: 20px;
+  font-size: 18px;
   border-radius: 5px;
   border: none;
   background-color: rgba(255, 255, 255, 0.7725490196);
@@ -78,11 +82,6 @@
   color: #fff;
   cursor: pointer;
 }
-.form .button_parameters {
-  position: absolute;
-  margin-left: 73%;
-  bottom: 0px;
-}
 
 .login_margin {
   margin-top: 150px;
@@ -90,4 +89,23 @@
 
 .register_size {
   height: 750px;
+}
+
+@media (min-width: 390px) {
+  .form {
+    width: 92%;
+  }
+  .form h2 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .form input[type=text],
+  .form input[type=email],
+  .form input[type=password] {
+    width: 82%;
+    font-size: 20px;
+  }
+  .form .checkbox_box {
+    width: 85%;
+  }
 }/*# sourceMappingURL=Login.module.css.map */

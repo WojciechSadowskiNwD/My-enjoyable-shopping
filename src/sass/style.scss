@@ -26,6 +26,7 @@ body {
 	display: flex;
 	overflow-x: hidden;
 	flex-direction: column;
+
 }
 
 .header {
@@ -109,4 +110,11 @@ body {
 		padding-left: 10px;
 		padding-right: 5px;
 	}
+}
+
+//prop styles used in HOMEPAGE for ButtonLink component
+.button_position {
+	position: relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
