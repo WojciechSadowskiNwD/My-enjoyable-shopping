@@ -9,12 +9,12 @@ function AboutUs() {
 	return (
 		<div className="pages_bgc">
 			<div className="bg_shadow"> 
-				<Logo details="logoDetails" />
+				<Logo details="logoDetails" /> 
 				<SectionTitle>About Us</SectionTitle>
 				<div className={styles.white_background}>
 					<div className={styles.team_img}></div>
 				</div>
-				<InfoBlock width="95%">
+				<InfoBlock width="infoBlock_width">
 					We are a team of ambitious professionals who love their work. Together
 					we create great applications and design websites for our clients every
 					day. If you like this project take a look at our portfolio too!

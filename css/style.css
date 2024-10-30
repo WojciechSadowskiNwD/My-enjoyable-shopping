@@ -104,4 +104,28 @@ body {
   position: relative;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.infoBlock_width {
+  width: 95%;
+}
+
+@media (min-width: 412px) {
+  .logoDetails {
+    height: 90px;
+  }
+  .logoDetails h1, .logoDetails a {
+    padding-left: 8px;
+    font-size: 23px;
+  }
+}
+@media (min-width: 576px) {
+  .logoDetails h1, .logoDetails a {
+    padding: 0px 10px 0px 12px;
+  }
+  .infoBlock_width {
+    width: 90%;
+    padding: 30px;
+    line-height: 1.2;
+  }
 }/*# sourceMappingURL=style.css.map */

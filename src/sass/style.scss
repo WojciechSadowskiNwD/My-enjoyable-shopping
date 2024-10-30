@@ -118,3 +118,41 @@ body {
 	margin-left: 50%;
 	transform: translateX(-50%);
 }
+
+// Styles for pages component InfoBlock
+.infoBlock_width {
+	width: 95%;
+}
+
+
+// RWD STYLES:
+@media(min-width: 412px){
+	.logoDetails {
+		height: 90px;
+
+		h1, a {
+			padding-left: 8px;
+			font-size: 23px;
+		}
+	}
+}
+
+// small
+@media (min-width: 576px) {
+	.logoDetails {
+		h1, a {
+			padding: 0px 10px 0px 12px;
+		}
+	}
+	.infoBlock_width {
+		width: 90%;
+		padding: 30px;
+		line-height: 1.2;
+	}
+	
+}
+
+// medium
+@media (min-width: 768px) {
+
+}

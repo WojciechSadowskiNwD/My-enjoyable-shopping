@@ -7,8 +7,8 @@
 	background-color: rgba(0, 0, 0, 0.473);
 
 	.target {
-        display: flex;
-        flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		margin-bottom: 10px;
 		// background-color: rgba(50, 136, 0, .3);
 	}
@@ -28,7 +28,7 @@
 	.accordion_top {
 		height: 80px;
 		border-bottom: 1px solid rgb(0, 0, 0, 0.3);
-        z-index: 100;
+		z-index: 100;
 
 		.title {
 			display: flex;
@@ -68,7 +68,7 @@
 		transform: translateY(0);
 		opacity: 1;
 		transition: 0.3s;
-        z-index: 11;
+		z-index: 11;
 
 		.text {
 			display: flex;
@@ -89,5 +89,37 @@
 	}
 	.accordion_height_XL {
 		min-height: 250px;
+	}
+}
+
+
+
+// RWD
+
+// small breakpoint
+@media (min-width: 576px) {
+	.accordion_box {
+		width: 90%;
+		margin-bottom: 140px;
+
+		.accordion {
+			overflow: hidden;
+			padding: 12px;
+			font-size: 22px;
+			line-height: 1.2;
+		}
+		.accordion_bottom {
+			.text {
+				min-height: 170px;
+				font-size: 21px;
+				letter-spacing: .2px;
+			}
+		}
+		.accordion_height_L {
+			min-height: 200px;
+		}
+		.accordion_height_XL {
+			min-height: 240px;
+		}
 	}
 }

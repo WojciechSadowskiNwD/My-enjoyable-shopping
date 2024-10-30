@@ -14,7 +14,6 @@ div {
 	right: 15px;
 	width: 80%;
 	min-width: 310px;
-	height: 90px;
 	height: 80px;
 	background-color: orange;
 	border-radius: 5px;
@@ -41,11 +40,51 @@ div {
 		color: #fff;
 	}
 }
-
+ 
 
 // RWD STYLES:
+
+//Width: Samsung Galaxy S8/S9, iPhone SE, iPhone 14/15, Samsung Galaxy S21/S22,
 @media (min-width: 390px) {
 	.logo{
 		transform: translateX(-5%) translateY(-50%);
+	}
+}
+
+//Width: Google Pixel 6,
+@media (min-width: 412px) {
+	.logo{
+		min-width: 340px;
+		height: 85px;
+
+		.img_logo { 
+			margin-left: -32px;
+			width: 135px;
+			height: 135px;
+		}
+		h1, a {
+			padding-left: 8px;
+			font-size: 23px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.logo{
+		right: 30px;
+		width: 68%;
+		min-width: 340px;
+		height: 90px;
+		
+		.img_logo { 
+			margin-left: -32px;
+			width: 145px;
+			height: 145px;
+		}
+		h1, a {
+			padding-left: 12px;
+			line-height: 28px;
+			font-size: 23px;
+		}
 	}
 }

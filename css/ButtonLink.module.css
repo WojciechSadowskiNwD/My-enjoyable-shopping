@@ -21,4 +21,13 @@
   word-spacing: 2px;
   text-decoration: none;
   color: #fff;
+}
+
+@media (min-width: 576px) {
+  .btn_basic_design {
+    padding: 16px 32px;
+  }
+  .btn_basic_design a {
+    font-size: 26px;
+  }
 }/*# sourceMappingURL=ButtonLink.module.css.map */

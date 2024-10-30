@@ -11,7 +11,7 @@ function OrderPremium() {
 			<div className="bg_shadow">
 				<Logo details="logoDetails" />
 				<SectionTitle>
-					Order Premium
+					Order Premium 
 				</SectionTitle>
 				<InfoBlock>
 					Here you have the opportunity to order a personalized version of this

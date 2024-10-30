@@ -46,4 +46,27 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .subscribe_form_box {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  .subscribe_form_box .subscribe_form {
+    width: 88%;
+    padding: 30px;
+  }
+  .subscribe_form_box .subscribe_form label {
+    margin-bottom: 35px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 22px;
+  }
+  .subscribe_form_box .subscribe_form button {
+    margin-top: 10px;
+    width: 190px;
+    padding: 14px;
+    font-size: 19px;
+  }
 }/*# sourceMappingURL=SubscribeForm.module.css.map */

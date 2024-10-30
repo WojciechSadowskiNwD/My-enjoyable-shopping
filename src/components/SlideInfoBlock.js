@@ -35,7 +35,7 @@ function SlideInfoBlock({ children, direction, type="" }) {
 
 	return (
 		<div
-			ref={revealRef}
+			ref={revealRef} 
 			className={`${styles.slideInfoBlock} ${styles[type]} ${styles[direction]} ${
 				isVisible ? styles.visible : ""
 			}`}

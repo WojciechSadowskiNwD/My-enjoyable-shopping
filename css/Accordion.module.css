@@ -82,4 +82,28 @@
 }
 .accordion_box .accordion_height_XL {
   min-height: 250px;
+}
+
+@media (min-width: 576px) {
+  .accordion_box {
+    width: 90%;
+    margin-bottom: 140px;
+  }
+  .accordion_box .accordion {
+    overflow: hidden;
+    padding: 12px;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .accordion_box .accordion_bottom .text {
+    min-height: 170px;
+    font-size: 21px;
+    letter-spacing: 0.2px;
+  }
+  .accordion_box .accordion_height_L {
+    min-height: 200px;
+  }
+  .accordion_box .accordion_height_XL {
+    min-height: 240px;
+  }
 }/*# sourceMappingURL=Accordion.module.css.map */

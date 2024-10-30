@@ -79,4 +79,10 @@
 }
 .mobileNav .isOpen a {
   transform: translateX(0%);
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
 }/*# sourceMappingURL=BurgerNav.module.css.map */

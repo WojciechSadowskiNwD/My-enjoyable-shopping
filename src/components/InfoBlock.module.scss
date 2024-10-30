@@ -13,3 +13,13 @@
 	word-spacing: 1.3px;
 	background-color: #1f1f1f7f;
 }
+
+
+// RWD:
+
+// small breakpoint
+@media (min-width: 576px) {
+	.info_block {
+		padding: 25px;
+	}
+}

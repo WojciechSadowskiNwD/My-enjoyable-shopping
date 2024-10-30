@@ -11,12 +11,12 @@ const StatsCounters = () => {
 		threshold: 0.1, // aktywuje licznik, gdy 10% komponentu będzie widoczne
 	});
 
-	useEffect(() => {
+	useEffect(() => { 
 		if (inView) {
       // cuunters:
 			let startComments = 0;
 			let startDownloads = 0;
-      let startMoneyCollected = 0;
+      		let startMoneyCollected = 0;
 			const endComments = 800; // Liczba docelowa
 			const endDownloads = 1190; // Liczba docelowa pobrań
 			const endMoneyCollected = 100400; // Liczba docelowa pobrań
@@ -80,19 +80,19 @@ const StatsCounters = () => {
 			}}
 		>
 			<div className={styles.counter_item}>
-				<p>Customer downloads</p>
+				<p className={styles.first_paragraph}>Customer downloads</p>
 				<i className={`fa-solid fa-cart-arrow-down ${styles.gradient_color}`}></i>
-				<p>{downloadsCount}</p>
+				<div className={styles.second_paragraph}><p>{downloadsCount}</p></div>
 			</div>
 			<div className={styles.counter_item}>
-				<p>Positive comments</p>
+				<p className={styles.first_paragraph}>Positive comments</p>
 				<i className={`fa-regular fa-star ${styles.gradient_color}`}></i>
-				<p>{commentsCount}</p>
+				<div className={styles.second_paragraph}><p>{commentsCount}</p></div>
 			</div>
 			<div className={styles.counter_item}>
-				<p>Funds raised</p>
+				<div className={styles.first_paragraph}><p className={styles.must_top_position}>Funds raised</p></div>
 				<i class={`fa-solid fa-sack-dollar ${styles.gradient_color}`}></i>
-				<p>{moneyCount} $</p>
+				<div className={styles.second_paragraph}><p>{moneyCount} $</p></div>
 			</div>
 		</div>
 	);

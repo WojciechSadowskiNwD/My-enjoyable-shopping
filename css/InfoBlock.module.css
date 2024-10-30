@@ -12,4 +12,10 @@
   font-style: normal;
   word-spacing: 1.3px;
   background-color: rgba(31, 31, 31, 0.4980392157);
+}
+
+@media (min-width: 576px) {
+  .info_block {
+    padding: 25px;
+  }
 }/*# sourceMappingURL=InfoBlock.module.css.map */

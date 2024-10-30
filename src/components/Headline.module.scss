@@ -1,14 +1,23 @@
 .headline {
 	margin-bottom: 40px;
 	padding: 10px;
+	// background: rgb(133, 85, 0);
+	// background: linear-gradient(
+	// 	327deg,
+	// 	rgba(133, 85, 0, 1) 0%,
+	// 	rgba(255, 165, 0, 1) 30%,
+	// 	rgba(255, 172, 0, 1) 67%,
+	// 	rgba(177, 122, 0, 1) 100%
+	// );
 	background: rgb(133, 85, 0);
 	background: linear-gradient(
 		327deg,
-		rgba(133, 85, 0, 1) 0%,
+		rgba(255, 122, 0, 1) 0%,
 		rgba(255, 165, 0, 1) 30%,
 		rgba(255, 172, 0, 1) 67%,
-		rgba(177, 122, 0, 1) 100%
+		rgba(255, 122, 0, 1) 100%
 	);
+    border-bottom: 2px solid #ffffff85;
 	// box shadow:
 	-webkit-box-shadow: 1px 1px 133px 26px rgba(0, 0, 0, 1);
 	-moz-box-shadow: 1px 1px 133px 26px rgba(0, 0, 0, 1);
@@ -37,6 +46,17 @@
 
 		h2 {
 			font-size: 25px;
+		}
+	}
+}
+
+// small breakpoint
+@media (min-width: 576px) {
+	.headline{
+		padding: 18px;
+
+		h2 {
+			font-size: 28px;
 		}
 	}
 }

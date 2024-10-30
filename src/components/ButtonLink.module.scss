@@ -6,7 +6,7 @@
 	padding: 15px 30px;
 	border-radius: 15px;
 	border: none;
-	background-color: orange;
+	background-color: orange; 
 	background: linear-gradient(
 		327deg,
 		rgba(133, 85, 0, 1) 0%,
@@ -29,5 +29,19 @@
 		word-spacing: 2px;
 		text-decoration: none;
 		color: #fff;
+	}
+}
+
+
+// RWD
+
+// small breakpoint
+@media (min-width: 576px) {
+	.btn_basic_design {
+		padding: 16px 32px;
+
+		a {
+			font-size: 26px;
+		}
 	}
 }

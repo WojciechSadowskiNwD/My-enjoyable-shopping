@@ -166,6 +166,11 @@ h2 {
 			border: none;
 			color: #5e401d;
 			cursor: pointer;
+			transition: .5s ease;
+		}
+		.btn_order:hover {
+			background-color: rgb(98, 138, 18);
+			color: #fff;
 		}
 	}
 
@@ -196,11 +201,6 @@ h2 {
 	opacity: 0;
 }
 
-
-
-
-
-
 // ANIMATIONS:
 @keyframes icon_rocking {
 	0% {
@@ -211,5 +211,75 @@ h2 {
 	}
 	100% {
 		transform: rotate(20deg);
+	}
+}
+
+// RWD:
+// small breakpoint
+@media (min-width: 576px) {
+	.order_card {
+		margin: 25px 50px; //nie wiem jeszcze
+		width: 78%;
+		height: 580px;
+
+		.card_front {
+			.card_front_content {
+				h3 {
+					font-size: 28px;
+				}
+				p {
+					font-size: 21px;
+				}
+				span {
+					width: 70%;
+					gap: 40px;
+				}
+			}
+		}
+		.card_back {
+			h3 {
+				padding-top: 10px;
+				font-size: 28px;
+			}
+			.order_icons {
+				i {
+					font-size: 45px;
+					margin-top: 30px;
+					margin-bottom: 30px;
+					margin-left: 12px;
+				}
+			}
+			.text_content {
+				.top_paragraph {
+					margin-top: 10px;
+					padding-bottom: 22px;
+					font-size: 21px;
+				}
+				.content_row {
+					width: 100%;
+					width: 92%;
+					align-self: flex-end;
+					margin: 5px;
+
+					i {
+						font-size: 23px;
+						margin-right: 6px;
+					}
+					p {
+						font-size: 19px;
+					}
+				}
+			}
+			.btn_order{
+			position: absolute;
+			bottom: 32px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 56%;
+			margin-top: 30px;
+			padding: 12px;
+			font-size: 18px;
+			}
+		}
 	}
 }

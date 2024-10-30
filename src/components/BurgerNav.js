@@ -20,8 +20,11 @@ function BurgerNav() {
 
 	return (
 		<nav className={styles.mobileNav}>
-			<div className={`${styles.top_nav_bar} ${isOpen ? '' : 
-				isScrolled ? styles.scrolled : ""}`}>
+			<div
+				className={`${styles.top_nav_bar} ${
+					isOpen ? "" : isScrolled ? styles.scrolled : ""
+				}`}
+			>
 				<button className={styles.burger} onClick={handleClick}>
 					{isOpen ? (
 						<i className="fas fa-times"></i>

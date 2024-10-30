@@ -39,4 +39,43 @@
 		flex-direction: column;
 		margin-top: 10px;
 	}
+} 
+
+ 
+// RWD STYLES:
+@media(min-width: 412px){
+	.glass {
+		.contact_box{
+			padding: 12px 10px 25px 10px;
+
+			h3 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+
+}
+
+// small breakpoint
+@media (min-width: 576px) {
+	.glass {
+		width: 90%;
+		margin-top: 35px;
+		padding-bottom: 30px;
+		padding-top: 20px;
+
+		.contact_box{
+			padding: 14px 10px 25px 10px;
+
+			h3 {
+				font-size: 21px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
 }

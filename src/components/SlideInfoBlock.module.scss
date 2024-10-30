@@ -4,13 +4,10 @@
     align-items: center;
     width: 90vw;
     min-height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px auto 60px auto;
     padding: 10px 10px 20px 15px;
     border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+    border-bottom-right-radius: 35px; 
     font-family: "EB Garamond", system-ui;
     font-optical-sizing: auto;
     font-size: 20px;
@@ -40,6 +37,26 @@
 }
 // Back component to visible state
 .visible {
-    opacity: 1;
+    opacity: 1; 
     transform: translateX(0);
+}
+
+
+
+// RWD STYLES:
+
+//Width: Google Pixel 6,
+@media (min-width: 412px) {
+    .slideInfoBlock{
+        font-size: 21px;
+    }
+}
+
+// small breakpoint
+@media (min-width: 576px) {
+    .slideInfoBlock{
+        width: 80vw;
+        padding: 25px;
+        font-size: 22px;
+    }
 }

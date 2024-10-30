@@ -37,7 +37,6 @@
   width: 85%;
   margin: 10px auto 10px auto;
   padding: 10px;
-  font-size: 20px;
   font-size: 18px;
   border-radius: 5px;
   border: none;
@@ -107,5 +106,20 @@
   }
   .form .checkbox_box {
     width: 85%;
+  }
+}
+@media (min-width: 576px) {
+  .form {
+    width: 74%;
+    padding-top: 14px;
+  }
+  .form input[type=text],
+  .form input[type=email],
+  .form input[type=password] {
+    padding-left: 14px;
+    font-size: 19px;
+  }
+  .login_margin {
+    margin-top: 170px;
   }
 }/*# sourceMappingURL=Login.module.css.map */

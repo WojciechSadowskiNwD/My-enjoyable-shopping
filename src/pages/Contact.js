@@ -7,11 +7,11 @@ import Hollow from "../components/Hollow";
 
 function Contact() {
 	return (
-		<div className="pages_bgc">
+		<div className="pages_bgc"> 
 			<div className="bg_shadow"> 
 				<Logo details="logoDetails" />
 				<SectionTitle>Contact</SectionTitle>
-				<InfoBlock width="95%">
+				<InfoBlock width="infoBlock_width">
 					If you have questions not covered in the faq you can always contact us
 					directly! Choose the form appropriate to the subject of the matter.
 				</InfoBlock>

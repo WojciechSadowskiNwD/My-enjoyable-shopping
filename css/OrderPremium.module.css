@@ -136,6 +136,11 @@ h2 {
   border: none;
   color: #5e401d;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.order_card .card_back .btn_order:hover {
+  background-color: rgb(98, 138, 18);
+  color: #fff;
 }
 .order_card p {
   font-size: 18px;
@@ -170,5 +175,60 @@ h2 {
   }
   100% {
     transform: rotate(20deg);
+  }
+}
+@media (min-width: 576px) {
+  .order_card {
+    margin: 25px 50px;
+    width: 78%;
+    height: 580px;
+  }
+  .order_card .card_front .card_front_content h3 {
+    font-size: 28px;
+  }
+  .order_card .card_front .card_front_content p {
+    font-size: 21px;
+  }
+  .order_card .card_front .card_front_content span {
+    width: 70%;
+    gap: 40px;
+  }
+  .order_card .card_back h3 {
+    padding-top: 10px;
+    font-size: 28px;
+  }
+  .order_card .card_back .order_icons i {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+  }
+  .order_card .card_back .text_content .top_paragraph {
+    margin-top: 10px;
+    padding-bottom: 22px;
+    font-size: 21px;
+  }
+  .order_card .card_back .text_content .content_row {
+    width: 100%;
+    width: 92%;
+    align-self: flex-end;
+    margin: 5px;
+  }
+  .order_card .card_back .text_content .content_row i {
+    font-size: 23px;
+    margin-right: 6px;
+  }
+  .order_card .card_back .text_content .content_row p {
+    font-size: 19px;
+  }
+  .order_card .card_back .btn_order {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56%;
+    margin-top: 30px;
+    padding: 12px;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=OrderPremium.module.css.map */

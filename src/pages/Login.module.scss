@@ -39,7 +39,6 @@
 		width: 85%;
 		margin: 10px auto 10px auto;
 		padding: 10px;
-		font-size: 20px;
 		font-size: 18px;
 		border-radius: 5px;
 		border: none;
@@ -99,10 +98,8 @@
 	height: 750px;
 }
 
+// RWD:
 
-
-
-// RWD STYLES:
 @media (min-width: 390px) {
 	.form {
 		width: 92%;
@@ -111,7 +108,7 @@
 			margin-left: 40px;
 			margin-right: 40px;
 		}
-		
+
 		input[type="text"],
 		input[type="email"],
 		input[type="password"] {
@@ -121,5 +118,23 @@
 		.checkbox_box {
 			width: 85%;
 		}
+	}
+}
+
+// small breakpoint
+@media (min-width: 576px) {
+	.form {
+		width: 74%;
+		padding-top: 14px;
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			padding-left: 14px;
+			font-size: 19px;
+		}
+	}
+	.login_margin {
+		margin-top: 170px;
 	}
 }

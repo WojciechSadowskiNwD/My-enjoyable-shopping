@@ -8,7 +8,7 @@ import Hollow from "../components/Hollow";
 
 function Login() {
 	return (
-		<div className="pages_bgc">
+		<div className="pages_bgc"> 
 			<div className="bg_shadow">
 				<Logo 
 					logoStyles={logoStyles.logo}

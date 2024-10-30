@@ -2,7 +2,8 @@
   margin-bottom: 40px;
   padding: 10px;
   background: rgb(133, 85, 0);
-  background: linear-gradient(327deg, rgb(133, 85, 0) 0%, rgb(255, 165, 0) 30%, rgb(255, 172, 0) 67%, rgb(177, 122, 0) 100%);
+  background: linear-gradient(327deg, rgb(255, 122, 0) 0%, rgb(255, 165, 0) 30%, rgb(255, 172, 0) 67%, rgb(255, 122, 0) 100%);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5215686275);
   box-shadow: 1px 1px 133px 26px rgb(0, 0, 0);
 }
 .headline h2 {
@@ -25,5 +26,13 @@
   }
   .headline h2 {
     font-size: 25px;
+  }
+}
+@media (min-width: 576px) {
+  .headline {
+    padding: 18px;
+  }
+  .headline h2 {
+    font-size: 28px;
   }
 }/*# sourceMappingURL=Headline.module.css.map */

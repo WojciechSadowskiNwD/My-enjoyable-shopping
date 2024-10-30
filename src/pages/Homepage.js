@@ -10,6 +10,7 @@ import StatsCounters from "../components/StatsCounters";
 import ButtonLink from "../components/ButtonLink";
 import img1 from "../img/ai-generated-8261519_1280.png";
 import img2 from "../img/Bag_vegetables-_640.png";
+import NavigationBar from "../components/NavigationBar";
 
 const faqs = [
 	{
@@ -42,6 +43,7 @@ function Homepage() {
 	return (
 		<div className="homepage">
 			<BurgerNav />
+			<NavigationBar />
 			<header className="header">
 				<Logo />
 				<DownArrow />

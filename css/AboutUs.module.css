@@ -19,6 +19,10 @@
   background-repeat: no-repeat;
 }
 
+.infoBlock_width {
+  width: 95%;
+}
+
 .portfolio_link {
   position: relative;
   display: flex;
@@ -62,5 +66,23 @@
   }
   100% {
     transform: rotate(90deg) translateY(0);
+  }
+}
+@media (min-width: 576px) {
+  .white_background {
+    height: 400px;
+    margin-bottom: 40px;
+    border-bottom: 8px solid orange;
+  }
+  .white_background .team_img {
+    height: 315px;
+  }
+  .portfolio_link .link_cursor {
+    left: 33%;
+    font-size: 28px;
+  }
+  .portfolio_link a {
+    width: 80px;
+    font-size: 19px;
   }
 }/*# sourceMappingURL=AboutUs.module.css.map */

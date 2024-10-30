@@ -34,7 +34,7 @@ function AccordionItem({ title, text, isOpen, onToggle }) {
 				<p className={styles.icon}>+</p>
 			</div>
 			<div
-				className={`
+				className={` 
 				${styles.accordion_height0}
 			 	${isOpen
 					? `${styles.accordion} ${styles.accordion_bottom} 

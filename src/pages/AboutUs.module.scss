@@ -10,7 +10,7 @@
 	background-color: #ffffffd2;
 	border-bottom: 7px solid orange;
 
-	.team_img { 
+	.team_img {
 		width: 95%;
 		height: 230px;
 		background-image: url("../img/men-4451375_640.png");
@@ -19,6 +19,11 @@
 		background-repeat: no-repeat;
 	}
 }
+
+.infoBlock_width {
+	width: 95%;
+}
+
 
 .portfolio_link {
 	position: relative;
@@ -57,7 +62,6 @@
 	}
 }
 
-
 // ANIMATIONS:
 @keyframes finger_motion {
 	0% {
@@ -68,5 +72,31 @@
 	}
 	100% {
 		transform: rotate(90deg) translateY(0);
+	}
+}
+
+// RWD:
+
+// small breakpoint
+@media (min-width: 576px) {
+	.white_background {
+		height: 400px;
+		margin-bottom: 40px;
+		border-bottom: 8px solid orange;
+
+		.team_img {
+			height: 315px;
+		}
+	}
+
+	.portfolio_link {
+		.link_cursor {
+			left: 33%;
+			font-size: 28px;
+		}
+		a {
+			width: 80px;
+			font-size: 19px;
+		}
 	}
 }

@@ -89,3 +89,10 @@
 		}
 	}
 }
+
+// medium
+@media (min-width: 768px) {
+	.mobileNav{
+		display: none;
+	}
+}

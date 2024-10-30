@@ -23,7 +23,7 @@ export default function Footer() {
                     <Link to="https://www.facebook.com/">Facebook</Link>
                     <Link to="https://x.com/?lang=pl">Platform X</Link>
                     <Link to="https://www.linkedin.com/">LinkedIn</Link>
-				</div>
+				</div> 
 			</div>
             <div className={styles.footer_bottom}>
                 <div className={styles.overline}></div>
