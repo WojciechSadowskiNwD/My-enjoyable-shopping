@@ -114,4 +114,23 @@
     padding: 18px;
     font-size: 18px;
   }
+}
+@media (min-width: 768px) {
+  .footer .bg_shadow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  .footer .bg_shadow .footer_box {
+    align-self: flex-start;
+    align-items: start;
+    margin-left: 15%;
+    padding-bottom: 80px;
+  }
+  .footer .bg_shadow .footer_box h3 {
+    padding-bottom: 30px;
+  }
+  .footer .bg_shadow .footer_box a {
+    padding-bottom: 14px;
+  }
 }/*# sourceMappingURL=Footer.module.css.map */

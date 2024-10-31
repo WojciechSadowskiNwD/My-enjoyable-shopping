@@ -88,3 +88,23 @@ div {
 		}
 	}
 }
+
+// medium
+@media (min-width: 768px) {
+	.logo{
+		right: 40px;
+		width: 62%;
+		min-width: 360px;
+		height: 90px;
+		
+		.img_logo { 
+			margin-left: -36px;
+			width: 150px;
+			height: 150px;
+		}
+		h1, a {
+			padding-left: 8px;
+			padding-right: 16px;
+		}
+	}
+}

@@ -11,17 +11,16 @@ function Login() {
 		<div className="pages_bgc"> 
 			<div className="bg_shadow">
 				<Logo 
-					logoStyles={logoStyles.logo}
+					// logoStyles={logoStyles.logo}
 					details="logoDetails"
-					imgSize={styles.imgSize}
 				/>
-
+ 
 				<form className={`${styles.form} ${styles.login_margin}`}>
 					<h2 className={styles.padding_bottom}>Do you have an account?</h2>
 					<input type="text" placeholder="Login" />
 					<input type="password" placeholder="Password" />
 					<label className={styles.forgot_password}>I forgot my password</label>
-					<ButtonLink>Login</ButtonLink>
+					<ButtonLink btnSize={styles.btn_size}>Login</ButtonLink>
 				</form>
 				<form className={`${styles.form} ${styles.register_size}`}>
 					<h2>First time here?</h2>
@@ -47,7 +46,7 @@ function Login() {
 							</label>
 						</div>
 					</div>
-					<ButtonLink parameters={styles.button_parameters}>
+					<ButtonLink parameters={styles.button_parameters} btnSize={styles.btn_size}>
 						Register
 					</ButtonLink>
 				</form>

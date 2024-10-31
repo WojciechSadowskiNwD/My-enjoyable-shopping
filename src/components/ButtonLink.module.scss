@@ -29,13 +29,14 @@
 		word-spacing: 2px;
 		text-decoration: none;
 		color: #fff;
+		transition: .3s;
 	}
-}
+} 
 
 
 // RWD
 
-// small breakpoint
+// small
 @media (min-width: 576px) {
 	.btn_basic_design {
 		padding: 16px 32px;
@@ -44,4 +45,19 @@
 			font-size: 26px;
 		}
 	}
+}
+
+// medium
+@media (min-width: 768px) { 
+	.btn_basic_design {
+		padding: 18px 34px;
+	}
+	.btn_basic_design:hover{
+		padding: 17px 27px;
+
+		a{
+			font-size: 28px;
+		}
+	}
+	
 }

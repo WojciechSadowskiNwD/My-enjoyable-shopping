@@ -138,3 +138,28 @@
 		margin-top: 170px;
 	}
 }
+
+// medium
+@media (min-width: 768px) {
+	.form {
+		width: 68%;
+		padding-top: 20px;
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			width: 70%;
+		}
+
+		//custom class for button form
+		.btn_size {
+			padding: 15px;
+			a {
+				font-size: 23px;
+			}
+		}
+		.checkbox_box {
+			width: 72%;
+		}
+	}
+}

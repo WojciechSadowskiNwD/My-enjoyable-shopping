@@ -154,5 +154,12 @@ body {
 
 // medium
 @media (min-width: 768px) {
-
+	.logoDetails {
+		margin-left: 51%;
+		
+		h1, a {
+			padding-left: 8px;
+			padding-right: 16px;
+		}
+	}
 }

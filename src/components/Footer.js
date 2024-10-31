@@ -9,7 +9,7 @@ export default function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<h2>My enjoyable shopping</h2>
- 
+  
 			<div className={styles.bg_shadow}>
                 <div className={styles.footer_box}>
 					<h3>Quick links</h3>

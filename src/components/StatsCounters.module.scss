@@ -32,7 +32,6 @@
 		justify-content: center;
 	}
 
-
 	p {
 		font-weight: bold;
 		padding: 10px;
@@ -89,6 +88,23 @@
 				width: 100%;
 				height: 30%;
 				font-size: 22px;
+			}
+		}
+	}
+}
+
+// medium
+@media (min-width: 768px) {
+	.info_bar {
+		margin-top: 30px;
+		padding-top: 25px;
+
+		.counter_item {
+			.must_top_position {
+				padding-top: 0px;
+			}
+			.second_paragraph {
+				font-size: 23px;
 			}
 		}
 	}

@@ -8,7 +8,7 @@ export default function Accordion({ data }) {
 		setCurrentOpen(currentOpen === index ? null : index);
 	};
 
-	return (
+	return ( 
 		<div className={styles.accordion_box}>
 			{data.map((item, index) => (
 				<AccordionItem

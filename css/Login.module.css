@@ -122,4 +122,24 @@
   .login_margin {
     margin-top: 170px;
   }
+}
+@media (min-width: 768px) {
+  .form {
+    width: 68%;
+    padding-top: 20px;
+  }
+  .form input[type=text],
+  .form input[type=email],
+  .form input[type=password] {
+    width: 70%;
+  }
+  .form .btn_size {
+    padding: 15px;
+  }
+  .form .btn_size a {
+    font-size: 23px;
+  }
+  .form .checkbox_box {
+    width: 72%;
+  }
 }/*# sourceMappingURL=Login.module.css.map */

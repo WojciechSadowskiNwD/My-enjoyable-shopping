@@ -69,4 +69,13 @@
     padding: 14px;
     font-size: 19px;
   }
+}
+@media (min-width: 768px) {
+  .subscribe_form_box {
+    margin-bottom: 120px;
+  }
+  .subscribe_form_box .subscribe_form {
+    width: 86%;
+    padding: 30px;
+  }
 }/*# sourceMappingURL=SubscribeForm.module.css.map */

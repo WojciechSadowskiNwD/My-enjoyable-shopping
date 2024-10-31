@@ -9,7 +9,7 @@ const StatsCounters = () => {
 	const { ref, inView } = useInView({
 		triggerOnce: true, // licznik uruchomi się tylko raz
 		threshold: 0.1, // aktywuje licznik, gdy 10% komponentu będzie widoczne
-	});
+	}); 
 
 	useEffect(() => { 
 		if (inView) {

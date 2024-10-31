@@ -106,4 +106,11 @@
   .accordion_box .accordion_height_XL {
     min-height: 240px;
   }
+}
+@media (min-width: 768px) {
+  .accordion_box {
+    width: 85%;
+    margin-top: 80px;
+    margin-bottom: 150px;
+  }
 }/*# sourceMappingURL=Accordion.module.css.map */
