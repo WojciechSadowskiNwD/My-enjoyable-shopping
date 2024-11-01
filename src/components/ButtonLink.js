@@ -8,5 +8,5 @@ export default function ButtonLink({children, positionClass='', btnSize=''}) {
         <button className={`${styles.btn_basic_design} ${positionClass} ${btnSize}`}>
             <Link to="/login">{children}</Link>
         </button>
-    )
+    ) 
 } 

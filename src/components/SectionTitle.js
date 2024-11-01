@@ -8,3 +8,4 @@ export default function SectionTitle({children}) {
 		</div>
 	);
 }
+ 

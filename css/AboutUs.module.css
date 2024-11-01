@@ -85,4 +85,15 @@
     width: 80px;
     font-size: 19px;
   }
+}
+@media (min-width: 768px) {
+  .white_background {
+    height: 470px;
+    margin-bottom: 40px;
+    border-bottom: 10px solid orange;
+  }
+  .white_background .team_img {
+    width: 88%;
+    height: 380px;
+  }
 }/*# sourceMappingURL=AboutUs.module.css.map */

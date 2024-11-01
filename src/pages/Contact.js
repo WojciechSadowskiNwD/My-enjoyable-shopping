@@ -19,7 +19,7 @@ function Contact() {
 				<div className={styles.glass}>
 					<div className={styles.contact_box}>
 						<h3>Collaboration</h3>
-						<p>wsdev-collabor@gmail.com</p>
+						<p>wsdev-collabor@gmail.com</p> 
 					</div>
 					<div className={styles.contact_box}>
 						<h3>Orders</h3>

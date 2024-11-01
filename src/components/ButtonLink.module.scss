@@ -31,7 +31,7 @@
 		color: #fff;
 		transition: .3s;
 	}
-} 
+}
 
 
 // RWD
@@ -50,14 +50,15 @@
 // medium
 @media (min-width: 768px) { 
 	.btn_basic_design {
-		padding: 18px 34px;
+		padding: 18px 34px;	
+		border: 5px solid rgba(255, 165, 0, 1);	
 	}
-	.btn_basic_design:hover{
-		padding: 17px 27px;
-
+	.btn_basic_design:hover {
+		border: 5px solid rgb(255, 219, 151);	
 		a{
-			font-size: 28px;
+			color: rgb(255, 225, 169);
 		}
 	}
 	
 }
+

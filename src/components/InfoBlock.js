@@ -8,3 +8,4 @@ export default function InfoBlock({ children, width }) {
 		</div>
 	);
 }
+ 

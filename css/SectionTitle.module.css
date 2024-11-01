@@ -19,4 +19,12 @@
     letter-spacing: 0.3px;
     margin-bottom: 25px;
   }
+}
+@media (min-width: 768px) {
+  .section_title {
+    margin-top: 200px;
+    font-size: 19px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=SectionTitle.module.css.map */

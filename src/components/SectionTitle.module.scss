@@ -17,9 +17,20 @@
 // small breakpoint
 @media (min-width: 576px) {
 	.section_title {
-	        margin-top: 170px;
-                font-size: 18px;
-                letter-spacing: .3px;
-                margin-bottom: 25px;
+		margin-top: 170px;
+		font-size: 18px;
+		letter-spacing: 0.3px;
+		margin-bottom: 25px;
+	}
+}
+
+// medium
+@media (min-width: 768px) {
+	.section_title {
+		// margin-top: 180px;
+		margin-top: 200px;
+		font-size: 19px;
+		margin-bottom: 30px;
+		padding: 20px;
 	}
 }

@@ -41,6 +41,8 @@
     cursor: pointer;
   }
   .navigation_bar .link a:hover {
+    background-color: rgb(255, 219, 151);
+    background-color: rgb(255, 226, 171);
     background-color: #f0f0f0;
     color: orange;
   }

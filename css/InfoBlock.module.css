@@ -18,4 +18,12 @@
   .info_block {
     padding: 25px;
   }
+}
+@media (min-width: 768px) {
+  .info_block {
+    padding: 30px;
+    width: 78%;
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=InfoBlock.module.css.map */

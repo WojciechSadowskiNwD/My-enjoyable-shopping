@@ -231,4 +231,10 @@ h2 {
     padding: 12px;
     font-size: 18px;
   }
+}
+@media (min-width: 768px) {
+  .order_card {
+    margin: 35px 50px;
+    width: 60%;
+  }
 }/*# sourceMappingURL=OrderPremium.module.css.map */

@@ -100,3 +100,17 @@
 		}
 	}
 }
+
+// medium
+@media (min-width: 768px) {
+	.white_background {
+		height: 470px;
+		margin-bottom: 40px;
+		border-bottom: 10px solid orange;
+
+		.team_img {
+			width: 88%;
+			height: 380px;
+		}
+	}
+}
