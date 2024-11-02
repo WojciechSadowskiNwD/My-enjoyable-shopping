@@ -7,4 +7,9 @@
   .hollow {
     height: 60px;
   }
+}
+@media (min-width: 992px) {
+  .hollow {
+    height: 70px;
+  }
 }/*# sourceMappingURL=Hollow.module.css.map */

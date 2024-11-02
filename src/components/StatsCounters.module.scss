@@ -24,7 +24,6 @@
 	text-align: center;
 	font-size: 18px;
 	line-height: 1.2;
-	// background-color: rgba(82, 82, 82, 0.43);
 	border-right: 1px solid rgba(75, 75, 75, 0.352);
 
 	.second_paragraph {
@@ -105,6 +104,19 @@
 			}
 			.second_paragraph {
 				font-size: 23px;
+			}
+		}
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.info_bar {
+		margin-bottom: 120px;
+		
+		.counter_item {
+			.gradient_color {
+				font-size: 60px;
 			}
 		}
 	}

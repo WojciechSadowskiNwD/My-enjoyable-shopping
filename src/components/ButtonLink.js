@@ -9,4 +9,4 @@ export default function ButtonLink({children, positionClass='', btnSize=''}) {
             <Link to="/login">{children}</Link>
         </button>
     ) 
-} 
+}  

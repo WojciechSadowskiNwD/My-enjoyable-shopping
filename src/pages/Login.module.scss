@@ -143,7 +143,9 @@
 @media (min-width: 768px) {
 	.form {
 		width: 68%;
+		max-width: 530px;
 		padding-top: 20px;
+		transition: .3s;
 
 		input[type="text"],
 		input[type="email"],
@@ -153,13 +155,25 @@
 
 		//custom class for button form
 		.btn_size {
-			padding: 15px;
+			padding: 12px;
 			a {
-				font-size: 23px;
+				font-size: 22px;
 			}
 		}
 		.checkbox_box {
 			width: 72%;
 		}
+	}
+	.form:hover {
+		border: 1.6px solid rgb(255, 204, 110);
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.form {
+		width: 46%;
+		margin-top: 40px;
+		padding-top: 25px;
 	}
 }

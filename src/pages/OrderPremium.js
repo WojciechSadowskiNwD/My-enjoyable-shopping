@@ -10,16 +10,16 @@ function OrderPremium() {
 		<div className="pages_bgc">
 			<div className="bg_shadow">
 				<Logo details="logoDetails" />
-				<SectionTitle>
-					Order Premium 
-				</SectionTitle>
+				<SectionTitle>Order Premium</SectionTitle>
 				<InfoBlock>
 					Here you have the opportunity to order a personalized version of this
 					application of this app in three possible variants. Flip the selected
 					card and see what you gain!
 				</InfoBlock>
 
-				{/* First Card */}
+				<div className="large_style">
+
+					{/* First Card */}
 				<div className={styles.order_card}>
 					<div className={`${styles.card_front}`}>
 						<div className={styles.card_front_content}>
@@ -154,8 +154,146 @@ function OrderPremium() {
 						<button className={styles.btn_order}>Order</button>
 					</div>
 				</div>
-				
-				<Hollow height="70px"/>
+
+				</div>
+
+				{/* First Card */}
+				{/* <div className={styles.order_card}>
+					<div className={`${styles.card_front}`}>
+						<div className={styles.card_front_content}>
+							<h3>Small Pack</h3>
+							<p>
+								Order your own theme, in this package you will have us make
+								every element of the application to look exactly the way you
+								want.
+							</p>
+							<span>
+								<i class="fa-solid fa-arrow-rotate-left"></i>
+								<p>Check out</p>
+							</span>
+						</div>
+						<div className={styles.photo_shadow}></div>
+					</div>
+
+					<div className={`${styles.card_back} ${styles.turnover}`}>
+						<h3>Small Pack</h3>
+						<div className={styles.order_icons}>
+							<i class="fa-solid fa-cookie-bite"></i>
+						</div>
+						<div className={styles.text_content}>
+							<p className={styles.top_paragraph}>
+								In the package you will receive:
+							</p>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>customized application theme </p>
+							</span>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>three additional product categories</p>
+							</span>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>possibility to use on 10 devices</p>
+							</span>
+						</div>
+						<button className={styles.btn_order}>Order</button>
+					</div>
+				</div> */}
+
+				{/* Second Card */}
+				{/* <div className={styles.order_card}>
+					<div className={`${styles.card_front}`}>
+						<div className={styles.card_front_content}>
+							<h3>Medium Pack</h3>
+							<p>
+								Everything as in point 1. In addition, the ability to create
+								multiple shopping lists by store, and your functionality.
+							</p>
+							<span>
+								<i class="fa-solid fa-arrow-rotate-left"></i>
+								<p>Check out</p>
+							</span>
+						</div>
+						<div className={styles.photo_shadow}></div>
+					</div>
+
+					<div className={`${styles.card_back} ${styles.turnover}`}>
+						<h3>Medium Pack</h3>
+						<div className={styles.order_icons}>
+							<i class="fa-solid fa-cookie-bite"></i>
+							<i class="fa-solid fa-cookie-bite"></i>
+						</div>
+						<div className={styles.text_content}>
+							<p className={styles.top_paragraph}>
+								In the package you will receive:
+							</p>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>All from a small pack</p>
+							</span>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>Additional functionality on request</p>
+							</span>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>Creation of different lists under the indicated stores</p>
+							</span>
+						</div>
+						<button className={styles.btn_order}>Order</button>
+					</div>
+				</div> */}
+
+				{/* Third Card */}
+				{/* <div className={styles.order_card}>
+					<div className={`${styles.card_front}`}>
+						<div className={styles.card_front_content}>
+							<h3>Maximum Pack</h3>
+							<p>
+								Everything as in point 1 & 2. Everything as in point 1 and 2. In
+								addition, you can order additional 3 smaller functionalities and
+								more icons that can be changed on each card.
+							</p>
+							<span>
+								<i class="fa-solid fa-arrow-rotate-left"></i>
+								<p>Check out</p>
+							</span>
+						</div>
+						<div className={styles.photo_shadow}></div>
+					</div>
+
+					<div className={`${styles.card_back} ${styles.turnover}`}>
+						<h3>Large Pack</h3>
+						<div className={styles.order_icons}>
+							<i class="fa-solid fa-cookie-bite"></i>
+							<i class="fa-solid fa-cookie-bite"></i>
+						</div>
+						<div className={styles.text_content}>
+							<p className={styles.top_paragraph}>
+								In the package you will receive:
+							</p>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>All from previous packs</p>
+							</span>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>Total 4 Additional functionality or filters</p>
+							</span>
+							<span className={styles.content_row}>
+								<i class="fa-solid fa-circle-check"></i>
+								<p>
+									Additional editable icons for colored cards and more
+									categories
+								</p>
+							</span>
+						</div>
+						<button className={styles.btn_order}>Order</button>
+					</div>
+				</div> */}
+
+				<Hollow height="70px" />
 				<PreviousPage />
 			</div>
 		</div>

@@ -26,4 +26,10 @@
     font-size: 21px;
     margin-bottom: 30px;
   }
+}
+@media (min-width: 992px) {
+  .info_block {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }/*# sourceMappingURL=InfoBlock.module.css.map */

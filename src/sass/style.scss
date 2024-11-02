@@ -26,7 +26,6 @@ body {
 	display: flex;
 	overflow-x: hidden;
 	flex-direction: column;
-
 }
 
 .header {
@@ -124,13 +123,21 @@ body {
 	width: 95%;
 }
 
+.large_style {
+	position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
 
 // RWD STYLES:
-@media(min-width: 412px){
+@media (min-width: 412px) {
 	.logoDetails {
 		height: 90px;
 
-		h1, a {
+		h1,
+		a {
 			padding-left: 8px;
 			font-size: 23px;
 		}
@@ -140,7 +147,8 @@ body {
 // small
 @media (min-width: 576px) {
 	.logoDetails {
-		h1, a {
+		h1,
+		a {
 			padding: 0px 10px 0px 12px;
 		}
 	}
@@ -149,17 +157,49 @@ body {
 		padding: 30px;
 		line-height: 1.2;
 	}
-	
 }
 
 // medium
 @media (min-width: 768px) {
 	.logoDetails {
 		margin-left: 51%;
-		
-		h1, a {
+
+		h1,
+		a {
 			padding-left: 8px;
 			padding-right: 16px;
 		}
 	}
+}
+
+// large
+@media (min-width: 992px) {
+	.button_position {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.large_style {
+		margin-top: 20px;
+		margin-bottom: 80px;
+		display: flex; 
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.margin_top_large {
+		margin-top: 160px;
+	}
+	.infoBlock_width {
+		width: 83%;
+	}
+}
+
+//extra large
+@media (min-width: 1200px) {
+	
+}
+
+//extra extra large
+@media (min-width: 1400px) {
 }

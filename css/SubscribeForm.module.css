@@ -78,4 +78,24 @@
     width: 86%;
     padding: 30px;
   }
+}
+@media (min-width: 992px) {
+  .subscribe_form_box {
+    width: 72%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscribe_form_box .subscribe_form {
+    width: 100%;
+    padding: 35px;
+  }
+  .subscribe_form_box .subscribe_form label {
+    margin-bottom: 45px;
+    font-size: 23px;
+    line-height: 1.4;
+  }
+  .subscribe_form_box .subscribe_form button {
+    margin-top: 17px;
+  }
 }/*# sourceMappingURL=SubscribeForm.module.css.map */

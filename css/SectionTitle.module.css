@@ -27,4 +27,9 @@
     margin-bottom: 30px;
     padding: 20px;
   }
+}
+@media (min-width: 992px) {
+  .section_title {
+    padding: 25px;
+  }
 }/*# sourceMappingURL=SectionTitle.module.css.map */

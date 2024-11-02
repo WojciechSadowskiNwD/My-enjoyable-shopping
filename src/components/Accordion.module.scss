@@ -130,5 +130,37 @@
 		width: 85%;
 		margin-top: 80px;
 		margin-bottom: 150px;
+
+		.accordion_bottom {
+			min-height: 140px;
+		}
+		.accordion_height_L {
+			min-height: 170px;
+		}
+		.accordion_height_XL {
+			min-height: 215px;
+		}
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.accordion_box {
+		width: 72%;
+		margin-bottom: 170px;
+
+		.accordion {
+			padding: 20px;
+			font-size: 22.5px;
+		}
+		.accordion_bottom {
+			min-height: 130px;
+		}
+		.accordion_height_L {
+			min-height: 155px;
+		}
+		.accordion_height_XL {
+			min-height: 190px;
+		}
 	}
 }

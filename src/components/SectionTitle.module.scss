@@ -27,10 +27,16 @@
 // medium
 @media (min-width: 768px) {
 	.section_title {
-		// margin-top: 180px;
 		margin-top: 200px;
 		font-size: 19px;
 		margin-bottom: 30px;
 		padding: 20px;
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.section_title {
+		padding: 25px;
 	}
 }

@@ -10,5 +10,5 @@ export default function PreviousPage() {
 				<p>Back</p>
 			</div>
 		</Link>
-	);
+	); 
 }

@@ -13,7 +13,7 @@ function AboutUs() {
 				<SectionTitle>About Us</SectionTitle>
 				<div className={styles.white_background}>
 					<div className={styles.team_img}></div>
-				</div>
+				</div> 
 				<InfoBlock width="infoBlock_width">
 					We are a team of ambitious professionals who love their work. Together
 					we create great applications and design websites for our clients every

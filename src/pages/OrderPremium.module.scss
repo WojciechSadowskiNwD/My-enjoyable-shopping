@@ -291,3 +291,11 @@ h2 {
 		width: 60%;
 	}
 }
+
+// large
+@media (min-width: 992px) {
+	.order_card {
+		margin: 35px 20px; //nie wiem jeszcze
+		width: 400px;
+	}
+} 

@@ -60,6 +60,7 @@ div {
   .logo {
     right: 30px;
     width: 68%;
+    max-width: 457px;
     min-width: 340px;
     height: 90px;
   }
@@ -78,6 +79,7 @@ div {
   .logo {
     right: 40px;
     width: 62%;
+    max-width: 465px;
     min-width: 360px;
     height: 90px;
   }
@@ -89,5 +91,10 @@ div {
   .logo h1, .logo a {
     padding-left: 8px;
     padding-right: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .logo {
+    width: 468px;
   }
 }/*# sourceMappingURL=Logo.module.css.map */

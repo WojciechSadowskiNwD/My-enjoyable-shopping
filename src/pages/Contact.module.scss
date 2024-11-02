@@ -41,6 +41,7 @@
 	}
 }
 
+
 // RWD STYLES:
 @media (min-width: 412px) {
 	.glass {
@@ -80,8 +81,16 @@
 
 // medium
 @media (min-width: 768px) {
-	.glass {
+	.glass { 
 		width: 82%;
+		margin-bottom: 50px;
 		padding-bottom: 30px;
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.glass {
+		width: 70%;
 	}
 }

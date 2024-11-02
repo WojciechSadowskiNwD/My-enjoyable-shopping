@@ -88,4 +88,12 @@
   .info_bar .counter_item .second_paragraph {
     font-size: 23px;
   }
+}
+@media (min-width: 992px) {
+  .info_bar {
+    margin-bottom: 120px;
+  }
+  .info_bar .counter_item .gradient_color {
+    font-size: 60px;
+  }
 }/*# sourceMappingURL=StatsCounters.module.css.map */

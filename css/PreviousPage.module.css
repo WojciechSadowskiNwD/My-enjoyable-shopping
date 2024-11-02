@@ -28,4 +28,15 @@
 
 .button_back:hover {
   color: orange;
+}
+
+@media (min-width: 576px) {
+  .button_back {
+    left: 7px;
+  }
+}
+@media (min-width: 768px) {
+  .button_back {
+    left: 15px;
+  }
 }/*# sourceMappingURL=PreviousPage.module.css.map */

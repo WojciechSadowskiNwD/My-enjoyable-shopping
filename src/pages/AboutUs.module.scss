@@ -94,7 +94,7 @@
 			left: 33%;
 			font-size: 28px;
 		}
-		a {
+		a { 
 			width: 80px;
 			font-size: 19px;
 		}
@@ -111,6 +111,31 @@
 		.team_img {
 			width: 88%;
 			height: 380px;
+		}
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.white_background {
+		height: 540px;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-bottom: 60px;
+
+		.team_img {
+			width: 80%;
+			height: 405px;
+		}
+	}
+	.portfolio_link {
+		.link_cursor {
+			left: 38%;
+			font-size: 28px;
+		}
+		a { 
+			width: 100px;
+			font-size: 21px;
 		}
 	}
 }

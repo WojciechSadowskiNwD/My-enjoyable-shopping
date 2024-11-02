@@ -13,7 +13,7 @@ export default function Accordion({ data }) {
 			{data.map((item, index) => (
 				<AccordionItem
 					title={item.title}
-					isOpen={currentOpen === index}
+					isOpen={currentOpen === index} 
 					key={item.title}
 					text={item.text}
 					onToggle={() => handleToggle(index)}

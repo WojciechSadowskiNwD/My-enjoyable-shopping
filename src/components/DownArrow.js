@@ -8,4 +8,4 @@ function downArrow() {
     )
 }
 
-export default downArrow;
+export default downArrow; 

@@ -4,7 +4,6 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 48px;
-  padding: 20px;
   padding: 0px 10px 10px 10px;
   width: 100px;
   border-radius: 50%;
@@ -30,5 +29,15 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+@media (min-width: 992px) {
+  .downArrow {
+    padding: 0px 10px 20px 10px;
+    width: 120px;
+    box-shadow: 0px 0px 100px 30px rgb(0, 0, 0);
+  }
+  .downArrow i {
+    font-size: 48px;
   }
 }/*# sourceMappingURL=DownArrow.module.css.map */

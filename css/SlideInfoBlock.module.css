@@ -50,4 +50,12 @@
     padding: 25px;
     font-size: 22px;
   }
+}
+@media (min-width: 992px) {
+  .slideInfoBlock {
+    width: 70vw;
+    margin: 70px auto 70px auto;
+    padding: 30px 25px 35px 30px;
+    font-size: 23px;
+  }
 }/*# sourceMappingURL=SlideInfoBlock.module.css.map */

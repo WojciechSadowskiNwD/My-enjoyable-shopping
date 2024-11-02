@@ -68,6 +68,12 @@
 @media (min-width: 768px) {
   .glass {
     width: 82%;
+    margin-bottom: 50px;
     padding-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .glass {
+    width: 70%;
   }
 }/*# sourceMappingURL=Contact.module.css.map */

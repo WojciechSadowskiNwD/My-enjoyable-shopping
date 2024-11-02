@@ -9,7 +9,7 @@ function SubscribeForm() {
                 <button>Subscribe</button>
             </form>
         </div>
-    )
+    ) 
 }
 
  
