@@ -1,14 +1,6 @@
 .headline {
 	margin-bottom: 40px;
 	padding: 10px;
-	// background: rgb(133, 85, 0);
-	// background: linear-gradient(
-	// 	327deg,
-	// 	rgba(133, 85, 0, 1) 0%,
-	// 	rgba(255, 165, 0, 1) 30%,
-	// 	rgba(255, 172, 0, 1) 67%,
-	// 	rgba(177, 122, 0, 1) 100%
-	// );
 	background: rgb(133, 85, 0);
 	background: linear-gradient(
 		327deg,
@@ -57,6 +49,17 @@
 
 		h2 {
 			font-size: 28px;
+		}
+	}
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.headline{
+		padding: 19px;
+
+		h2 {
+			font-size: 29px;
 		}
 	}
 }

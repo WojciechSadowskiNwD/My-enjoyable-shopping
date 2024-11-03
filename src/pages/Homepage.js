@@ -82,7 +82,7 @@ function Homepage() {
 				<Accordion data={faqs} />
 				<Headline>Stay up to date</Headline>
 				<SubscribeForm />
-			</section>
+			</section> 
 			<Footer />
 		</div>
 	);

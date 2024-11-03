@@ -35,7 +35,7 @@ function Contact() {
 					</div>
 				</div>
                 <Hollow height="100px"/>
-                <PreviousPage/>
+                <PreviousPage/> 
 			</div>
 		</div> 
 	);

@@ -25,7 +25,7 @@ export default function Accordion({ data }) {
 
 function AccordionItem({ title, text, isOpen, onToggle }) {
 	return (
-		<div className={styles.target}>
+		<div className={styles.target}> 
 			<div
 				className={`${styles.accordion} ${styles.accordion_top}`}
 				onClick={onToggle}
@@ -34,7 +34,7 @@ function AccordionItem({ title, text, isOpen, onToggle }) {
 				<p className={styles.icon}>+</p>
 			</div>
 			<div
-				className={` 
+				className={`  
 				${styles.accordion_height0}
 			 	${isOpen
 					? `${styles.accordion} ${styles.accordion_bottom} 

@@ -8,17 +8,17 @@ export default function Footer() {
 
 	return (
 		<footer className={styles.footer}>
-			<h2>My enjoyable shopping</h2>
+			<h2>My enjoyable shopping</h2> 
   
-			<div className={styles.bg_shadow}>
+			<div className={styles.bg_shadow}> 
                 <div className={styles.footer_box}>
 					<h3>Quick links</h3>
                     <Link to="/login">Login</Link>
 					<Link to="/orderPremium">Order Premium</Link>
 					<Link to="/aboutUs">About us</Link>
 					<Link to="/contact">Contact</Link>
-				</div>
-				<div className={styles.footer_box}>
+				</div> 
+				<div className={`${styles.footer_box} ${styles.second_box}`}>
 					<h3>Find us on</h3>
                     <Link to="https://www.facebook.com/">Facebook</Link>
                     <Link to="https://x.com/?lang=pl">Platform X</Link>

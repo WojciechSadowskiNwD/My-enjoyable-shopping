@@ -118,3 +118,10 @@ div {
 		width: 468px;
 	}
 }
+
+//extra extra large
+@media (min-width: 1400px) {
+	.logo {
+		right: 50px;
+	}
+}

@@ -6,7 +6,7 @@ import styles from "./SlideInfoBlock.module.scss";
 function SlideInfoBlock({ children, direction, type="" }) {
 	const revealRef = useRef(null);
 	const [isVisible, setIsVisible] = useState(false);
-
+ 
 	const showElement = () => {
 		const element = revealRef.current;
 		const elementBottom = element.getBoundingClientRect().bottom; // Pozycja dolnej krawędzi elementu
@@ -38,10 +38,10 @@ function SlideInfoBlock({ children, direction, type="" }) {
 			ref={revealRef} 
 			className={`${styles.slideInfoBlock} ${styles[type]} ${styles[direction]} ${
 				isVisible ? styles.visible : ""
-			}`}
+			}`} 
 		>
 			<p>{children}</p>
-		</div>
+		</div> 
 	);
 }
 

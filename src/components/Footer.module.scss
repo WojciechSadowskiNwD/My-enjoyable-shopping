@@ -1,6 +1,5 @@
 .footer {
 	width: 100%;
-	min-height: 50vh;
 	background-image: url("../img/BackgroundDownBig.jpg");
 	background-size: 200%;
 	background-position: 45%;
@@ -145,7 +144,6 @@
 // medium
 @media (min-width: 768px) {
 	.footer {
-		
 		.bg_shadow {
 			display: flex;
 			flex-direction: row;
@@ -156,7 +154,7 @@
 				align-items: start;
 				margin-left: 15%;
 				padding-bottom: 80px;
-				
+
 				h3 {
 					padding-bottom: 30px;
 				}
@@ -164,6 +162,74 @@
 				a {
 					padding-bottom: 14px;
 				}
+			}
+		}
+	}
+}
+
+//extra large
+@media (min-width: 1200px) {
+	.footer {
+		h2 {
+			font-size: 23.5px;
+		}
+
+		.bg_shadow {
+			padding-top: 70px;
+
+			.footer_box {
+				align-self: flex-start;
+				align-items: start;
+				width: 50%;
+				margin-left: 1%;
+				padding-bottom: 80px;
+
+				h3,
+				a {
+					// margin-left: 50%;
+					margin-left: 40%;
+				}
+			}
+			.second_box {
+				h3,
+				a {
+					margin-left: 30%;
+				}
+			}
+		}
+	}
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.footer {
+		h2 {
+			font-size: 24px;
+		}
+		.bg_shadow {
+			padding-top: 80px;
+
+			.footer_box {
+				padding-bottom: 100px;
+				
+				h3,
+				a {
+					margin-left: 45%;
+					margin-bottom: 5px;
+				}
+			} 
+			.second_box {
+				h3,
+				a {
+					margin-left: 30%;
+				}
+			}
+		}
+		.footer_bottom {
+			p {
+				padding: 19px;
+				font-size: 19px;
+				letter-spacing: 1px;
 			}
 		}
 	}

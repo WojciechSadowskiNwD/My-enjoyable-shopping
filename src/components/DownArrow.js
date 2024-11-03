@@ -7,5 +7,5 @@ function downArrow() {
         </div>
     )
 }
-
+ 
 export default downArrow; 

@@ -96,4 +96,16 @@
   .info_bar .counter_item .gradient_color {
     font-size: 60px;
   }
+}
+@media (min-width: 1200px) {
+  .info_bar {
+    height: 230px;
+    margin-bottom: 130px;
+  }
+  .info_bar .counter_item {
+    font-size: 21px;
+  }
+  .info_bar .counter_item .gradient_color {
+    font-size: 62px;
+  }
 }/*# sourceMappingURL=StatsCounters.module.css.map */

@@ -7,5 +7,5 @@ export default function InfoBlock({ children, width }) {
 			<p>{children}</p>
 		</div>
 	);
-}
+} 
   

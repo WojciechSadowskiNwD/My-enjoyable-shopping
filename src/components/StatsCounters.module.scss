@@ -121,3 +121,38 @@
 		}
 	}
 }
+
+//extra large
+@media (min-width: 1200px) {
+	.info_bar {
+		height: 250px;
+		margin-bottom: 130px;
+		  
+		.counter_item {
+			font-size: 21.5px;
+
+			.gradient_color {
+				font-size: 62px;
+				margin-bottom: 10px;
+			}
+			.second_paragraph {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.info_bar {
+		height: 260px;
+
+		.counter_item {
+			font-size: 22px;
+
+			.gradient_color {
+				font-size: 64px;
+			}
+		}
+	}
+}

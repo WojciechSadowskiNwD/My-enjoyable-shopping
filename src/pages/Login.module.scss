@@ -43,7 +43,16 @@
 		border-radius: 5px;
 		border: none;
 		background-color: #ffffffc5;
+		color: #555555e6;
+		outline: none;
+		border: 1.6px solid transparent;
 	}
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="password"]:focus {
+		background-color: #f8ffeec5;
+	} 
+	
 	// section checkbox_boxes margin-top
 	.section_margin {
 		margin-top: 10px;
@@ -145,7 +154,7 @@
 		width: 68%;
 		max-width: 530px;
 		padding-top: 20px;
-		transition: .3s;
+		transition: 0.3s;
 
 		input[type="text"],
 		input[type="email"],
@@ -175,5 +184,26 @@
 		width: 46%;
 		margin-top: 40px;
 		padding-top: 25px;
+	}
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.form {
+		max-width: 530px;
+		margin-right: 35px;
+		margin-left: 35px;
+
+		h2,p {
+			font-size: 20.5px;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			font-size: 20px;
+		}
+		.checkbox_box {
+			font-size: 15.5px;
+		}
 	}
 }

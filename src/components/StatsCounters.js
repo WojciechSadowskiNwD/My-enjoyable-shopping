@@ -10,8 +10,8 @@ const StatsCounters = () => {
 		triggerOnce: true, // licznik uruchomi się tylko raz
 		threshold: 0.1, // aktywuje licznik, gdy 10% komponentu będzie widoczne
 	});  
-
-	useEffect(() => { 
+ 
+	useEffect(() => {  
 		if (inView) {
       // cuunters:
 			let startComments = 0;
@@ -78,7 +78,7 @@ const StatsCounters = () => {
 				transition: "opacity 1s ease-out",
 				opacity: inView ? 1 : 0, // Efekt pojawiania się licznika
 			}}
-		>
+		> 
 			<div className={styles.counter_item}>
 				<p className={styles.first_paragraph}>Customer downloads</p>
 				<i className={`fa-solid fa-cart-arrow-down ${styles.gradient_color}`}></i>

@@ -12,7 +12,7 @@ function Login() {
 			<div className="bg_shadow">
 				<Logo
 					details="logoDetails"
-				/>
+				/> 
 				<div className="large_style margin_top_large">
 					<form className={`${styles.form} ${styles.login_margin}`}>
 						<h2 className={styles.padding_bottom}>Do you have an account?</h2>

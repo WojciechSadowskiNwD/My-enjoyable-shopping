@@ -92,8 +92,6 @@
 	}
 }
 
-
-
 // RWD
 
 // small breakpoint
@@ -107,12 +105,12 @@
 			padding: 12px;
 			font-size: 22px;
 			line-height: 1.2;
-		} 
+		}
 		.accordion_bottom {
 			.text {
 				min-height: 170px;
 				font-size: 21px;
-				letter-spacing: .2px;
+				letter-spacing: 0.2px;
 			}
 		}
 		.accordion_height_L {
@@ -161,6 +159,36 @@
 		}
 		.accordion_height_XL {
 			min-height: 190px;
+		}
+	}
+}
+
+//extra large
+@media (min-width: 1200px) {
+	.accordion_box {
+		width: 70%;
+	}
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.accordion_box {
+		width: 66%;
+		max-width: 895px;
+		margin-top: 100px;
+		margin-bottom: 180px;
+
+		.accordion {
+			font-size: 23px;
+		}
+		.accordion_bottom {
+			min-height: 125px;
+		}
+		.accordion_height_L {
+			min-height: 140px;
+		}
+		.accordion_height_XL {
+			min-height: 165px;
 		}
 	}
 }

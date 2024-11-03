@@ -9,8 +9,8 @@ function SubscribeForm() {
                 <button>Subscribe</button>
             </form>
         </div>
-    ) 
-}
+    )  
+}  
 
  
 export default SubscribeForm;

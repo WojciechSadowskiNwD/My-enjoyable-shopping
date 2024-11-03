@@ -1,72 +1,88 @@
 .slideInfoBlock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    min-height: 150px;
-    margin: 60px auto 60px auto;
-    padding: 10px 10px 20px 15px;
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px; 
-    font-family: "EB Garamond", system-ui;
-    font-optical-sizing: auto;
-    font-size: 20px;
-    font-style: normal;
-    color: black;
-    background-color: #f1f1f1dc;
-    opacity: 0;
-    transition: transform 1.3s ease-out, opacity 1.7s ease-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	min-height: 150px;
+	margin: 60px auto 60px auto;
+	padding: 10px 10px 20px 15px;
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	font-family: "EB Garamond", system-ui;
+	font-optical-sizing: auto;
+	font-size: 20px;
+	font-style: normal;
+	color: black;
+	background-color: #f1f1f1dc;
+	opacity: 0;
+	transition: transform 1.3s ease-out, opacity 1.7s ease-out;
 
-    p{
-        padding: 10px;
-    }
-
+	p {
+		padding: 10px;
+		transition: 2.6s;
+	}
 }
 // Jeżeli infoBlock jest obrazkiem, zastosuj inne style:
 .images {
-    border-radius: 0px;
-    background: none;
+	border-radius: 0px;
+	background: none;
 }
 
 // Exposed components from left and right after user scroll action
 .hidden_left {
-    transform: translateX(-100%);
+	transform: translateX(-100%);
 }
 .hidden_right {
-    transform: translateX(100%);
+	transform: translateX(100%);
 }
 // Back component to visible state
 .visible {
-    opacity: 1; 
-    transform: translateX(0);
+	opacity: 1;
+	transform: translateX(0);
 }
-
-
 
 // RWD STYLES:
 
 //Width: Google Pixel 6,
 @media (min-width: 412px) {
-    .slideInfoBlock{
-        font-size: 21px;
-    }
+	.slideInfoBlock {
+		font-size: 21px;
+	}
 }
 
 // small breakpoint
 @media (min-width: 576px) {
-    .slideInfoBlock{
-        width: 80vw;
-        padding: 25px;
-        font-size: 22px;
-    } 
+	.slideInfoBlock {
+		width: 80vw;
+		padding: 25px;
+		font-size: 22px;
+	}
 }
 
 // large
 @media (min-width: 992px) {
-    .slideInfoBlock{
-        width: 70vw;
-        margin: 70px auto 70px auto;
-        padding: 30px 25px 35px 30px;
-        font-size: 23px;
-    } 
+	.slideInfoBlock {
+		width: 70vw;
+		margin: 70px auto 70px auto;
+		padding: 30px 25px 35px 30px;
+		font-size: 23px;
+	}
 }
+
+//extra large
+@media (min-width: 1200px) {
+	.slideInfoBlock {
+		width: 67vw;
+		margin: 90px auto 70px auto;
+		padding: 40px 25px 40px 35px;
+	}
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.slideInfoBlock {
+        max-width: 920px;
+        margin: 100px auto 70px auto;
+        font-size: 24px;
+	}
+}  

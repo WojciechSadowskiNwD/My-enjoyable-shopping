@@ -3,10 +3,8 @@
 }
 
 
-
 // RWD
-
-// medium
+// medium:
 @media (min-width: 768px) {
 	.navigation_bar {
         position: fixed;
@@ -58,6 +56,15 @@
                 
                 color: orange;
             }
+        }
+    }
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+    .navigation_bar {
+        .link {
+            font-size: 25px;
         }
     }
 }

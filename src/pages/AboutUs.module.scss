@@ -24,7 +24,6 @@
 	width: 95%;
 }
 
-
 .portfolio_link {
 	position: relative;
 	display: flex;
@@ -94,7 +93,7 @@
 			left: 33%;
 			font-size: 28px;
 		}
-		a { 
+		a {
 			width: 80px;
 			font-size: 19px;
 		}
@@ -133,9 +132,52 @@
 			left: 38%;
 			font-size: 28px;
 		}
-		a { 
+		a {
 			width: 100px;
 			font-size: 21px;
 		}
 	}
+}
+
+//extra large
+@media (min-width: 1200px) {
+	.white_background {
+		height: 570px;
+
+		.team_img {
+			width: 75%;
+			height: 480px;
+		}
+	}
+
+	.portfolio_link {
+		.link_cursor {
+			left: 40%;
+		}
+		a {
+			width: 100px;
+			font-size: 22px;
+		}
+	}
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.white_background {
+		height: 600px;
+
+		.team_img {
+			width: 65%;
+			max-width: 865px;
+			height: 500px; 
+		}
+	}
+	.portfolio_link {
+		margin-top: 50px;
+
+		.link_cursor {
+			left: 42%;
+		}
+	}
+
 }
