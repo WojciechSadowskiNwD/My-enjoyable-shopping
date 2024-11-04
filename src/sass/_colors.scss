@@ -1,0 +1,38 @@
+// Brand colors:
+$logo-color: orange;
+$orange-border: rgba(255, 165, 0, 1);
+$button-gradient: linear-gradient(
+    327deg,
+    rgba(133, 85, 0, 1) 0%,
+    rgba(255, 165, 0, 1) 20%,
+    rgba(255, 172, 0, 1) 80%,
+    rgba(177, 122, 0, 1) 90%
+);
+$orange-gradient: linear-gradient(
+    327deg,
+    rgba(255, 122, 0, 1) 0%,
+    rgba(255, 165, 0, 1) 30%,
+    rgba(255, 172, 0, 1) 67%,
+    rgba(255, 122, 0, 1) 100%
+);
+$gingerbread: #5e401d;
+$light-brown-cake: #8c5e2b;
+$card-button-green: rgb(98, 138, 18);
+$green-focus: rgb(0, 117, 45);  //subscribe form
+
+$pale-orange: rgb(255, 219, 151);
+$ultra-pale-orange: rgb(255, 238, 206);
+$pure-white: #f0f0f0; //subscribe form
+$input-subscribe-bg: #e1e3ea;
+$input-font-gray: #555555e6;
+
+
+// Shadow colors:
+$bg-shadow-ultra-dark: rgba(0, 0, 0, 0.92);
+$bg-shadow-dark: rgba(0, 0, 0, 0.75);
+$bg-shadow: rgba(0, 0, 0, 0.6);
+$bg-shadow-light: rgba(0, 0, 0, 0.473);
+$bg-shadow-ultra-light: rgb(0, 0, 0, 0.3);
+$shadow-white: rgba(255, 255, 255, 0.81);
+$gray-shadow: rgba(255, 255, 255, 0.5);
+$green-shadow: rgba(0, 123, 17, 0.65); //subscribe form

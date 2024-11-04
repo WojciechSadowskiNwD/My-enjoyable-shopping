@@ -1,3 +1,5 @@
+@import "../sass/colors";
+
 .footer {
 	width: 100%;
 	background-image: url("../img/BackgroundDownBig.jpg");
@@ -65,7 +67,7 @@
 		font-weight: 400;
 		font-style: normal;
 		text-transform: uppercase;
-		color: orange;
+		color: $logo-color;
 	}
 
 	.footer_bottom {
@@ -79,7 +81,7 @@
 			height: 1px;
 			margin-left: auto;
 			margin-right: auto;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: $gray-shadow;
 		}
 
 		p {

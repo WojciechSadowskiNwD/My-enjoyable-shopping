@@ -75,7 +75,6 @@
 }
 
 // RWD:
-
 // small breakpoint
 @media (min-width: 576px) {
 	.white_background {
@@ -100,7 +99,7 @@
 	}
 }
 
-// medium
+// medium breakpoint
 @media (min-width: 768px) {
 	.white_background {
 		height: 470px;
@@ -114,7 +113,7 @@
 	}
 }
 
-// large
+// large breakpoint
 @media (min-width: 992px) {
 	.white_background {
 		height: 540px;
@@ -139,7 +138,7 @@
 	}
 }
 
-//extra large
+//extra large breakpoint
 @media (min-width: 1200px) {
 	.white_background {
 		height: 570px;
@@ -161,7 +160,7 @@
 	}
 }
 
-//extra extra large
+//extra extra large breakpoint
 @media (min-width: 1400px) {
 	.white_background {
 		height: 600px;

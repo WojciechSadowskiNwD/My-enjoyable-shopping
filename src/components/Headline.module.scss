@@ -1,15 +1,11 @@
+@import "../sass/colors";
+
+
 .headline {
 	margin-bottom: 40px;
 	padding: 10px;
-	background: rgb(133, 85, 0);
-	background: linear-gradient(
-		327deg,
-		rgba(255, 122, 0, 1) 0%,
-		rgba(255, 165, 0, 1) 30%,
-		rgba(255, 172, 0, 1) 67%,
-		rgba(255, 122, 0, 1) 100%
-	);
-    border-bottom: 2px solid #ffffff85;
+	background: $orange-gradient;
+    border-bottom: 2px solid $gray-shadow;
 	// box shadow:
 	-webkit-box-shadow: 1px 1px 133px 26px rgba(0, 0, 0, 1);
 	-moz-box-shadow: 1px 1px 133px 26px rgba(0, 0, 0, 1);

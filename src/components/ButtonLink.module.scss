@@ -1,3 +1,5 @@
+@import "../sass/colors";
+
 .btn_basic_design {
 	position: absolute;
 	bottom: 40px;
@@ -6,14 +8,8 @@
 	padding: 15px 30px;
 	border-radius: 15px;
 	border: none;
-	background-color: orange; 
-	background: linear-gradient(
-		327deg,
-		rgba(133, 85, 0, 1) 0%,
-		rgba(255, 165, 0, 1) 20%,
-		rgba(255, 172, 0, 1) 80%,
-		rgba(177, 122, 0, 1) 90%
-	);
+	background-color: $logo-color; 
+	background: $button-gradient;
 	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	-moz-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
 	box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
@@ -51,12 +47,12 @@
 @media (min-width: 768px) { 
 	.btn_basic_design {
 		padding: 18px 34px;	
-		border: 5px solid rgba(255, 165, 0, 1);	
+		border: 5px solid $orange-border;	
 	}
 	.btn_basic_design:hover {
-		border: 5px solid rgb(255, 219, 151);	
+		border: 5px solid $pale-orange;
 		a{
-			color: rgb(255, 238, 206);
+			color: $ultra-pale-orange;
 		}
 	}
 	

@@ -1,3 +1,5 @@
+@import "../sass/colors";
+
 .subscribe_form_box {
 	display: flex;
 	justify-content: center;
@@ -5,7 +7,7 @@
 	width: 100%;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: $bg-shadow-ultra-light;
 
 	.subscribe_form {
 		display: flex;
@@ -13,14 +15,12 @@
 		align-items: center;
 		width: 90%;
 		padding: 15px;
-		background-color: rgba(0, 123, 17, 0.65);
+		background-color: $green-shadow;
 
 		label {
 			margin-bottom: 25px;
 			padding-top: 5px;
-			font-family: "Comfortaa", sans-serif;
 			text-align: center;
-			font-style: normal;
 			font-weight: 200;
 			font-size: 21px;
 		}
@@ -33,7 +33,7 @@
 			font-weight: 400;
 			font-size: 21px;
 			border: none;
-			color: #555555e6;
+			color: $input-font-gray;
 			outline: none;
 			border: 2px solid transparent;
 		}
@@ -42,8 +42,8 @@
 			-webkit-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 			-moz-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 			box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
-			border: 2px solid rgb(0, 117, 45);
-			background-color: #e1e3ea;
+			border: 2px solid $green-focus;
+			background-color: $input-subscribe-bg;
 		}
 
 		button {

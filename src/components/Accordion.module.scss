@@ -1,16 +1,17 @@
+@import "../sass/colors";
+
 .accordion_box {
 	display: flex;
 	flex-direction: column;
 	width: 92%;
 	margin: 60px 0px 60px 50%;
 	transform: translateX(-50%);
-	background-color: rgba(0, 0, 0, 0.473);
+	background-color: $bg-shadow-light;
 
 	.target {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 10px;
-		// background-color: rgba(50, 136, 0, .3);
 	}
 
 	.accordion {
@@ -21,13 +22,13 @@
 		padding: 10px;
 		font-size: 20px;
 		color: #000;
-		background-color: rgba(255, 255, 255, 0.81);
+		background-color: $shadow-white;
 		overflow: hidden;
 	}
 
 	.accordion_top {
 		height: 80px;
-		border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+		border-bottom: 1px solid $bg-shadow-ultra-light;
 		z-index: 100;
 
 		.title {
@@ -36,10 +37,8 @@
 			justify-content: flex-start;
 			align-self: center;
 			flex-grow: 1;
-			font-family: "Comfortaa", sans-serif;
 			font-weight: 400;
 			padding: 10px;
-			font-style: normal;
 		}
 		.icon {
 			display: flex;
@@ -76,12 +75,10 @@
 			justify-content: flex-start;
 			align-self: center;
 			flex-grow: 1;
-			opacity: 1;
-			font-family: "Comfortaa", sans-serif;
 			font-weight: 400;
 			padding: 20px 10px 20px 10px;
-			font-style: normal;
 			font-size: 18px;
+			opacity: 1;
 		}
 	}
 	.accordion_height_L {

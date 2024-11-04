@@ -1,3 +1,5 @@
+@import "../sass/colors";
+
 .slideInfoBlock {
 	display: flex;
 	justify-content: center;
@@ -12,8 +14,8 @@
 	font-optical-sizing: auto;
 	font-size: 20px;
 	font-style: normal;
-	color: black;
-	background-color: #f1f1f1dc;
+	color: #000;
+	background-color: $shadow-white;
 	opacity: 0;
 	transition: transform 1.3s ease-out, opacity 1.7s ease-out;
 
@@ -22,7 +24,7 @@
 		transition: 2.6s;
 	}
 }
-// Jeżeli infoBlock jest obrazkiem, zastosuj inne style:
+// If infoBlock are image, use this other style:
 .images {
 	border-radius: 0px;
 	background: none;
@@ -41,8 +43,9 @@
 	transform: translateX(0);
 }
 
-// RWD STYLES:
 
+
+// RWD:
 //Width: Google Pixel 6,
 @media (min-width: 412px) {
 	.slideInfoBlock {
@@ -59,7 +62,7 @@
 	}
 }
 
-// large
+// large breakpoint
 @media (min-width: 992px) {
 	.slideInfoBlock {
 		width: 70vw;
@@ -69,7 +72,7 @@
 	}
 }
 
-//extra large
+//extra large breakpoint
 @media (min-width: 1200px) {
 	.slideInfoBlock {
 		width: 67vw;
@@ -78,7 +81,7 @@
 	}
 }
 
-//extra extra large
+//extra extra large breakpoint
 @media (min-width: 1400px) {
 	.slideInfoBlock {
         max-width: 920px;

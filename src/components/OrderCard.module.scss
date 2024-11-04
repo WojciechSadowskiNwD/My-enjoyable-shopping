@@ -1,6 +1,8 @@
+@import "../sass/colors";
+
 h2 {
 	text-transform: uppercase;
-	color: orange;
+	color: $logo-color;
 }
 
 .order_card {
@@ -10,7 +12,6 @@ h2 {
 	height: 520px;
 	perspective: 800px;
 
-	// przód karty
 	.card_front {
 		width: 100%;
 		height: 100%;
@@ -22,7 +23,7 @@ h2 {
 			#c4904e 70%,
 			#8c5e2b 100%
 		);
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* lekkie cieniowanie */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 		-webkit-box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
 		-moz-box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
 		box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
@@ -59,7 +60,7 @@ h2 {
 			i {
 				font-size: 35px;
 				animation: icon_rocking 3s ease-in-out infinite;
-				color: #5e401d;
+				color: $gingerbread;
 				transition: 0.3s;
 			}
 
@@ -78,7 +79,6 @@ h2 {
 		transition: 0.8s;
 	}
 
-	// rewers card
 	.card_back {
 		position: absolute;
 		display: flex;
@@ -99,7 +99,7 @@ h2 {
 			#c4904e 70%,
 			#8c5e2b 100%
 		);
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* lekkie cieniowanie */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 		-webkit-box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
 		-moz-box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
 		box-shadow: 7px 14px 57px 12px rgba(0, 0, 0, 1);
@@ -129,7 +129,7 @@ h2 {
 			i {
 				font-size: 23px;
 				margin-right: 5px;
-				color: rgb(98, 138, 18);
+				color: $card-button-green;
 			}
 		}
 
@@ -149,7 +149,7 @@ h2 {
 				margin-top: 20px;
 				margin-bottom: 25px;
 				margin-left: 10px;
-				color: #8c5e2b;
+				color: $light-brown-cake;
 			}
 		}
 
@@ -164,12 +164,12 @@ h2 {
 			font-size: 14px;
 			border-radius: 5px;
 			border: none;
-			color: #5e401d;
+			color: $gingerbread;
 			cursor: pointer;
 			transition: 0.5s ease;
 		}
 		.btn_order:hover {
-			background-color: rgb(98, 138, 18);
+			background-color: $card-button-green;
 			color: #fff;
 		}
 	}
@@ -177,7 +177,7 @@ h2 {
 	p {
 		font-size: 18px;
 		padding: 7px;
-		color: #5e401d;
+		color: $gingerbread;
 	}
 
 	// Start position for cart_back:
@@ -200,6 +200,7 @@ h2 {
 	transform: rotateY(180deg);
 	opacity: 0;
 }
+ 
 
 // ANIMATIONS:
 @keyframes icon_rocking {
@@ -214,11 +215,12 @@ h2 {
 	}
 }
 
+
 // RWD:
 // small breakpoint
 @media (min-width: 576px) {
 	.order_card {
-		margin: 25px 50px; //nie wiem jeszcze
+		margin: 25px 50px;
 		width: 78%;
 		height: 580px;
 
@@ -287,7 +289,7 @@ h2 {
 // medium
 @media (min-width: 768px) {
 	.order_card {
-		margin: 35px 50px; //nie wiem jeszcze
+		margin: 35px 50px;
 		width: 60%;
 	}
 }
@@ -295,7 +297,7 @@ h2 {
 // large
 @media (min-width: 992px) {
 	.order_card {
-		margin: 35px 20px; //nie wiem jeszcze
+		margin: 35px 20px;
 		width: 400px;
 	}
 } 

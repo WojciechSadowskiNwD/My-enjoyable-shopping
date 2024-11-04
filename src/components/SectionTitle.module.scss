@@ -1,3 +1,5 @@
+@import "../sass/colors";
+
 .section_title {
 	display: flex;
 	flex-direction: row;
@@ -8,12 +10,12 @@
 	width: 100%;
 	font-size: 17px;
 	text-transform: uppercase;
-	background-color: rgba(0, 0, 0, 0.7);
-	color: orange;
+	background-color: $bg-shadow-dark;
+	color: $logo-color;
 }
 
-// RWD:
 
+// RWD:
 // small breakpoint
 @media (min-width: 576px) {
 	.section_title {

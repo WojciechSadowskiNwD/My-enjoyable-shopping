@@ -1,3 +1,5 @@
+@import "../sass/colors";
+
 .mobileNav {
 	position: fixed;
 	top: 0;
@@ -15,7 +17,7 @@
 		width: 50px;
 		height: 50px;
 		font-size: 46px;
-		color: #d1d1d1;
+		color: $shadow-white;
 		border: none;
 		background: none;
 		cursor: pointer;
@@ -33,7 +35,7 @@
 	}
 
 	.scrolled {
-		background-color: rgba(0, 0, 0, 0.75);
+		background-color: $bg-shadow-dark;
 		z-index: 101;
 	}
 
@@ -46,7 +48,7 @@
 		height: 100vh;
 		padding: 25% 0;
 		text-transform: uppercase;
-		background-color: rgba(0, 0, 0, 0.92);
+		background-color: $bg-shadow-ultra-dark;
 		transform: translateX(100%);
 		transition: 0.3s;
 		z-index: 102;
@@ -58,7 +60,7 @@
 			font-size: 34px;
 			letter-spacing: 2px;
 			word-spacing: 2px;
-			color: orange;
+			color: $logo-color;
 			text-decoration: none;
 			transform: translateX(150px);
 			transition: transform 0.5s ease, opacity 0.5s ease;

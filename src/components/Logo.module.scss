@@ -1,3 +1,6 @@
+@import "../sass/colors";
+
+
 div {
 	display: flex;
 	justify-content: flex-end;
@@ -15,7 +18,7 @@ div {
 	width: 80%;
 	min-width: 310px;
 	height: 80px;
-	background-color: orange;
+	background-color: $logo-color;
 	border-radius: 5px;
 
 	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
@@ -30,9 +33,7 @@ div {
 	}
 
 	h1, a {
-		font-family: "Comfortaa", sans-serif;
 		font-weight: 400;
-		font-style: normal;
 		text-transform: uppercase;
 		font-size: 22px;
 		padding-left: 5px;
