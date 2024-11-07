@@ -9,7 +9,7 @@ export default function Logo({
 }) {
 	return (
 		<Link to="/">
-			<div className={`${logoStyles} ${details}`}>
+			<div className={`${logoStyles} ${details}`}> 
 				<img
 					className={`${styles.img_logo} ${imgSize}`}
 					src={smallLogo}

@@ -11,6 +11,7 @@ import ButtonLink from "../components/ButtonLink";
 import img1 from "../img/ai-generated-8261519_1280.png";
 import img2 from "../img/Bag_vegetables-_640.png";
 import NavigationBar from "../components/NavigationBar";
+import { Link } from "react-router-dom";
 
 const faqs = [
 	{
@@ -74,7 +75,11 @@ function Homepage() {
 						alt="A few colorfull photos showing the appearance of the application"
 					/>
 				</SlideInfoBlock>
-				<ButtonLink positionClass="button_position">Let's Start App</ButtonLink>
+				<Link to="/login">
+					<ButtonLink positionClass="button_position">
+						Let's Start App
+					</ButtonLink>
+				</Link>
 				<StatsCounters />
 			</section>
 			<section className="main">
@@ -82,7 +87,7 @@ function Homepage() {
 				<Accordion data={faqs} />
 				<Headline>Stay up to date</Headline>
 				<SubscribeForm />
-			</section> 
+			</section>
 			<Footer />
 		</div>
 	);

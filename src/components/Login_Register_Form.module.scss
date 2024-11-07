@@ -101,6 +101,14 @@
 	height: 750px;
 }
 
+// correction position for btn if button are inside tag Link
+.position_Btn_Form {
+	transform: translateX(-50%);
+}
+
+
+
+
 // RWD:
 
 @media (min-width: 390px) {

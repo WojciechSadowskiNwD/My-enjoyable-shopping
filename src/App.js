@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import AboutUs from "./pages/AboutUs";
 import Homepage from "./pages/Homepage";
 import ScrollToTop from "./components/ScrollToTop";
+import AppStart from "./pages/AppStart";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Route path="contact" element={<Contact />} />
 				<Route path="orderPremium" element={<OrderPremium />} />
 				<Route path="aboutUs" element={<AboutUs />} />
+				<Route path="appStart" element={<AppStart/>} />
 			</Routes>
 		</BrowserRouter>
 	);

@@ -1,7 +1,4 @@
 import Logo from "../components/Logo";
-import styles from "./Login.module.scss";
-import ButtonLink from "../components/ButtonLink";
-import { Link } from "react-router-dom";
 import PreviousPage from "../components/PreviousPage";
 import Hollow from "../components/Hollow";
 import LoginForm from "../components/LoginForm";

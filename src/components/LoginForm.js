@@ -1,6 +1,6 @@
-import ButtonLink from './ButtonLink';
-import styles from './Login_Register_Form.module.scss';
-
+import { Link } from "react-router-dom";
+import ButtonLink from "./ButtonLink";
+import styles from "./Login_Register_Form.module.scss";
 
 function LoginForm() {
 	return (
@@ -9,10 +9,11 @@ function LoginForm() {
 			<input type="text" placeholder="Login" />
 			<input type="password" placeholder="Password" />
 			<label className={styles.forgot_password}>I forgot my password</label>
-			<ButtonLink btnSize={styles.btn_size}>Login</ButtonLink>
+			<Link to="/appStart">
+				<ButtonLink btnSize={styles.btn_size} positionClass={styles.position_Btn_Form}>Login</ButtonLink>
+			</Link>
 		</form>
 	);
 }
-
 
 export default LoginForm;
