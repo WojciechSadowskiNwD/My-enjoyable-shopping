@@ -5,6 +5,26 @@
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
+
+	background-image: url("../img/BackgroundSmall.jpg");
+	background-image: url("../img/BackgroundDownBig.jpg");
+	background-image: url("../img/BackgroundLarge.jpg");
+	background-size: cover;
+	background-position: 55%;
+	background-position: 5%;
+	background-repeat: no-repeat;
+	background-color: #333;
+	z-index: 0;
+
+	.bg_shadow {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		// background-color: rgba(0,0,0,.7);
+		// background-color: rgba(0,0,0,.55);
+		background-color: rgba(0, 0, 0, 0.3);
+	}
 }
 
 .app_header {
@@ -14,7 +34,7 @@
 	align-items: center;
 	width: 100%;
 	height: 200px;
-	background-color: rgba(182, 225, 215, 0.703);
+	// background-color: rgba(182, 225, 215, 0.703);
 
 	.green_circle {
 		position: absolute;
@@ -31,6 +51,8 @@
 			rgba(0, 56, 6, 0.877) 100%
 		);
 		border-radius: 50%;
+		border: 4px solid #ffffff23;
+		border: 6px solid #ffffff23;
 		z-index: 1;
 	}
 
@@ -65,7 +87,6 @@
 		width: 200px;
 		height: 50px;
 		top: 120px;
-		// background-color: red;
 		z-index: 2;
 
 		i {
@@ -79,18 +100,15 @@
 	}
 }
 
-.app_main {
+.app_section_button {
 	position: relative;
 	width: 100%;
 	height: 150px;
 	padding: 5px;
-	// background-color: red;
 	// background-color: rgba(182, 225, 215, 0.703);
 
-	.section_button {
+	.button_box {
 		display: flex;
-		// justify-content: space-around;
-		// justify-content: space-between;
 		align-items: center;
 		width: 90%;
 		height: 90%;
@@ -101,6 +119,13 @@
 		padding: 10px;
 		background-color: #fff;
 		background-color: #c0c0c0;
+		background-color: rgba(0, 0, 0, 0.6);
+		// background-color: rgba(0,0,0,.5);
+		border: 1.6px solid #ffffff82;
+		// border: 6px solid #ffffff23;	
+		border: 3px solid #ffffff23;	
+		// border: 4px solid #ffffff23;	
+		// border: 1.6px solid #ffffff6e;
 
 		p {
 			margin-left: 10px;
@@ -119,6 +144,8 @@
 			font-size: 15px;
 			border-radius: 15px;
 			border: none;
+			// border: 2px solid #ffffff23;
+			border: 3px solid #ffffff23;
 			background-color: rgb(9, 105, 6);
 			color: #fff;
 			-webkit-box-shadow: inset 0px -15px 69px -37px rgba(66, 68, 90, 1);
@@ -126,5 +153,110 @@
 			box-shadow: inset 0px -15px 69px -37px rgba(66, 68, 90, 1);
 			cursor: pointer;
 		}
+	}
+}
+
+.app_main {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 100%;
+	// height: 600px;
+	// background-color: rgb(222, 222, 222);
+
+	.app_title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: 45px;
+		height: 40px;
+		margin-top: 25px;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+		border-radius: 15px;
+		background: linear-gradient(
+			327deg,
+			rgba(255, 122, 0, 1) 0%,
+			rgba(255, 165, 0, 1) 30%,
+			rgba(255, 172, 0, 1) 67%,
+			rgba(255, 122, 0, 1) 100%
+		);
+
+		h2 {
+			text-align: center;
+			font-size: 11.5px;
+			color: #fff;
+		}
+	}
+
+	.section_shop_lists {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		// justify-content: start;
+
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+		width: 90%;
+		// height: 100%;
+		padding: 10px;
+		padding-left: 6.5%;
+		padding-right: 6.5%;
+		border-radius: 15px;
+		// border: 1.6px solid #4747476a;
+		// border: 1.6px solid #ffffff99;
+		// border: 1.6px solid #ffffff7f;
+		border: 1.6px solid #ffffff6e;
+
+		.shop_square {
+			width: 42%;
+			min-width: 125px;
+			height: 130px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			border-radius: 20px;
+			padding: 20px;
+			border: 3px solid #ffffff23;
+			border: 5px solid #ffffff23;
+			background-color: crimson;
+		}
+	}
+}
+
+.logout_box {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+
+	.logout_btn {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 70%;
+		width: 60%;
+		height: 50px;
+		height: 40px;
+		background: linear-gradient(
+			327deg,
+			rgba(168, 7, 39, 0.908) 0%,
+			rgba(220, 20, 60, 0.879) 30%,
+			crimson 67%,
+			rgba(168, 7, 39, 0.942)100%
+		);
+		border-radius: 15px;
+		border: none;
+		border: 1px solid #ffffff23;   //fajny borderek ghost
+
+		-webkit-box-shadow: -1px 2px 61px 2px rgba(0, 0, 0, 1);
+		-moz-box-shadow: -1px 12px 61px 2px rgba(0, 0, 0, 1);
+		box-shadow: -1px 2px 61px 2px rgba(0, 0, 0, 1);
+		cursor: pointer;
 	}
 }
