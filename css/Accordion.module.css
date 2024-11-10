@@ -33,10 +33,8 @@
   justify-content: flex-start;
   align-self: center;
   flex-grow: 1;
-  font-family: "Comfortaa", sans-serif;
   font-weight: 400;
   padding: 10px;
-  font-style: normal;
 }
 .accordion_box .accordion_top .icon {
   display: flex;
@@ -70,12 +68,10 @@
   justify-content: flex-start;
   align-self: center;
   flex-grow: 1;
-  opacity: 1;
-  font-family: "Comfortaa", sans-serif;
   font-weight: 400;
   padding: 20px 10px 20px 10px;
-  font-style: normal;
   font-size: 18px;
+  opacity: 1;
 }
 .accordion_box .accordion_height_L {
   min-height: 190px;
@@ -140,5 +136,30 @@
   }
   .accordion_box .accordion_height_XL {
     min-height: 190px;
+  }
+}
+@media (min-width: 1200px) {
+  .accordion_box {
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .accordion_box {
+    width: 66%;
+    max-width: 895px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+  }
+  .accordion_box .accordion {
+    font-size: 23px;
+  }
+  .accordion_box .accordion_bottom {
+    min-height: 125px;
+  }
+  .accordion_box .accordion_height_L {
+    min-height: 140px;
+  }
+  .accordion_box .accordion_height_XL {
+    min-height: 165px;
   }
 }/*# sourceMappingURL=Accordion.module.css.map */

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -13,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 }
 
 .homepage {
+  height: 100%;
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
@@ -34,8 +36,8 @@ body {
   height: 100vh;
   background-image: url("../img/BackgroundSmall.jpg");
   background-size: cover;
-  background-position: 55%; /* Centrowanie obrazka można też zmienić na wartość center*/
-  background-repeat: no-repeat; /* Nie powtarzaj obrazka */
+  background-position: 55%;
+  background-repeat: no-repeat;
   background-color: #333;
   z-index: 0;
 }
@@ -46,8 +48,8 @@ body {
   background-size: cover;
   background-image: url("../img/BackgroundDownBig.jpg");
   background-position: center;
-  background-position: 55%; /* Centrowanie obrazka */
-  background-repeat: no-repeat; /* Nie powtarzaj obrazka */
+  background-position: 55%;
+  background-repeat: no-repeat;
   padding-bottom: 60px;
 }
 
@@ -58,14 +60,13 @@ body {
   background-size: cover;
   background-position: 55%;
   background-repeat: no-repeat;
-  font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  font-style: normal;
   color: #fff;
   background-color: #333;
   z-index: 0;
 }
-.pages_bgc .bg_shadow {
+
+.bg_shadow {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -139,6 +140,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .header {
+    background-image: url("../img/BackgroundLarge.jpg");
+  }
   .logoDetails {
     margin-left: 51%;
   }
@@ -149,6 +153,9 @@ body {
   }
 }
 @media (min-width: 992px) {
+  .pages_bgc {
+    background-image: url("../img/shopping_bag_big.jpg");
+  }
   .button_position {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -167,5 +174,25 @@ body {
   }
   .infoBlock_width {
     width: 83%;
+  }
+}
+@media (min-width: 1200px) {
+  .infoBlock_width {
+    width: 78%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    line-height: 1.3;
+  }
+}
+@media (min-width: 1400px) {
+  .large_style {
+    justify-content: space-around;
+    justify-content: center;
+  }
+  .margin_top_large {
+    margin-top: 180px;
+  }
+  .infoBlock_width {
+    width: 76%;
   }
 }/*# sourceMappingURL=style.css.map */

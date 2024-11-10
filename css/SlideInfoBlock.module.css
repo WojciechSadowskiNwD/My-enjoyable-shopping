@@ -12,13 +12,14 @@
   font-optical-sizing: auto;
   font-size: 20px;
   font-style: normal;
-  color: black;
-  background-color: rgba(241, 241, 241, 0.862745098);
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.81);
   opacity: 0;
   transition: transform 1.3s ease-out, opacity 1.7s ease-out;
 }
 .slideInfoBlock p {
   padding: 10px;
+  transition: 2.6s;
 }
 
 .images {
@@ -57,5 +58,19 @@
     margin: 70px auto 70px auto;
     padding: 30px 25px 35px 30px;
     font-size: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .slideInfoBlock {
+    width: 67vw;
+    margin: 90px auto 70px auto;
+    padding: 40px 25px 40px 35px;
+  }
+}
+@media (min-width: 1400px) {
+  .slideInfoBlock {
+    max-width: 920px;
+    margin: 100px auto 70px auto;
+    font-size: 24px;
   }
 }/*# sourceMappingURL=SlideInfoBlock.module.css.map */

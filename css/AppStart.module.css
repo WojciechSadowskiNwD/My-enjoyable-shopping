@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-image: url("../img/BackgroundLarge.jpg");
+  background-size: cover;
+  background-position: 55%;
+  background-position: 5%;
+  background-repeat: no-repeat;
+  background-color: #333;
+  z-index: 0;
+}
+.app .shadow_bg {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.app_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+}/*# sourceMappingURL=AppStart.module.css.map */

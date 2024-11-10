@@ -116,4 +116,36 @@
     width: 100px;
     font-size: 21px;
   }
+}
+@media (min-width: 1200px) {
+  .white_background {
+    height: 570px;
+  }
+  .white_background .team_img {
+    width: 75%;
+    height: 480px;
+  }
+  .portfolio_link .link_cursor {
+    left: 40%;
+  }
+  .portfolio_link a {
+    width: 100px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 1400px) {
+  .white_background {
+    height: 600px;
+  }
+  .white_background .team_img {
+    width: 65%;
+    max-width: 865px;
+    height: 500px;
+  }
+  .portfolio_link {
+    margin-top: 50px;
+  }
+  .portfolio_link .link_cursor {
+    left: 42%;
+  }
 }/*# sourceMappingURL=AboutUs.module.css.map */

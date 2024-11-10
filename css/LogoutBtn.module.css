@@ -1,0 +1,24 @@
+.logout_box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+.logout_box .logout_btn {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  width: 60%;
+  height: 50px;
+  height: 40px;
+  letter-spacing: 0.7px;
+  color: #fff;
+  background: linear-gradient(327deg, rgba(168, 7, 39, 0.908) 0%, rgba(220, 20, 60, 0.879) 30%, crimson 67%, rgba(168, 7, 39, 0.942) 100%);
+  border-radius: 15px;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.137254902);
+  box-shadow: -1px 2px 61px 2px rgb(0, 0, 0);
+  cursor: pointer;
+}/*# sourceMappingURL=LogoutBtn.module.css.map */

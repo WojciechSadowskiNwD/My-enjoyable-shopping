@@ -30,8 +30,6 @@
     width: 100%;
     height: 100%;
     line-height: 50px;
-    font-family: "Comfortaa", sans-serif;
-    font-style: normal;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -41,9 +39,12 @@
     cursor: pointer;
   }
   .navigation_bar .link a:hover {
-    background-color: rgb(255, 226, 171);
-    background-color: rgb(255, 219, 151);
     background-color: #f0f0f0;
     color: orange;
+  }
+}
+@media (min-width: 1400px) {
+  .navigation_bar .link {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=NavigationBar.module.css.map */

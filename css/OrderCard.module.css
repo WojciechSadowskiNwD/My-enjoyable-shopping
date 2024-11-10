@@ -1,0 +1,246 @@
+h2 {
+  text-transform: uppercase;
+  color: orange;
+}
+
+.order_card {
+  position: relative;
+  margin: 20px 50px;
+  width: 87%;
+  height: 520px;
+  perspective: 800px;
+}
+.order_card .card_front {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-image: linear-gradient(145deg, #f5d5a8, #e6b67a 40%, #c4904e 70%, #8c5e2b 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 14px 57px 12px rgb(0, 0, 0);
+  overflow: hidden;
+  transition: 0.8s;
+}
+.order_card .card_front .card_front_content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.order_card .card_front .card_front_content span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  gap: 50px;
+}
+.order_card .card_front .card_front_content h3,
+.order_card .card_front .card_front_content i,
+.order_card .card_front .card_front_content p {
+  z-index: 1;
+}
+.order_card .card_front .card_front_content h3 {
+  font-size: 26px;
+}
+.order_card .card_front .card_front_content i {
+  font-size: 35px;
+  animation: icon_rocking 3s ease-in-out infinite;
+  color: #5e401d;
+  transition: 0.3s;
+}
+.order_card .card_front .card_front_content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.order_card .photo_shadow {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/ai-generated-8261519_1280.png");
+  filter: opacity(0.07);
+  transition: 0.8s;
+}
+.order_card .card_back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 15px 10px 0px 10px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 15px;
+  background-image: linear-gradient(145deg, #f5d5a8, #e6b67a 40%, #c4904e 70%, #8c5e2b 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 14px 57px 12px rgb(0, 0, 0);
+  opacity: 0;
+  transition: 0.8s;
+}
+.order_card .card_back .text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px;
+}
+.order_card .card_back .text_content .top_paragraph {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 25px;
+}
+.order_card .card_back .content_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+}
+.order_card .card_back .content_row i {
+  font-size: 23px;
+  margin-right: 5px;
+  color: rgb(98, 138, 18);
+}
+.order_card .card_back h3 {
+  font-size: 22px;
+  margin-top: 15px;
+  text-align: center;
+}
+.order_card .card_back .order_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.order_card .card_back .order_icons i {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  color: #8c5e2b;
+}
+.order_card .card_back .btn_order {
+  margin-left: auto;
+  margin-right: auto;
+  width: 58%;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  color: #5e401d;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.order_card .card_back .btn_order:hover {
+  background-color: rgb(98, 138, 18);
+  color: #fff;
+}
+.order_card p {
+  font-size: 18px;
+  padding: 7px;
+  color: #5e401d;
+}
+.order_card .turnover {
+  transform: rotateY(-180deg);
+}
+
+.order_card:hover .card_back {
+  transform: rotate(0);
+  opacity: 1;
+}
+
+.order_card:hover .card_front {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.order_card:hover .first_img {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+@keyframes icon_rocking {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+@media (min-width: 576px) {
+  .order_card {
+    margin: 25px 50px;
+    width: 78%;
+    height: 580px;
+  }
+  .order_card .card_front .card_front_content h3 {
+    font-size: 28px;
+  }
+  .order_card .card_front .card_front_content p {
+    font-size: 21px;
+  }
+  .order_card .card_front .card_front_content span {
+    width: 70%;
+    gap: 40px;
+  }
+  .order_card .card_back h3 {
+    padding-top: 10px;
+    font-size: 28px;
+  }
+  .order_card .card_back .order_icons i {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+  }
+  .order_card .card_back .text_content .top_paragraph {
+    margin-top: 10px;
+    padding-bottom: 22px;
+    font-size: 21px;
+  }
+  .order_card .card_back .text_content .content_row {
+    width: 100%;
+    width: 92%;
+    align-self: flex-end;
+    margin: 5px;
+  }
+  .order_card .card_back .text_content .content_row i {
+    font-size: 23px;
+    margin-right: 6px;
+  }
+  .order_card .card_back .text_content .content_row p {
+    font-size: 19px;
+  }
+  .order_card .card_back .btn_order {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56%;
+    margin-top: 30px;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .order_card {
+    margin: 35px 50px;
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .order_card {
+    margin: 35px 20px;
+    width: 400px;
+  }
+}/*# sourceMappingURL=OrderCard.module.css.map */

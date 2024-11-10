@@ -18,9 +18,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px 10px 25px 10px;
-  font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 .glass .contact_box h3 {
   font-size: 19px;
@@ -52,8 +50,8 @@
   .glass {
     width: 90%;
     margin-top: 35px;
-    padding-bottom: 30px;
     padding-top: 20px;
+    padding-bottom: 30px;
   }
   .glass .contact_box {
     padding: 14px 10px 25px 10px;
@@ -75,5 +73,28 @@
 @media (min-width: 992px) {
   .glass {
     width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .glass {
+    width: 66%;
+    margin-top: 40px;
+    padding-top: 25px;
+  }
+  .glass .contact_box {
+    padding: 18px 10px 25px 10px;
+  }
+  .glass .contact_box h3 {
+    font-size: 22px;
+  }
+  .glass .contact_box p {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1400px) {
+  .glass {
+    max-width: 850px;
+    padding-top: 35px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=Contact.module.css.map */

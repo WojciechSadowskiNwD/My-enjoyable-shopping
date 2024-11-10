@@ -4,15 +4,6 @@
   min-width: 230px;
   line-height: 1.2;
   padding: 15px 30px;
-  border-radius: 15px;
-  border: none;
-  background-color: orange;
-  background: linear-gradient(327deg, rgb(133, 85, 0) 0%, rgb(255, 165, 0) 20%, rgb(255, 172, 0) 80%, rgb(177, 122, 0) 90%);
-  box-shadow: -1px 5px 51px 4px rgb(0, 0, 0);
-  transition: 0.3s;
-  cursor: pointer;
-}
-.btn_basic_design a {
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -21,15 +12,20 @@
   word-spacing: 2px;
   text-decoration: none;
   color: #fff;
+  border: none;
+  border-radius: 17px;
+  background-color: orange;
+  background: linear-gradient(327deg, rgb(133, 85, 0) 0%, rgb(255, 165, 0) 20%, rgb(255, 172, 0) 80%, rgb(177, 122, 0) 90%);
+  box-shadow: -1px 5px 51px 4px rgb(0, 0, 0);
   transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {
   .btn_basic_design {
     padding: 16px 32px;
-  }
-  .btn_basic_design a {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 @media (min-width: 768px) {
@@ -39,8 +35,6 @@
   }
   .btn_basic_design:hover {
     border: 5px solid rgb(255, 219, 151);
-  }
-  .btn_basic_design:hover a {
     color: rgb(255, 238, 206);
   }
 }/*# sourceMappingURL=ButtonLink.module.css.map */

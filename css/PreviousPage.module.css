@@ -4,14 +4,12 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  width: 120px;
-  padding: 10px;
-  margin-bottom: 10px;
   left: 0;
   bottom: 0;
-  font-family: "Comfortaa", sans-serif;
+  width: 120px;
+  margin-bottom: 10px;
+  padding: 10px;
   font-weight: 400;
-  font-style: normal;
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
@@ -38,5 +36,10 @@
 @media (min-width: 768px) {
   .button_back {
     left: 15px;
+  }
+}
+@media (min-width: 1400px) {
+  .button_back {
+    left: 20px;
   }
 }/*# sourceMappingURL=PreviousPage.module.css.map */
