@@ -62,36 +62,3 @@ function AppStart() {
 }
 
 export default AppStart;
-
-// KOPIA ZAPASOWA OD RETURN DO KONCA
-// return (
-// 	<div className={styles.app}>
-// 		<div className={`bg_shadow ${styles.shadow_bg}`}>
-// 			<AppCircleHeader />
-
-// 			<div className={styles.section_addList}>
-// 				<NewListButton onChange={handleChange} toggle={isClickCreate} />
-// 				<CreateShopList onChange={handleChange} toggle={isClickCreate} />
-// 			</div>
-
-// 			<div className={styles.app_main}>
-// 				<OrangePillHeader />
-// 				<AllShopLists />
-// 			</div>
-
-// 			<LogoutBtn />
-// 		</div>
-// 	</div>
-// );
-// }
-
-// export default AppStart;
-
-// Layout:
-// TOP:
-// 1. UP --- LOGO!
-// 2. BOTTOM -- WYLCOME USER
-// MAIN:
-// 3. Big button [ADD NEW SHOP & new list for that shop]
-// DOWN:
-// 4. Squares represent exist shop lists.

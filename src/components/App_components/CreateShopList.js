@@ -11,7 +11,7 @@ import netto from "../../img/shops/netto_1.png";
 import carrefour from "../../img/shops/carrefour_1.jpg";
 import dino from "../../img/shops/dino_1.png";
 
-function CreateShopList({onChange, toggle}) {
+function CreateShopList({onChange}) {
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -32,8 +32,7 @@ function CreateShopList({onChange, toggle}) {
 	];
 
 	return (
-
-		<div className={`${styles.section_create_new_list} ${toggle ? styles.invisible : ""}`}>
+		<div className={styles.section_create_new_list}>
 			<div className={styles.title_box}>
 				<span onClick={onChange}>❌</span>
 				<h2>Create a list to store</h2>
