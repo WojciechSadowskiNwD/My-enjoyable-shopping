@@ -7,7 +7,6 @@
 	overflow-x: hidden;
 	background-image: url("../img/BackgroundLarge.jpg");
 	background-size: cover;
-	background-position: 55%;
 	background-position: 5%;
 	background-repeat: no-repeat;
 	background-color: #333;
@@ -18,6 +17,24 @@
 	}
 }
 
+.section_addList {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 180px;
+	margin-top: 10px;
+	// padding: 5px;
+	// background-color: rgba(182, 225, 215, 0.703);
+	
+	
+	a {
+		text-decoration: none;
+	} 
+}
+
+
 .app_main {
 	display: flex;
 	flex-direction: column;
@@ -25,3 +42,38 @@
 	width: 100%;
 	// background-color: rgb(222, 222, 222);
 }
+
+
+.visible {
+	background-color: red;
+}
+
+
+
+
+// test
+:global {
+	
+	.fade-enter {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	.fade-enter-active {
+		opacity: 1;
+		transform: translateY(0);
+		transition: opacity 0.5s ease, transform 0.5s ease;
+	}
+	
+	.fade-exit {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+	.fade-exit-active {
+		opacity: 0;
+		transform: translateY(-10px);
+		transition: opacity 0.5s ease, transform 0.5s ease;
+	}
+
+}
+

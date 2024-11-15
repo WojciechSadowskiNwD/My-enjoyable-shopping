@@ -1,14 +1,28 @@
 import styles from './NewListButton.module.scss';
 
-function newListButton() {
+function NewListButton({ onChange }) {
 	return (
-		<div className={styles.section_new_list_btn}>
-			<div className={styles.button_box}>
-				<p>Add a new store and create a shopping list inside</p>
-				<button className={styles.addList_btn}>+ Add new shopping list</button>
-			</div>
+		<div className={styles.button_box}>
+			<p>Add a new store and create a shopping list inside</p>
+			<button className={styles.addList_btn} onClick={onChange}>
+				+ Add new shopping list
+			</button>
 		</div>
 	);
 }
 
-export default newListButton;
+export default NewListButton;
+
+
+
+
+// function newListButton({onChange, toggle}) {
+// 	return (
+// 			<div className={`${styles.button_box} ${toggle ? styles.invisible : ""}`} >
+// 				<p>Add a new store and create a shopping list inside</p>
+// 				<button className={styles.addList_btn} onClick={onChange} >+ Add new shopping list</button>
+// 			</div>
+// 	);
+// }
+
+// export default newListButton;

@@ -1,0 +1,11 @@
+.shop_square {
+  width: 70px;
+  min-width: 70px;
+  height: 70px;
+  margin: 0 5px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid rgba(255, 166, 0, 0.884);
+}/*# sourceMappingURL=ShopSquare.module.css.map */
