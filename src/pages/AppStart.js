@@ -21,8 +21,8 @@ function AppStart() {
 	};
 
 	return (
-		<div className={styles.app}>
-			<div className={`bg_shadow ${styles.shadow_bg}`}>
+		<div className="app">
+			<div className="bg_shadow shadow_bg">
 				<AppCircleHeader />
 
 				<div className={styles.section_addList}>

@@ -1,19 +1,14 @@
-.app {
+.section_addList {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  background-image: url("../img/BackgroundLarge.jpg");
-  background-size: cover;
-  background-position: 55%;
-  background-position: 5%;
-  background-repeat: no-repeat;
-  background-color: #333;
-  z-index: 0;
+  height: 180px;
+  margin-top: 10px;
 }
-.app .shadow_bg {
-  background-color: rgba(0, 0, 0, 0.4);
+.section_addList a {
+  text-decoration: none;
 }
 
 .app_main {
@@ -21,4 +16,23 @@
   flex-direction: column;
   justify-content: start;
   width: 100%;
+}
+
+:global .fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+:global .fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+:global .fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+:global .fade-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }/*# sourceMappingURL=AppStart.module.css.map */

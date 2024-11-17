@@ -1,34 +1,40 @@
 .section_create_new_list {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 320px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.137254902);
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.section_create_new_list .title_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 7px;
   padding: 5px;
-  margin-top: 10px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: rgb(9, 105, 6);
+}
+.section_create_new_list .title_box span {
+  margin-bottom: 5px;
+  font-size: 22px;
 }
 .section_create_new_list h2 {
-  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  padding-right: 10px;
   color: #fff;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: rgb(9, 105, 6);
-  border: 3px solid rgba(255, 255, 255, 0.137254902);
 }
 .section_create_new_list .slider {
   width: 80%;
-  margin: 0 auto;
-}
-.section_create_new_list .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 26px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 1;
-}
-.section_create_new_list .arrow.next {
-  right: -35px;
-}
-.section_create_new_list .arrow.prev {
-  left: -35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }/*# sourceMappingURL=CreateShopList.module.css.map */
