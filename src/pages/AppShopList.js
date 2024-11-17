@@ -3,6 +3,7 @@ import AppCircleHeader from "../components/App_components/AppCircleHeader";
 import AppTopTextBar from "../components/App_components/AppTopTextBar";
 
 import styles from "./AppShopList.module.scss";
+import NewProductForm from "../components/App_components/NewProductForm";
 
 
 function AppShopList() {
@@ -14,7 +15,7 @@ function AppShopList() {
 			<div className="shadow_bg bg_shadow">
 				<AppCircleHeader />
                 <AppTopTextBar img={img} name={name}/>
-
+                <NewProductForm />
 
 
 
@@ -27,5 +28,3 @@ function AppShopList() {
 }
 
 export default AppShopList;
-
-

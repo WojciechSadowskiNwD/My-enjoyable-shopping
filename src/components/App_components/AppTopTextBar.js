@@ -15,9 +15,9 @@ function AppTopTextBar({ img, name }) {
 				</p>
 			</div>
             <div className={styles.add_button}>
+				{/* W momencie, gdy przycisk zostanie kliknięty, zmienię 'add' w 'collapse' */}
                 <p className={styles.add_button_text}>Add</p>
                 <i class="fa-solid fa-circle-plus"></i>
-                
             </div>
 		</div>
 	);
