@@ -17,11 +17,21 @@ function AppShopList() {
                 <AppTopTextBar img={img} name={name}/>
                 <NewProductForm />
 
+				<div className={styles.list_box}>
+				<h2>SHOPPING LIST</h2>
+
+					<div className={styles.products_card}>
+						<h3 className={styles.card_title}>diary</h3>
+						<p>Cheese</p>
+						<p>Milk</p>
+						<p>Cottage cheese</p>
 
 
-				<h1>SHOP LIST</h1>
-				{/* <p>{name}</p> */}
-				{/* <img src={img}></img> */}
+
+					</div>
+
+				</div>
+
 			</div>
 		</div>
 	);

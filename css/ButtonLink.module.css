@@ -14,10 +14,10 @@
   color: #fff;
   border: none;
   border-radius: 17px;
+  border: 3.5px solid rgb(255, 165, 0);
   background-color: orange;
   background: linear-gradient(327deg, rgb(133, 85, 0) 0%, rgb(255, 165, 0) 20%, rgb(255, 172, 0) 80%, rgb(177, 122, 0) 90%);
   box-shadow: -1px 5px 51px 4px rgb(0, 0, 0);
-  transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }

@@ -8,4 +8,4 @@ export default function ButtonLink({children, positionClass='', btnSize=''}) {
             {children}
         </button>
     ) 
-}  
+}   
