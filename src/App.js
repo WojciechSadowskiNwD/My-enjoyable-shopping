@@ -6,7 +6,6 @@ import AboutUs from "./pages/AboutUs";
 import Homepage from "./pages/Homepage";
 import ScrollToTop from "./components/ScrollToTop";
 import AppStart from "./pages/AppStart";
-import CreateShopList from "./components/App_components/CreateShopList";
 import AppShopList from "./pages/AppShopList";
 
 
@@ -22,7 +21,6 @@ function App() {
 				<Route path="aboutUs" element={<AboutUs />} />
 				<Route path="appStart" element={<AppStart/>} />
 				<Route path="appShopList" element={<AppShopList />}/>
-				{/* <Route path="createShopList" element={<CreateShopList />} /> */}
 			</Routes>
 		</BrowserRouter>
 	);
