@@ -27,6 +27,15 @@
 	p {
 		margin-top: -12px;
 	}
+
+	.wrong_Fill_Error {
+		margin-top: 25px;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 1.7;
+		color: crimson;
+	}
+
 	.padding_bottom {
 		padding-bottom: 15px;
 	}
@@ -102,6 +111,9 @@
 }
 
 // correction position for btn if button are inside tag Link
+.position_Btn_Form_A {
+	transform: translateX(0);
+}
 .position_Btn_Form {
 	transform: translateX(-50%);
 }

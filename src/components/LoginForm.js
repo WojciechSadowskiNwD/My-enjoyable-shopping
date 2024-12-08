@@ -1,17 +1,62 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ButtonLink from "./ButtonLink";
 import styles from "./Login_Register_Form.module.scss";
+import { useEffect, useState } from "react";
+import { useLogin } from "../contexsts/LoginProvider";
 
 function LoginForm() {
+	const { login, password, onChangeLogin, onChangePass, loginWalidation, wrongData, isAuthenticated } =
+		useLogin();
+
+	const navigate = useNavigate();
+
+	function handleSubmitLogin(e) {
+		e.preventDefault();
+		loginWalidation(login, password);
+	}
+
+	// automatyczne przekierowanie stąd do appStart jeśli true, można przenieść do homepage i też zadziała
+	useEffect(()=>{
+		if(isAuthenticated === true){
+			navigate("../appStart", {replace: true})
+		}
+	},[isAuthenticated, navigate]);
+
+
 	return (
-		<form className={`${styles.form} ${styles.login_margin}`}>
+		<form
+			className={`${styles.form} ${styles.login_margin}`}
+			onSubmit={handleSubmitLogin}
+		>
 			<h2 className={styles.padding_bottom}>Do you have an account?</h2>
-			<input type="text" placeholder="Login" />
-			<input type="password" placeholder="Password" />
+
+			<input
+				type="text"
+				id="login"
+				value={login}
+				onChange={onChangeLogin}
+				placeholder="Login"
+			/>
+			<input
+				type="password"
+				id="password"
+				value={password}
+				onChange={onChangePass}
+				placeholder="Password"
+			/>
+
 			<label className={styles.forgot_password}>I forgot my password</label>
-			<Link to="/appStart">
-				<ButtonLink btnSize={styles.btn_size} positionClass={styles.position_Btn_Form}>Login</ButtonLink>
-			</Link>
+
+			{wrongData ? <p className={styles.wrong_Fill_Error}>Incorrect login or password information</p> : ''}
+
+			<ButtonLink
+				btnSize={styles.btn_size}
+				positionClass={styles.position_Btn_Form_A}
+				login={login}
+				password={password}
+			>
+				Login
+			</ButtonLink>
 		</form>
 	);
 }

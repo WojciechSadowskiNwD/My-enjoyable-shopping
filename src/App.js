@@ -7,21 +7,23 @@ import Homepage from "./pages/Homepage";
 import ScrollToTop from "./components/ScrollToTop";
 import AppStart from "./pages/AppStart";
 import AppShopList from "./pages/AppShopList";
-
+import { LoginProvider } from "./contexsts/LoginProvider";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<ScrollToTop />
-			<Routes>
-				<Route path="/" element={<Homepage />} />
-				<Route path="login" element={<Login />} />
-				<Route path="contact" element={<Contact />} />
-				<Route path="orderPremium" element={<OrderPremium />} />
-				<Route path="aboutUs" element={<AboutUs />} />
-				<Route path="appStart" element={<AppStart/>} />
-				<Route path="appShopList" element={<AppShopList />}/>
-			</Routes>
+			<LoginProvider>
+				<Routes>
+					<Route path="/" element={<Homepage />} />
+					<Route path="contact" element={<Contact />} />
+					<Route path="orderPremium" element={<OrderPremium />} />
+					<Route path="aboutUs" element={<AboutUs />} />
+					<Route path="login" element={<Login />} />
+					<Route path="appStart" element={<AppStart />} />
+					<Route path="appShopList" element={<AppShopList />} />
+				</Routes>
+			</LoginProvider>
 		</BrowserRouter>
 	);
 }
