@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import ButtonLink from "./ButtonLink";
 import styles from "./Login_Register_Form.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLogin } from "../contexsts/LoginProvider";
 
 function LoginForm() {
@@ -15,7 +15,7 @@ function LoginForm() {
 		loginWalidation(login, password);
 	}
 
-	// automatyczne przekierowanie stąd do appStart jeśli true, można przenieść do homepage i też zadziała
+	// automatic redirect from here to appStart if true, can be moved to homepage and will also work
 	useEffect(()=>{
 		if(isAuthenticated === true){
 			navigate("../appStart", {replace: true})

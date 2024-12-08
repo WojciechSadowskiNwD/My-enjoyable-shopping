@@ -76,6 +76,7 @@ function LoginProvider({ children }) {
 				loginWalidation,
 				isAuthenticated,
 				wrongData,
+                dispatch
 			}}
 		>
 			{children}

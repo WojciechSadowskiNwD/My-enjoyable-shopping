@@ -1,12 +1,17 @@
-import { Link } from "react-router-dom";
 import styles from "./LogoutBtn.module.scss";
+import { useLogin } from "../../contexsts/LoginProvider";
 
 export default function LogoutBtn() {
+	const { dispatch } = useLogin();
+
 	return (
 		<div className={styles.logout_box}>
-			<Link to="/">
-				<button className={styles.logout_btn}>Logout</button>
-			</Link>
+			<button
+				className={styles.logout_btn}
+				onClick={() => dispatch({ type: "logout" })}
+			>
+				Logout
+			</button>
 		</div>
 	);
 }
