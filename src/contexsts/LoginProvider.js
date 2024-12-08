@@ -57,10 +57,10 @@ function LoginProvider({ children }) {
 	// Walidacja danych logowania:
 	function loginWalidation(login, password) {
 		if (login === FAKE_USER.login && password === FAKE_USER.password) {
-			console.log("TAK dane są takie same");
+			// console.log("TAK dane są takie same");
 			dispatch({ type: "login" });
 		} else {
-			console.log("Nadal nie mamy zgodności danych");
+			// console.log("Nadal nie mamy zgodności danych");
 			dispatch({ type: "wrongFill" });
 		}
 	}

@@ -1,8 +1,11 @@
+import { useLogin } from '../../contexsts/LoginProvider';
 import Logo from '../Logo';
 import styles from './AppCircleHeader.module.scss';
 
 
 function AppCircleHeader() {
+	const {user} = useLogin();
+
 	return (
 		<header className={styles.app_header}>
 			<div className={styles.green_circle}></div>
@@ -11,7 +14,7 @@ function AppCircleHeader() {
 			</div>
 			<div className={styles.user_square}>
 				<i class="fa-solid fa-user-large"></i>
-				<p>Welcome David!</p>
+				<p>Welcome {user}!</p>
 			</div>
 		</header>
 	);

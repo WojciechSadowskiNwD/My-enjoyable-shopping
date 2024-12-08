@@ -9,6 +9,7 @@ import OrangePillHeader from "../components/App_components/OrangePillHeader";
 import AllShopLists from "../components/App_components/AllShopLists";
 import LogoutBtn from "../components/App_components/LogoutBtn";
 import CreateShopList from "../components/App_components/CreateShopList";
+import { useLists } from "../contexsts/ListsProvider";
 
 
 function AppStart() {
@@ -16,7 +17,6 @@ function AppStart() {
 	const [isExiting, setIsExiting] = useState(false);  //transition param.
 	const navigate = useNavigate();
 	const {isAuthenticated} = useLogin();
-
 
 	function handleChange() {
 		if(isClickCreate) {
@@ -31,6 +31,7 @@ function AppStart() {
 			navigate("/", {replace: true})
 		}
 	},[isAuthenticated, navigate]);
+
 
 	return (
 		<div className="app">

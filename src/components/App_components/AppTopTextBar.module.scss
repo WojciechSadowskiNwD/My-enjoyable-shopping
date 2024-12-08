@@ -1,4 +1,5 @@
 .text_bar {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
@@ -11,9 +12,23 @@
 	border-bottom: 3px solid orange;
 	border-top: 3.5px solid green;
 
+	.arrow_back_box {
+		position: absolute;
+		display: flex;
+		justify-content: start;
+		top: 8%;
+		left: 5%;
+		width: 50px;
+
+		.arrow_details {
+			font-size: 26px;
+			color: rgba(255, 255, 255, 0.9);
+		}
+	}
+
 	h2 {
-		padding: 10px;
-		padding-bottom: 15px;
+		padding-top: 15px;
+		padding-bottom: 10px;
 		text-align: center;
 	}
 

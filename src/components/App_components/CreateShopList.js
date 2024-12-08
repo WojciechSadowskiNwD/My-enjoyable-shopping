@@ -2,16 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import styles from "./CreateShopList.module.scss";
 import ShopSquare from "./ShopSquare";
+import { useLists } from "../../contexsts/ListsProvider";
 
-// images shops
-import biedronka from "../../img/shops/biedronka_1.png";
-import auchan from "../../img/shops/auchan_1.png";
-import lidl from "../../img/shops/lidl_1.png";
-import netto from "../../img/shops/netto_1.png";
-import carrefour from "../../img/shops/carrefour_1.jpg";
-import dino from "../../img/shops/dino_1.png";
+function CreateShopList({ onChange }) {
+	const { state } = useLists();
 
-function CreateShopList({onChange}) {
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -22,14 +17,10 @@ function CreateShopList({onChange}) {
 		prevArrow: <SampleNextArrow />,
 	};
 
-	const shopsImages = [
-		{ id: 0, name: "biedronka", img: biedronka },
-		{ id: 1, name: "auchan", img: auchan },
-		{ id: 2, name: "lidl", img: lidl },
-		{ id: 3, name: "netto", img: netto },
-		{ id: 4, name: "carrefour", img: carrefour },
-		{ id: 5, name: "dino", img: dino },
-	];
+
+	// Przekształcam obiekty w tablicę
+	const shopsData = Object.values(state);
+
 
 	return (
 		<div className={styles.section_create_new_list}>
@@ -40,8 +31,8 @@ function CreateShopList({onChange}) {
 
 			<div className={styles.slider}>
 				<Slider {...settings}>
-					{shopsImages.map((item) => (
-						<ShopSquare key={item.id} name={item.name} img={item.img} />
+					{shopsData.map((shop, index) => (
+						<ShopSquare key={index} name={shop.name} img={shop.img} />
 					))}
 				</Slider>
 			</div>
