@@ -1,102 +1,112 @@
 import { useState } from "react";
 import ButtonLink from "../ButtonLink";
 import styles from "./NewProductForm.module.scss";
+import { useLists } from "../../contexsts/ListsProvider";
 
-// initial shop list for tests
-const initialShoppingList = [
-	{ id: 1, category: "bread", name: "bread", amount: 2, grams: false, packed: false },
-	{ id: 2, category: "fruits", name: "orange", amount: 5, grams: false, packed: true },
-	{ id: 3, category: "wegetables", name: "potaoes", amount: 2.5, grams: true, packed: false },
-	{ id: 4, category: "diary", name: "cheese", amount: 0.400, grams: true, packed: false },
-	{ id: 5, category: "diary", name: "milk bottle", amount: 6.0, grams: true, packed: false },
-];
+function NewProductForm({ thisList }) {
+	const { dispatch } = useLists();
 
-function NewProductForm() {
-	// all shops lists:
-	const [biedronkaShop, setBiedronkaShop] = useState(initialShoppingList);
-	const [lidlShop, setLidlShop] = useState("");
-	const [auchanShop, setAuchanShop] = useState("");
-	const [dinoShop, setDinoShop] = useState("");
-	const [carrefourShop, setCarrefourShop] = useState("");
-	const [nettoShop, setNettoShop] = useState("");
+	// Obiekt domyślny i przechowujący potem dane otrzymane z formularza
+	const [formData, setFormData] = useState({
+		id: "",
+		productName: "",
+		productCategory: "cereal",
+		productAmount: "",
+		isGrams: false,
+		packed: false,
+	});
+	const { productName, productCategory, productAmount, isGrams } =
+		formData;
+	console.log(thisList.shoppingList);
 
-	const [productName, setProductName] = useState("");
-	const [productAmount, setProductAmount] = useState("");
-	const [productCategory, setProductCategory] = useState("");
-	const [isGrams, setIsGrams] = useState(false);
-
-
-	//send filled form
-	function onAddProduct(e) {
+	//FORM SEND DATA:
+	function handleSubmit(e) {
 		e.preventDefault();
 
 		// alert if user no fill all fields
-		if(!productName || !productAmount) {
+		if (!formData.productName || !formData.productAmount) {
 			return alert("Complete all the fields");
 		}
-		
+
 		// create object newProduct with values from form
 		const newProduct = {
-			category: productCategory,
-			name: productName,
-			amount: productAmount,
-			grams: isGrams,
-			packed: false,
 			id: crypto.randomUUID(),
-		}
+			name: productName,
+			typeProduct: productCategory,
+			quantity: productAmount,
+			isWeightInGrams: isGrams,
+			isCollected: false,
+		};
 
-		// send newProduct to function addProductToList
-		addProductToList(newProduct);
-		
-		// clean states values (no category because user can added next products in the same category, for convenience I left this)
-		setProductName('');
-		setProductAmount('');
-		setIsGrams(false);
+		// ustaw ostatni wybór kategorii produktu do zapamiętania:
+
+		// send data to reducer
+		dispatch({
+			type: "add_product",
+			payload: {
+				shopName: thisList.name,
+				product: newProduct,
+			},
+		});
+
+		// form cleaning from data
+		setFormData({
+			id: "",
+			productName: "",
+			productAmount: "",
+			isGrams: false,
+			packed: false,
+			productCategory: formData.productCategory,
+		});
 	}
 
-	// linking of arrays to one bigger product list
-	function addProductToList(newProduct) {
-		setBiedronkaShop((products)=> [...products, newProduct]);
-	}
-
+	//* * FORM ADD DATA TO STATES:
 	// selecting categories by image
 	const onSelectCategory = (e) => {
-		setProductCategory(e.target.value);
-	}
+		setFormData((prev) => ({
+			...prev,
+			productCategory: e.target.value,
+			lastCategory: e.target.value,
+		}));
+	};
 
 	// select name product
 	const handleChangeProductName = (e) => {
-		setProductName(e.target.value);
+		setFormData((prev) => ({ ...prev, productName: e.target.value }));
 	};
 
 	// how many pieces / grams
 	const handleChangeProductAmount = (e) => {
-		setProductAmount(e.target.value);
-		console.log(productAmount);
+		setFormData((prev) => ({ ...prev, productAmount: e.target.value }));
 	};
+
 	// whether the amount is given in grams
 	const handleCheckboxClick = (e) => {
-		setIsGrams((prev) => !prev);
-		console.log(isGrams);
+		// setIsGrams((prev) => !prev);
+		setFormData({ ...formData, isGrams: !formData.isGrams });
 	};
 
 	return (
 		<div className={styles.new_product_form}>
-
-			<form className={styles.product_form} onSubmit={onAddProduct}>
+			<form className={styles.product_form} onSubmit={handleSubmit}>
 				<div className={styles.title_bar}>
 					<i className={`fa-regular fa-square-minus ${styles.minus_icon}`}></i>
 					<h2>Add product</h2>
 				</div>
+
 				<div className={styles.middle_part_form}>
 					<div className={styles.left}>
-						<select className={styles.products_category} onChange={(e) => onSelectCategory(e)}>
-							<option value="bread">🍞</option>
-							<option value="diary">🧀</option>
+						<select
+							value={productCategory}
+							className={styles.products_category}
+							onChange={(e) => onSelectCategory(e)}
+						>
+							<option value="cereal">🍞</option>
+							<option value="dairy">🧀</option>
 							<option value="vegetables">🥬</option>
 							<option value="fruits">🥝</option>
 							<option value="meat">🍖</option>
-							<option value="fishs">🐟</option>
+							<option value="frozen">🐟</option>
 							<option value="candies">🍭</option>
 							<option value="drinks">🍹</option>
 						</select>

@@ -8,14 +8,18 @@ import NewProductForm from "../components/App_components/NewProductForm";
 
 function AppShopList() {
 	const location = useLocation();
-	const { img, name } = location.state || {};
+	const { thisList, img, name } = location.state || {};
+	// console.log(thisList);
+
 
 	return (
 		<div className="app">
 			<div className="shadow_bg bg_shadow">
 				<AppCircleHeader />
                 <AppTopTextBar img={img} name={name}/>
-                <NewProductForm />
+                <NewProductForm thisList={thisList}/>
+
+
 
 				<div className={styles.list_box}>
 				<h2>SHOPPING LIST</h2>

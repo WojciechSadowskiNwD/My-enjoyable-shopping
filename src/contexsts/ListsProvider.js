@@ -2,14 +2,14 @@ import { createContext, useContext, useReducer } from "react";
 
 const ListsContext = createContext();
 
-// * * * shoppongLists data
+// * * * shoppongLists data _START
 const initialShopList = {
 	// cereal products-produkty zbożowe
 	// frozen - mrożonki
 	biedronka: {
-        listExist: true,
-        name: "biedronka",
-        img: "shops_img/biedronka_1.png",
+		listExist: true,
+		name: "biedronka",
+		img: "shops_img/biedronka_1.png",
 		shoppingList: [
 			{
 				id: 1,
@@ -30,7 +30,7 @@ const initialShopList = {
 			{
 				id: 3,
 				name: "bread",
-				typeProduct: "cereal products",
+				typeProduct: "cereal",
 				quantity: 2,
 				isWeightInGrams: false,
 				isCollected: true,
@@ -59,17 +59,33 @@ const initialShopList = {
 				isWeightInGrams: true,
 				isCollected: false,
 			},
+			{
+				id: 7,
+				name: "sausages",
+				typeProduct: "meat",
+				quantity: 300,
+				isWeightInGrams: true,
+				isCollected: true,
+			},
+			{
+				id: 8,
+				name: "smoked ham",
+				typeProduct: "meat",
+				quantity: 150,
+				isWeightInGrams: true,
+				isCollected: false,
+			},
 		],
 	},
 	auchan: {
 		listExist: true,
-        name: "auchan",
-        img: "shops_img/auchan_1.png",
+		name: "auchan",
+		img: "shops_img/auchan_1.png",
 		shoppingList: [
 			{
 				id: 1,
 				name: "cornflakes",
-				typeProduct: "cereal products",
+				typeProduct: "cereal",
 				quantity: 250,
 				isWeightInGrams: true,
 				isCollected: true,
@@ -114,30 +130,54 @@ const initialShopList = {
 				isWeightInGrams: false,
 				isCollected: true,
 			},
+			{
+				id: 7,
+				name: "butter",
+				typeProduct: "dairy",
+				quantity: 4,
+				isWeightInGrams: false,
+				isCollected: false,
+			},
+			{
+				id: 8,
+				name: "strawberries",
+				typeProduct: "fruits",
+				quantity: 250,
+				isWeightInGrams: true,
+				isCollected: false,
+			},
+			{
+				id: 9,
+				name: "lemons",
+				typeProduct: "fruits",
+				quantity: 5,
+				isWeightInGrams: false,
+				isCollected: true,
+			},
 		],
 	},
 	lidl: {
 		listExist: false,
-        name: "lidl",
-        img: "shops_img/lidl_1.png",
+		name: "lidl",
+		img: "shops_img/lidl_1.png",
 		shoppingList: [],
 	},
 	netto: {
 		listExist: false,
-        name: "netto",
-        img: "shops_img/netto_1.png",
+		name: "netto",
+		img: "shops_img/netto_1.png",
 		shoppingList: [],
 	},
 	carrefour: {
 		listExist: false,
-        name: "carrefour",
-        img: "shops_img/carrefour_1.jpg",
+		name: "carrefour",
+		img: "shops_img/carrefour_1.jpg",
 		shoppingList: [],
 	},
 	dino: {
 		listExist: false,
-        name: "dino",
-        img: "shops_img/dino_1.png",
+		name: "dino",
+		img: "shops_img/dino_1.png",
 		shoppingList: [],
 	},
 };
@@ -146,26 +186,34 @@ const initialShopList = {
 // reducer to build
 function reducer(state, action) {
 	switch (action.type) {
-		// ...
+		case "add_product":
+			const { shopName, product } = action.payload;
+			console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+			console.log(state[shopName]);
+			console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+			return {
+				...state,
+				[shopName]: {
+					...state[shopName], listExist: true,
+					shoppingList: [...state[shopName].shoppingList, product],
+				}
+			};
+
+
 
 		default:
 			throw new Error("Unknown action in shopList");
 	}
 }
 
-
-
 function ListsProvider({ children }) {
 	// useReducer
-	const [state, dispatch] =
-		useReducer(reducer, initialShopList);
+	const [state, dispatch] = useReducer(reducer, initialShopList);
 	// const [{ biedronka, auchan, lidl, netto, carrefour, dino }, dispatch] =
 	// 	useReducer(reducer, initialShopList);
 
 	return (
-		<ListsContext.Provider
-			value={{ state, dispatch }}
-		>
+		<ListsContext.Provider value={{ state, dispatch }}>
 			{children}
 		</ListsContext.Provider>
 	);
@@ -181,7 +229,7 @@ function ListsProvider({ children }) {
 // custom context hook:
 function useLists() {
 	const context = useContext(ListsContext);
-    if (!context) {
+	if (!context) {
 		throw new Error("useLists must be used within a ListsProvider");
 	}
 	return context;

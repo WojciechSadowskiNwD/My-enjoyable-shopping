@@ -18,7 +18,7 @@ function CreateShopList({ onChange }) {
 	};
 
 
-	// Przekształcam obiekty w tablicę
+	// Przekształcam obiekty w tablicęb
 	const shopsData = Object.values(state);
 
 
@@ -32,7 +32,7 @@ function CreateShopList({ onChange }) {
 			<div className={styles.slider}>
 				<Slider {...settings}>
 					{shopsData.map((shop, index) => (
-						<ShopSquare key={index} name={shop.name} img={shop.img} />
+						<ShopSquare key={index} name={shop.name} img={shop.img} thisList={shop} />
 					))}
 				</Slider>
 			</div>

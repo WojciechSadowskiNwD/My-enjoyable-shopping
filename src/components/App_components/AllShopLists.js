@@ -4,7 +4,7 @@ import ShopSquare from "./ShopSquare";
 
 function AllShopLists() {
 	const { state } = useLists();
-	console.log(state);
+	// console.log(state);
 
 	// Przekształcam obiekty w tablicę
 	const shopsData = Object.values(state);
@@ -15,11 +15,20 @@ function AllShopLists() {
 	return (
 		<div className={styles.section_shop_lists}>
 			{filteredShops.map((shop, index) => (
-						<div className={styles.shop_square_bottom}>
-							<ShopSquare key={index} name={shop.name} img={shop.img} />
-							<p>Products: {shop.shoppingList.length}</p>
-						</div>
-					))}
+				<div className={styles.shop_square_bottom}>
+					<ShopSquare
+						key={index}
+						thisList={shop}
+						name={shop.name}
+						img={shop.img}
+						position={styles.square_position}
+						itemSize={styles.square_size}
+					/>
+					<p>
+						Products: <strong>{shop.shoppingList.length}</strong>
+					</p>
+				</div>
+			))}
 		</div>
 	);
 }
