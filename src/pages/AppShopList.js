@@ -1,16 +1,17 @@
 import { useLocation } from "react-router-dom";
 import AppCircleHeader from "../components/App_components/AppCircleHeader";
 import AppTopTextBar from "../components/App_components/AppTopTextBar";
-
-import styles from "./AppShopList.module.scss";
 import NewProductForm from "../components/App_components/NewProductForm";
+import AllProducts from "../components/App_components/AllProducts";
+import styles from "./AppShopList.module.scss";
+import { useLists } from "../contexsts/ListsProvider";
 
 
 function AppShopList() {
 	const location = useLocation();
-	const { thisList, img, name } = location.state || {};
-	// console.log(thisList);
-
+	const {img, name } = location.state || {};
+	const {state} = useLists();
+	const thisList = state[name]; 
 
 	return (
 		<div className="app">
@@ -19,22 +20,8 @@ function AppShopList() {
                 <AppTopTextBar img={img} name={name}/>
                 <NewProductForm thisList={thisList}/>
 
-
-
-				<div className={styles.list_box}>
-				<h2>SHOPPING LIST</h2>
-
-					<div className={styles.products_card}>
-						<h3 className={styles.card_title}>diary</h3>
-						<p>Cheese</p>
-						<p>Milk</p>
-						<p>Cottage cheese</p>
-
-
-
-					</div>
-
-				</div>
+				<AllProducts allProducts={thisList.shoppingList}/>
+				
 
 			</div>
 		</div>

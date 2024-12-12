@@ -17,7 +17,8 @@ function NewProductForm({ thisList }) {
 	});
 	const { productName, productCategory, productAmount, isGrams } =
 		formData;
-	console.log(thisList.shoppingList);
+	// console.log("thisList.shoppingList");
+	// console.log(thisList.shoppingList);
 
 	//FORM SEND DATA:
 	function handleSubmit(e) {
