@@ -1,0 +1,19 @@
+.products_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 10px;
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #d1d1d1e4;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 20px;
+    }
+}

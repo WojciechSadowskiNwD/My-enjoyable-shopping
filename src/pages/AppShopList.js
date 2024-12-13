@@ -19,10 +19,7 @@ function AppShopList() {
 				<AppCircleHeader />
                 <AppTopTextBar img={img} name={name}/>
                 <NewProductForm thisList={thisList}/>
-
 				<AllProducts allProducts={thisList.shoppingList}/>
-				
-
 			</div>
 		</div>
 	);
