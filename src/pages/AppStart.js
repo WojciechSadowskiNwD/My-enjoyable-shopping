@@ -9,7 +9,6 @@ import OrangePillHeader from "../components/App_components/OrangePillHeader";
 import AllShopLists from "../components/App_components/AllShopLists";
 import LogoutBtn from "../components/App_components/LogoutBtn";
 import CreateShopList from "../components/App_components/CreateShopList";
-import { useLists } from "../contexsts/ListsProvider";
 
 
 function AppStart() {
@@ -50,7 +49,6 @@ function AppStart() {
 					>
 						<NewListButton onChange={handleChange} />
 					</CSSTransition>
-
 					<CSSTransition
 						in={isClickCreate}
 						timeout={500}

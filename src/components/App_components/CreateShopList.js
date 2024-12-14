@@ -1,8 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import styles from "./CreateShopList.module.scss";
 import ShopSquare from "./ShopSquare";
 import { useLists } from "../../contexsts/ListsProvider";
+import styles from "./CreateShopList.module.scss";
+
 
 function CreateShopList({ onChange }) {
 	const { state } = useLists();
@@ -18,9 +19,8 @@ function CreateShopList({ onChange }) {
 	};
 
 
-	// Przekształcam obiekty w tablicęb
+	// Transform the object into an array
 	const shopsData = Object.values(state);
-
 
 	return (
 		<div className={styles.section_create_new_list}>
