@@ -31,49 +31,56 @@ function AllProducts({ allProducts, listName }) {
 			typeName: "cereal",
 			typeImg: "🍞",
 			typeBgColor: "#f1b75add",
+			productBgColor: "#f1b75a84",
 			items: cerealType,
 		},
 		{
 			typeName: "dairy",
 			typeImg: "🧀",
 			typeBgColor: "rgba(255, 255, 25, 0.74)",
+			productBgColor: "rgba(255, 255, 25, 0.51)",
 			items: dairyType,
 		},
 		{
 			typeName: "meat",
 			typeImg: "🍖",
 			typeBgColor: "#d5407cdd",
+			productBgColor: "#d5407b8e",
 			items: meatType,
 		},
 		{
 			typeName: "fruits",
 			typeImg: "🥝",
 			typeBgColor: "#d1c026dd",
+			productBgColor: "#d1c02684",
 			items: fruitsType,
 		},
 		{
 			typeName: "vegetables",
 			typeImg: "🥬",
-			// typeBgColor: "#a5c75bdd",
 			typeBgColor: "#a3d831dd",
+			productBgColor: "#a3d831a2",
 			items: vegetablesType,
 		},
 		{
 			typeName: "frozen",
 			typeImg: "🐟",
 			typeBgColor: "#26cbd1dd",
+			productBgColor: "#26cbd18a",
 			items: frozenType,
 		},
 		{
 			typeName: "candies",
 			typeImg: "🍭",
 			typeBgColor: "#d57a39dd",
+			productBgColor: "#d57a39dd",
 			items: candiesType,
 		},
 		{
 			typeName: "drinks",
 			typeImg: "🍹",
 			typeBgColor: "#494542dd",
+			productBgColor: "#878999d9",
 			items: drinksType,
 		},
 	];
@@ -81,12 +88,13 @@ function AllProducts({ allProducts, listName }) {
 	return (
 		<div className={styles.list_box}>
 			<h2>SHOPPING LIST</h2>
-			{typesCollection.map(({ typeName, typeImg, typeBgColor, items }) => (
+			{typesCollection.map(({ typeName, typeImg, typeBgColor, productBgColor, items }) => (
 				<CategoryCard
 					key={typeName}
 					typeName={typeName}
 					typeImg={typeImg}
 					bgColor={typeBgColor}
+					productBgColor={productBgColor}
 					items={items}
 					listName={listName}
 				/>

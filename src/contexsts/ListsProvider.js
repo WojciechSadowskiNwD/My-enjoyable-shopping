@@ -4,8 +4,6 @@ const ListsContext = createContext();
 
 // * * * shoppongLists data _START
 const initialShopList = {
-	// cereal - produkty zbożowe
-	// frozen - mrożone produkty
 	biedronka: {
 		listExist: true,
 		name: "biedronka",

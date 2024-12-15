@@ -12,8 +12,6 @@ function AppShopList() {
 	const {img, name } = location.state || {};
 	const {state} = useLists();
 	const thisList = state[name]; 
-	// console.log("sprawdzam co siedzi w thisList:");
-	// console.log(thisList);
 
 
 	return (

@@ -1,14 +1,50 @@
-.product_box{
+.product_section{
     display: flex;
     justify-content: start;
     padding: 10px;
+    margin-bottom: 5px;
     background-color: #ffffffed;
     color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+    transition: .3s;
 
-    p {
-        padding: 5px;
+    .left_box {
+        display: flex;
+        align-items: center;
+        width: 40px;
+    }
+    .middle_box {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: 7px;
+
+        p{
+            padding: 6px;
+            transition: .2s;
+        }
+        .grams {
+            font-size: 12px;
+        }
+        
+    }
+    .right_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
     }
 }
+
+.is_collected {
+    background-color: transparent;
+    
+    p{
+        color: #fff;
+        text-decoration: line-through;
+    }
+}
+
 .emptyCheckbox {
     font-size: 22px;
 	filter: brightness(150%);

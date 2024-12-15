@@ -9,12 +9,13 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding: 5px;
+	margin-top: 10px;
 	padding: 10px;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	background-color: rgba(0, 103, 0, 0.764);
-	border: 2px solid #fff;
+	border: 2px solid #ffffff64;
+	
 
 	.title_bar {
 		position: relative;
@@ -159,7 +160,8 @@ select:focus {
 	background-color: #fffffff1;
 }
 
-select:focus, option {
+select:focus,
+option {
 	-webkit-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	-moz-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
