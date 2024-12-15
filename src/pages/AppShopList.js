@@ -14,7 +14,7 @@ function AppShopList() {
 	const thisList = state[name]; 
 	// console.log("sprawdzam co siedzi w thisList:");
 	// console.log(thisList);
-	// console.log("koniec sprawdzania");
+
 
 	return (
 		<div className="app">
@@ -22,7 +22,7 @@ function AppShopList() {
 				<AppCircleHeader />
                 <AppTopTextBar img={img} name={name}/>
                 <NewProductForm thisList={thisList}/>
-				<AllProducts allProducts={thisList.shoppingList}/>
+				<AllProducts listName={name} allProducts={thisList.shoppingList}/>
 			</div>
 		</div>
 	);

@@ -58,7 +58,6 @@ function AppStart() {
 					>
 						<CreateShopList onChange={handleChange} />
 					</CSSTransition>
-
 				</div>
 
 				<div className={styles.app_main}>

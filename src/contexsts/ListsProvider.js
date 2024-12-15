@@ -210,20 +210,45 @@ const initialShopList = {
 // reducer to build
 function reducer(state, action) {
 	switch (action.type) {
-		case "add_product":
+		case "product/add_product":
 			const { shopName, product } = action.payload;
-			console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
-			console.log(state[shopName]);
-			console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+
 			return {
 				...state,
 				[shopName]: {
-					...state[shopName], listExist: true,
+					...state[shopName],
+					listExist: true,
 					shoppingList: [...state[shopName].shoppingList, product],
-				}
+				},
 			};
 
+		case "product/change_isCollected":
+			const { listName, id } = action.payload;
 
+			return {
+				...state,
+				[listName]: {
+					...state[listName],
+					shoppingList: state[listName].shoppingList.map((product) =>
+						product.id === id
+							? { ...product, isCollected: !product.isCollected }
+							: product
+					),
+				},
+			};
+
+		case "product/delete_product":
+			const { id: targetId, listName: targetListName  } = action.payload; 
+
+			return {
+				...state,
+				[targetListName]: {
+					...state[targetListName],
+					shoppingList: state[targetListName].shoppingList.filter(
+						(product) => product.id !== targetId
+					),
+				},
+			};
 
 		default:
 			throw new Error("Unknown action in shopList");
@@ -233,21 +258,12 @@ function reducer(state, action) {
 function ListsProvider({ children }) {
 	// useReducer
 	const [state, dispatch] = useReducer(reducer, initialShopList);
-	// const [{ biedronka, auchan, lidl, netto, carrefour, dino }, dispatch] =
-	// 	useReducer(reducer, initialShopList);
 
 	return (
 		<ListsContext.Provider value={{ state, dispatch }}>
 			{children}
 		</ListsContext.Provider>
 	);
-	// return (
-	// 	<ListsContext.Provider
-	// 		value={{ biedronka, auchan, lidl, netto, carrefour, dino }}
-	// 	>
-	// 		{children}
-	// 	</ListsContext.Provider>
-	// );
 }
 
 // custom context hook:

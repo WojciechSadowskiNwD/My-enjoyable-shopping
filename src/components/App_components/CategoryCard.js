@@ -1,7 +1,8 @@
 import styles from "./CategoryCard.module.scss";
 import SingleProduct from "./SingleProduct";
 
-function CategoryCard({ typeName, typeImg, bgColor, items }) {
+function CategoryCard({listName, typeName, typeImg, bgColor, items }) {
+
 	return (
 		<>
 			{items.length > 0 ? (
@@ -16,7 +17,7 @@ function CategoryCard({ typeName, typeImg, bgColor, items }) {
 						<h3 className={styles.card_title}>{typeName}</h3>
 					</div>
 					{items.map((item) => (
-						<SingleProduct key={item.id} item={item} />
+						<SingleProduct key={item.id} item={item} listName={listName} />
 					))}
 				</div>
 			) : (

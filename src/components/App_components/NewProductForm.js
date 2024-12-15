@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { useLists } from "../../contexsts/ListsProvider";
 import ButtonLink from "../ButtonLink";
 import styles from "./NewProductForm.module.scss";
-import { useLists } from "../../contexsts/ListsProvider";
 
 function NewProductForm({ thisList }) {
 	const { dispatch } = useLists();
@@ -17,8 +17,6 @@ function NewProductForm({ thisList }) {
 	});
 	const { productName, productCategory, productAmount, isGrams } =
 		formData;
-	// console.log("thisList.shoppingList");
-	// console.log(thisList.shoppingList);
 
 	//FORM SEND DATA:
 	function handleSubmit(e) {
@@ -43,7 +41,7 @@ function NewProductForm({ thisList }) {
 
 		// send data to reducer
 		dispatch({
-			type: "add_product",
+			type: "product/add_product",
 			payload: {
 				shopName: thisList.name,
 				product: newProduct,

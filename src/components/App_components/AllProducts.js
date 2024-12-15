@@ -1,7 +1,8 @@
 import styles from "./AllProducts.module.scss";
 import CategoryCard from "./CategoryCard";
 
-function AllProducts({ allProducts }) {
+function AllProducts({ allProducts, listName }) {
+
 	// filter by type products:
 	const cerealType = allProducts.filter(
 		(item) => item.typeProduct === "cereal"
@@ -87,6 +88,7 @@ function AllProducts({ allProducts }) {
 					typeImg={typeImg}
 					bgColor={typeBgColor}
 					items={items}
+					listName={listName}
 				/>
 			))}
 		</div>
