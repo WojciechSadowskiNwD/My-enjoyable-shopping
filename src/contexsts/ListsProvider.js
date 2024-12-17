@@ -238,15 +238,29 @@ function reducer(state, action) {
 		case "product/delete_product":
 			const { id: targetId, listName: targetListName  } = action.payload; 
 
-			return {
-				...state,
-				[targetListName]: {
-					...state[targetListName],
-					shoppingList: state[targetListName].shoppingList.filter(
-						(product) => product.id !== targetId
-					),
-				},
-			};
+			if(state[targetListName].shoppingList.length <= 1){
+				return {
+					...state,
+					[targetListName]: {
+						...state[targetListName],
+						listExist: !state[targetListName].listExist,
+						shoppingList: state[targetListName].shoppingList.filter(
+							(product) => product.id !== targetId
+						),
+					}
+				};
+			}else {
+				return {
+					...state,
+					[targetListName]: {
+						...state[targetListName],
+						shoppingList: state[targetListName].shoppingList.filter(
+							(product) => product.id !== targetId
+						),
+					},
+				};
+			}
+
 
 		default:
 			throw new Error("Unknown action in shopList");
