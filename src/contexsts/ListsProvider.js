@@ -259,7 +259,8 @@ function reducer(state, action) {
 						),
 					},
 				};
-			}
+			};
+
 
 
 		default:
@@ -267,12 +268,78 @@ function reducer(state, action) {
 	}
 }
 
+
 function ListsProvider({ children }) {
 	// useReducer
 	const [state, dispatch] = useReducer(reducer, initialShopList);
 
+	// example props: 'biedronka', 'cereal',and next type, ...
+	function filterProductsByType(listName, typeProduct) {
+		const thisList = state[listName]?.shoppingList || [];
+		return thisList.filter((item) => item.typeProduct === typeProduct);
+	}
+	const getTypesCollection = (listName) => [
+		{
+			typeName: "cereal",
+			typeImg: "🍞",
+			typeBgColor: "#f1b75add",
+			productBgColor: "#f1b75a84",
+			items: filterProductsByType(listName, "cereal"),
+		},
+		{
+			typeName: "dairy",
+			typeImg: "🧀",
+			typeBgColor: "rgba(255, 255, 25, 0.74)",
+			productBgColor: "rgba(255, 255, 25, 0.51)",
+			items: filterProductsByType(listName, "dairy"),
+		},
+		{
+			typeName: "meat",
+			typeImg: "🍖",
+			typeBgColor: "#d5407cdd",
+			productBgColor: "#d5407b8e",
+			items: filterProductsByType(listName, "meat"),
+		},
+		{
+			typeName: "fruits",
+			typeImg: "🥝",
+			typeBgColor: "#d1c026dd",
+			productBgColor: "#d1c02684",
+			items: filterProductsByType(listName, "fruits"),
+		},
+		{
+			typeName: "vegetables",
+			typeImg: "🥬",
+			typeBgColor: "#a3d831dd",
+			productBgColor: "#a3d831a2",
+			items: filterProductsByType(listName, "vegetables"),
+		},
+		{
+			typeName: "frozen",
+			typeImg: "🐟",
+			typeBgColor: "#26cbd1dd",
+			productBgColor: "#26cbd18a",
+			items: filterProductsByType(listName, "frozen"),
+		},
+		{
+			typeName: "candies",
+			typeImg: "🍭",
+			typeBgColor: "#d57a39dd",
+			productBgColor: "#d57a39dd",
+			items: filterProductsByType(listName, "candies"),
+		},
+		{
+			typeName: "drinks",
+			typeImg: "🍹",
+			typeBgColor: "#494542dd",
+			productBgColor: "#878999d9",
+			items: filterProductsByType(listName, "drinks"),
+		},
+	];
+
+
 	return (
-		<ListsContext.Provider value={{ state, dispatch }}>
+		<ListsContext.Provider value={{ state, dispatch, getTypesCollection }}>
 			{children}
 		</ListsContext.Provider>
 	);

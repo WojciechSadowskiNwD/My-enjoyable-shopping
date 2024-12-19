@@ -4,7 +4,6 @@ import ShopSquare from "./ShopSquare";
 
 function AllShopLists() {
 	const { state } = useLists();
-	// console.log(state);
 
 	// Przekształcam obiekty w tablicę
 	const shopsData = Object.values(state);
