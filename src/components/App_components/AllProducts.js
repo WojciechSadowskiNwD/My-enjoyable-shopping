@@ -1,11 +1,13 @@
 import { useLists } from "../../contexsts/ListsProvider";
 import CategoryCard from "./CategoryCard";
 import styles from "./AllProducts.module.scss";
+import EmptyList from "./EmptyList";
 
 
 function AllProducts({ listName }) {
-	const {getTypesCollection} = useLists();
+	const {getTypesCollection, state} = useLists();
 	const typesCollection = getTypesCollection(listName);
+	const listExist = state[listName].listExist;
 
 	return (
 		<div className={styles.list_box}>
@@ -21,6 +23,7 @@ function AllProducts({ listName }) {
 					listName={listName}
 				/>
 			))}
+			{!listExist ? <EmptyList/> : ''}
 		</div>
 	);
 }
