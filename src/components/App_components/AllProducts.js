@@ -15,6 +15,7 @@ function AllProducts({ listName }) {
 			{typesCollection.map(({ typeName, typeImg, typeBgColor, productBgColor, items }) => (
 				<CategoryCard
 					key={typeName}
+
 					typeName={typeName}
 					typeImg={typeImg}
 					bgColor={typeBgColor}
@@ -23,7 +24,9 @@ function AllProducts({ listName }) {
 					listName={listName}
 				/>
 			))}
-			{!listExist ? <EmptyList/> : ''}
+			{!listExist ? <EmptyList>
+				<p>This list is <span>empty</span>, add your first product.</p>
+			</EmptyList> : ''}
 		</div>
 	);
 }

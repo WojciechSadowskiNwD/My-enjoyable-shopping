@@ -1,5 +1,6 @@
 import { useLists } from "../../contexsts/ListsProvider";
 import styles from "./AllShopLists.module.scss";
+import EmptyList from "./EmptyList";
 import ShopSquare from "./ShopSquare";
 
 function AllShopLists() {
@@ -10,7 +11,7 @@ function AllShopLists() {
 
 	// Filtrowanie na tylko sklepy z istniejącą listą (opcjonalne)
 	const filteredShops = shopsData.filter((shop) => shop.listExist);
-
+	console.log(filteredShops.length);
 	return (
 		<div className={styles.section_shop_lists}>
 			{filteredShops.map((shop, index) => (
@@ -28,6 +29,13 @@ function AllShopLists() {
 					</p>
 				</div>
 			))}
+			{filteredShops.length === 0 ? (
+				<EmptyList componentSize={styles.empty_list_size}>
+					<p>Any list was not found.</p>
+				</EmptyList>
+			) : (
+				""
+			)}
 		</div>
 	);
 }
