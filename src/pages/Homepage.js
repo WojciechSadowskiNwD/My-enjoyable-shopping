@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BurgerNav from "../components/BurgerNav";
 import Logo from "../components/Logo";
 import DownArrow from "../components/DownArrow";
@@ -8,10 +9,9 @@ import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import StatsCounters from "../components/StatsCounters";
 import ButtonLink from "../components/ButtonLink";
+import NavigationBar from "../components/NavigationBar";
 import img1 from "../img/ai-generated-8261519_1280.png";
 import img2 from "../img/Bag_vegetables-_640.png";
-import NavigationBar from "../components/NavigationBar";
-import { Link } from "react-router-dom";
 
 const faqs = [
 	{

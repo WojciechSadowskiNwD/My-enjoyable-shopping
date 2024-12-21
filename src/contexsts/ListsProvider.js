@@ -234,6 +234,16 @@ function reducer(state, action) {
 					),
 				},
 			};
+		case "product/delete_list":
+			console.log(action.payload);
+			return {
+				...state,
+					[action.payload]: {
+						...state[action.payload],
+						listExist: !state[action.payload].listExist,
+						shoppingList: [],
+					}
+			}
 
 		case "product/delete_product":
 			const { id: targetId, listName: targetListName  } = action.payload; 

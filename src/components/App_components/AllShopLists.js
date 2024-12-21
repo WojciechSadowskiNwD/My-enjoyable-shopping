@@ -4,7 +4,7 @@ import EmptyList from "./EmptyList";
 import ShopSquare from "./ShopSquare";
 
 function AllShopLists() {
-	const { state } = useLists();
+	const { dispatch, state } = useLists();
 
 	// Przekształcam obiekty w tablicę
 	const shopsData = Object.values(state);
@@ -12,6 +12,7 @@ function AllShopLists() {
 	// Filtrowanie na tylko sklepy z istniejącą listą (opcjonalne)
 	const filteredShops = shopsData.filter((shop) => shop.listExist);
 	console.log(filteredShops.length);
+
 	return (
 		<div className={styles.section_shop_lists}>
 			{filteredShops.map((shop, index) => (
@@ -24,9 +25,22 @@ function AllShopLists() {
 						position={styles.square_position}
 						itemSize={styles.square_size}
 					/>
-					<p>
-						Products: <strong>{shop.shoppingList.length}</strong>
-					</p>
+					<div className={styles.box_left_part}>
+						<div
+							className={styles.btn_delete}
+							onClick={() =>
+								dispatch({
+									type: "product/delete_list",
+									payload: shop.name,
+								})
+							}
+						>
+							⛌
+						</div>
+						<p>
+							Products: <strong>{shop.shoppingList.length}</strong>
+						</p>
+					</div>
 				</div>
 			))}
 			{filteredShops.length === 0 ? (
