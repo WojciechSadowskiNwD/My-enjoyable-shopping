@@ -326,7 +326,7 @@ function ListsProvider({ children }) {
 		},
 		{
 			typeName: "frozen",
-			typeImg: "🐟",
+			typeImg: "🧊",
 			typeBgColor: "#26cbd1dd",
 			productBgColor: "#26cbd18a",
 			items: filterProductsByType(listName, "frozen"),

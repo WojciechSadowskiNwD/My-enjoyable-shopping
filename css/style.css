@@ -166,6 +166,10 @@ body {
   right: -25px; /* Dostosuj położenie w zależności od potrzeb */
 }
 
+.no_opacity {
+  opacity: 0;
+}
+
 @media (min-width: 412px) {
   .logoDetails {
     height: 90px;

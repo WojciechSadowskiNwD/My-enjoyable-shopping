@@ -1,0 +1,47 @@
+.product_section {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.9294117647);
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+  transition: 0.3s;
+}
+.product_section .left_box {
+  display: flex;
+  align-items: center;
+  width: 40px;
+}
+.product_section .middle_box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 7px;
+}
+.product_section .middle_box p {
+  padding: 6px;
+  transition: 0.2s;
+}
+.product_section .middle_box .grams {
+  font-size: 12px;
+}
+.product_section .right_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
+
+.is_collected {
+  background-color: transparent;
+}
+.is_collected p {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.emptyCheckbox {
+  font-size: 22px;
+  filter: brightness(150%);
+}/*# sourceMappingURL=SingleProduct.module.css.map */

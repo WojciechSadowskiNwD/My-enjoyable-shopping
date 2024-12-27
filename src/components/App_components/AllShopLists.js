@@ -45,7 +45,7 @@ function AllShopLists() {
 			))}
 			{filteredShops.length === 0 ? (
 				<EmptyList componentSize={styles.empty_list_size}>
-					<p>Any list was not found.</p>
+					<p>There is no shopping list yet.</p>
 				</EmptyList>
 			) : (
 				""

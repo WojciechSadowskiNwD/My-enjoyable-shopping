@@ -4,7 +4,7 @@ import { useLogin } from "../contexsts/LoginProvider";
 import { useLists } from "../contexsts/ListsProvider";
 import AppCircleHeader from "../components/App_components/AppCircleHeader";
 import AppTopTextBar from "../components/App_components/AppTopTextBar";
-import NewProductForm from "../components/App_components/NewProductForm";
+import AddProductForm from "../components/App_components/AddProductForm";
 import AllProducts from "../components/App_components/AllProducts";
 import LogoutBtn from "../components/App_components/LogoutBtn";
 
@@ -28,7 +28,7 @@ function AppShopList() {
 			<div className="shadow_bg bg_shadow">
 				<AppCircleHeader />
 				<AppTopTextBar img={img} name={name} />
-				<NewProductForm thisList={thisList} />
+				<AddProductForm thisList={thisList} />
 				<AllProducts listName={name} />
 				<LogoutBtn />
 			</div>

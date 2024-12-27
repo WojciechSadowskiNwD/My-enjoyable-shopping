@@ -180,6 +180,11 @@ body {
     right: -25px; /* Dostosuj położenie w zależności od potrzeb */
 }
 
+.no_opacity {
+	opacity: 0;
+}
+
+
 
 // RWD STYLES:
 @media (min-width: 412px) {

@@ -26,6 +26,13 @@
 .form p {
   margin-top: -12px;
 }
+.form .wrong_Fill_Error {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.7;
+  color: crimson;
+}
 .form .padding_bottom {
   padding-bottom: 15px;
 }
@@ -92,6 +99,10 @@
   height: 750px;
 }
 
+.position_Btn_Form_A {
+  transform: translateX(0);
+}
+
 .position_Btn_Form {
   transform: translateX(-50%);
 }
@@ -124,6 +135,11 @@
   .form input[type=password] {
     padding-left: 14px;
     font-size: 19px;
+  }
+  .form .wrong_Fill_Error {
+    margin-top: 35px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .login_margin {
     margin-top: 170px;

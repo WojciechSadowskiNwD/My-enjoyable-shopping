@@ -1,0 +1,12 @@
+.list_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.list_box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=AllProducts.module.css.map */

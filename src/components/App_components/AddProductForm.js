@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { useLists } from "../../contexsts/ListsProvider";
 import ButtonLink from "../ButtonLink";
-import styles from "./NewProductForm.module.scss";
+import styles from "./AddProductForm.module.scss";
 
-function NewProductForm({ thisList }) {
+function AddProductForm({ thisList }) {
 	const { dispatch } = useLists();
+	const [isOpen, setIsOpen] = useState(true); //do akordeonu
 
-	// Obiekt domyślny i przechowujący potem dane otrzymane z formularza
+	// toggle accordion: visible/unvisible
+	const handleToggle = () => setIsOpen((curr) => !curr);
+
+	// Default object and later storing the data received from form
 	const [formData, setFormData] = useState({
 		id: "",
 		productName: "",
@@ -15,8 +19,7 @@ function NewProductForm({ thisList }) {
 		isGrams: false,
 		packed: false,
 	});
-	const { productName, productCategory, productAmount, isGrams } =
-		formData;
+	const { productName, productCategory, productAmount, isGrams } = formData;
 
 	//FORM SEND DATA:
 	function handleSubmit(e) {
@@ -70,34 +73,41 @@ function NewProductForm({ thisList }) {
 	};
 
 	// select name product
-	const handleChangeProductName = (e) => {
+	const handleChangeProductName = (e) =>
 		setFormData((prev) => ({ ...prev, productName: e.target.value }));
-	};
 
 	// how many pieces / grams
-	const handleChangeProductAmount = (e) => {
+	const handleChangeProductAmount = (e) =>
 		setFormData((prev) => ({ ...prev, productAmount: e.target.value }));
-	};
 
 	// whether the amount is given in grams
-	const handleCheckboxClick = (e) => {
-		// setIsGrams((prev) => !prev);
+	const handleCheckboxClick = (e) =>
 		setFormData({ ...formData, isGrams: !formData.isGrams });
-	};
 
 	return (
-		<div className={styles.new_product_form}>
-			<form className={styles.product_form} onSubmit={handleSubmit}>
-				<div className={styles.title_bar}>
-					<i className={`fa-regular fa-square-minus ${styles.minus_icon}`}></i>
-					<h2>Add product</h2>
+		<div className={styles.form_container}>
+			<div className={styles.top_bar}>
+				<h2>Add product</h2>
+				<div className={styles.box_icon} onClick={handleToggle}>
+					{isOpen ? (
+						<i className={`fa-regular fa-square-minus ${styles.icons}`}></i>
+					) : (
+						<i className={`fa-regular fa-square-plus ${styles.icons}`}></i>
+					)}
 				</div>
+			</div>
 
-				<div className={styles.middle_part_form}>
+			<form
+				className={`${styles.accordion_height0} ${
+					isOpen ? styles.product_form : ""
+				}`}
+				onSubmit={handleSubmit}
+			>
+				<div>
 					<div className={styles.left}>
 						<select
 							value={productCategory}
-							className={styles.products_category}
+							className={`${styles.products_category} ${isOpen ? '' : "no_opacity"}`}
 							onChange={(e) => onSelectCategory(e)}
 						>
 							<option value="cereal">🍞</option>
@@ -105,14 +115,14 @@ function NewProductForm({ thisList }) {
 							<option value="vegetables">🥬</option>
 							<option value="fruits">🥝</option>
 							<option value="meat">🍖</option>
-							<option value="frozen">🐟</option>
+							<option value="frozen">🧊</option>
 							<option value="candies">🍭</option>
 							<option value="drinks">🍹</option>
 						</select>
 					</div>
 					<div className={styles.right}>
 						<input
-							className={`${styles.input_add_product} ${styles.input_name}`}
+						className={`${styles.input_name} ${isOpen ? "" : "no_opacity"}`}
 							type="text"
 							placeholder="Type your product"
 							value={productName}
@@ -120,7 +130,7 @@ function NewProductForm({ thisList }) {
 						></input>
 						<div className={styles.right_bottom}>
 							<input
-								className={`${styles.input_add_product} ${styles.input_number}`}
+								className={`${styles.input_number} ${isOpen ? "" : "no_opacity"}`}
 								type="number"
 								placeholder="How many"
 								value={productAmount}
@@ -148,4 +158,4 @@ function NewProductForm({ thisList }) {
 	);
 }
 
-export default NewProductForm;
+export default AddProductForm;
