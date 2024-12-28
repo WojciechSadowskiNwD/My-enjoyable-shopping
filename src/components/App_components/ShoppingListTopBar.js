@@ -1,5 +1,5 @@
-import { useState } from "react";
 import styles from "./ShoppingListTopBar.module.scss";
+import { useState } from "react";
 import { useLists } from "../../contexsts/ListsProvider";
 
 export default function ShoppingListTopBar() {
@@ -51,6 +51,8 @@ export default function ShoppingListTopBar() {
 					</button>
 				</div>
 			</div>
+			
+			<div className={`${styles.bottom_bar} ${!isOpen ? "" : "no_opacity"}`}></div>
 		</div>
 	);
 }

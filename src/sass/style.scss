@@ -2,7 +2,6 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import "colors";
 
-
 *,
 *::before,
 *::after {
@@ -102,8 +101,6 @@ body {
 	}
 }
 
-
-
 // Param for component InfoBlock - as a picture variant
 .infoBlock_img {
 	width: 100%;
@@ -155,36 +152,35 @@ body {
 /*react slick Arrows - my customization */
 .slick-prev:before,
 .slick-next:before {
-    font-family: "FontAwesome";
-    font-size: 26px;
-    // line-height: 1;
-    line-height: 10px;
-    opacity: 1;
-    color: #dbdbdb; /* color arrows */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	font-family: "FontAwesome";
+	font-size: 26px;
+	// line-height: 1;
+	line-height: 10px;
+	opacity: 1;
+	color: #dbdbdb; /* color arrows */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev:before {
-    content: "\f0d9";
+	content: "\f0d9";
 }
 .slick-next:before {
-    content: "\f0da";
+	content: "\f0da";
 }
 
 .slick-prev {
-    left: -20px; /* Dostosuj położenie w zależności od potrzeb */
+	left: -20px; /* Dostosuj położenie w zależności od potrzeb */
 }
 
 .slick-next {
-    right: -25px; /* Dostosuj położenie w zależności od potrzeb */
+	right: -25px; /* Dostosuj położenie w zależności od potrzeb */
 }
 
 .no_opacity {
 	opacity: 0;
+	transition: 0.3s;
 }
-
-
 
 // RWD STYLES:
 @media (min-width: 412px) {
@@ -219,7 +215,6 @@ body {
 	.header {
 		background-image: url("../img/BackgroundLarge.jpg");
 	}
-
 
 	.logoDetails {
 		margin-left: 51%;

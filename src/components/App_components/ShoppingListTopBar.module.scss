@@ -60,6 +60,24 @@
 	}
 }
 
+.bottom_bar {
+	width: 95%;
+	margin-top: -6px;
+	height: 15px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+	// background-color: orange;
+	background: linear-gradient(
+		327deg,
+		rgba(255, 122, 0, 1) 0%,
+		rgba(255, 165, 0, 1) 30%,
+		rgba(255, 172, 0, 1) 67%,
+		rgba(255, 122, 0, 1) 100%
+	);
+	z-index: 100;
+}
+
 .options {
 	display: flex;
 	flex-direction: column;
@@ -83,6 +101,10 @@
 	background-color: orange;
 	opacity: 1;
 	transition: 0.3s;
+
+	.btns_box{
+		opacity: 1;
+	}
 }
 
 .text {
@@ -98,6 +120,8 @@
 	margin-top: 10px;
 	width: 95%;
 	padding: 10px;
+	opacity: 0;
+	
 
 	.btn_sortBy {
 		min-width: 120px;
