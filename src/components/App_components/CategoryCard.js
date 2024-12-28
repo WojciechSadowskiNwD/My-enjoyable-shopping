@@ -1,3 +1,4 @@
+import { useLists } from "../../contexsts/ListsProvider";
 import styles from "./CategoryCard.module.scss";
 import SingleProduct from "./SingleProduct";
 
@@ -9,6 +10,19 @@ function CategoryCard({
 	productBgColor,
 	items,
 }) {
+	const {activeButton: sortBy} = useLists();
+	let sortedItems = items;
+
+	if (sortBy === "alphabetically")
+		sortedItems = items.slice().sort((a, b) => a.name.localeCompare(b.name));
+
+	if (sortBy === "toPack")
+		sortedItems = items.slice().sort((a, b) => Number(a.isCollected) - Number(b.isCollected));
+
+	if (sortBy === "packed")
+		sortedItems = items.slice().sort((a, b) => Number(b.isCollected) - Number(a.isCollected));
+
+
 	return (
 		<>
 			{items.length > 0 ? (
@@ -22,7 +36,7 @@ function CategoryCard({
 						<span>{typeImg}</span>
 						<h3 className={styles.card_title}>{typeName}</h3>
 					</div>
-					{items.map((item) => (
+					{sortedItems.map((item) => (
 						<SingleProduct
 							key={item.id}
 							item={item}

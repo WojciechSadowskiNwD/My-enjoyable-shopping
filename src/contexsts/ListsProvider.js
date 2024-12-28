@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer, useState } from "react";
 
 const ListsContext = createContext();
 
@@ -282,6 +282,7 @@ function reducer(state, action) {
 function ListsProvider({ children }) {
 	// useReducer
 	const [state, dispatch] = useReducer(reducer, initialShopList);
+	const [activeButton, setActiveButton] = useState(null);  //manage which button should be colored -- in sorting list buttons
 
 	// example props: 'biedronka', 'cereal',and next type, ...
 	function filterProductsByType(listName, typeProduct) {
@@ -346,10 +347,20 @@ function ListsProvider({ children }) {
 			items: filterProductsByType(listName, "drinks"),
 		},
 	];
+	const setHowToSort = (buttonClicked) => {
 
+        // set button color to active
+		if (buttonClicked === "toPack") {
+			setActiveButton("toPack");
+		} else if (buttonClicked === "packed") {
+            setActiveButton("packed");
+		}else if (buttonClicked === "alphabetically") {
+            setActiveButton("alphabetically");
+		}
+	};
 
 	return (
-		<ListsContext.Provider value={{ state, dispatch, getTypesCollection }}>
+		<ListsContext.Provider value={{ state, activeButton, setHowToSort, dispatch, getTypesCollection }}>
 			{children}
 		</ListsContext.Provider>
 	);

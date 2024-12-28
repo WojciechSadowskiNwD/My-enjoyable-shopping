@@ -1,24 +1,13 @@
 import { useState } from "react";
 import styles from "./ShoppingListTopBar.module.scss";
+import { useLists } from "../../contexsts/ListsProvider";
 
 export default function ShoppingListTopBar() {
 	const [isOpen, setIsOpen] = useState(true);
-	const [activeButton, setActiveButton] = useState(null);
+    const {activeButton, setHowToSort} = useLists();
 
 	const handleToggle = () => {
 		setIsOpen((curr) => !curr);
-	};
-
-	const setHowToSort = (buttonClicked) => {
-
-        // set button color to active
-		if (buttonClicked === "toPack") {
-			setActiveButton("toPack");
-		} else if (buttonClicked === "packed") {
-            setActiveButton("packed");
-		}else if (buttonClicked === "alphabetically") {
-            setActiveButton("alphabetically");
-		}
 	};
 
 	return (
@@ -65,5 +54,3 @@ export default function ShoppingListTopBar() {
 		</div>
 	);
 }
-
-// test
