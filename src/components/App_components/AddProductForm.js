@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useLists } from "../../contexsts/ListsProvider";
-import ButtonLink from "../ButtonLink";
 import styles from "./AddProductForm.module.scss";
+import ButtonLink from "../ButtonLink";
+import FormTopBar from "./FormTopBar";
 
 function AddProductForm({ thisList }) {
 	const { dispatch } = useLists();
@@ -86,16 +87,7 @@ function AddProductForm({ thisList }) {
 
 	return (
 		<div className={styles.form_container}>
-			<div className={styles.top_bar}>
-				<h2>Add product</h2>
-				<div className={styles.box_icon} onClick={handleToggle}>
-					{isOpen ? (
-						<i className={`fa-regular fa-square-minus ${styles.icons}`}></i>
-					) : (
-						<i className={`fa-regular fa-square-plus ${styles.icons}`}></i>
-					)}
-				</div>
-			</div>
+			<FormTopBar isOpen={isOpen} onToggle={handleToggle}/>
 
 			<form
 				className={`${styles.accordion_height0} ${

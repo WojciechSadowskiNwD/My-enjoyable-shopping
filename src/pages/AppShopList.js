@@ -1,10 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useLogin } from "../contexsts/LoginProvider";
 import { useLists } from "../contexsts/ListsProvider";
 import AppCircleHeader from "../components/App_components/AppCircleHeader";
 import AppTopTextBar from "../components/App_components/AppTopTextBar";
 import AddProductForm from "../components/App_components/AddProductForm";
+import ShoppingListTopBar from "../components/App_components/ShoppingListTopBar";
 import AllProducts from "../components/App_components/AllProducts";
 import LogoutBtn from "../components/App_components/LogoutBtn";
 
@@ -29,6 +30,7 @@ function AppShopList() {
 				<AppCircleHeader />
 				<AppTopTextBar img={img} name={name} />
 				<AddProductForm thisList={thisList} />
+				<ShoppingListTopBar />
 				<AllProducts listName={name} />
 				<LogoutBtn />
 			</div>
