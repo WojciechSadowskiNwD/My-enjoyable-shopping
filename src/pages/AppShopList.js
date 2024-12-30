@@ -8,6 +8,7 @@ import AddProductForm from "../components/App_components/AddProductForm";
 import ShoppingListTopBar from "../components/App_components/ShoppingListTopBar";
 import AllProducts from "../components/App_components/AllProducts";
 import LogoutBtn from "../components/App_components/LogoutBtn";
+import SummaryBar from "../components/App_components/SummaryBar";
 
 function AppShopList() {
 	const location = useLocation();
@@ -16,6 +17,9 @@ function AppShopList() {
 	const navigate = useNavigate();
 	const { isAuthenticated } = useLogin();
 	const thisList = state[name];
+	let totalProducts = thisList.shoppingList.length;
+	console.log(thisList.shoppingList);
+	const toCollected = thisList.shoppingList.filter((item) => item.isCollected === false );
 
 	// automatic redirect from here to Homepage if false
 	useEffect(() => {
@@ -32,6 +36,7 @@ function AppShopList() {
 				<AddProductForm thisList={thisList} />
 				<ShoppingListTopBar />
 				<AllProducts listName={name} />
+				<SummaryBar total={totalProducts} toCollected={toCollected} />
 				<LogoutBtn />
 			</div>
 		</div>
@@ -39,3 +44,5 @@ function AppShopList() {
 }
 
 export default AppShopList;
+
+

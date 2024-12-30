@@ -168,6 +168,7 @@ body {
 
 .no_opacity {
   opacity: 0;
+  transition: 0.3s;
 }
 
 @media (min-width: 412px) {

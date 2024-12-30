@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/components/App_components/AllProducts.module.scss","AllProducts.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EAEA,gBAAA;ACAJ;ADEI;EACI,kBAAA;EACA,mBAAA;ACAR","file":"AllProducts.module.css"}
+{"version":3,"sources":["../src/components/App_components/AllProducts.module.scss","AllProducts.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;ACCJ;ADCI;EACI,kBAAA;EACA,mBAAA;ACCR","file":"AllProducts.module.css"}
