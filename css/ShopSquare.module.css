@@ -18,4 +18,15 @@ a .square_box {
   background-position: center;
   background-repeat: no-repeat;
   border: 5px solid rgba(255, 166, 0, 0.884);
+}
+
+@media (min-width: 412px) {
+  a .square_box {
+    transform: translateX(30%);
+  }
+  .shop_square {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+  }
 }/*# sourceMappingURL=ShopSquare.module.css.map */

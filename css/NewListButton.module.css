@@ -28,4 +28,37 @@
   color: #fff;
   box-shadow: inset 0px -15px 69px -37px rgb(66, 68, 90);
   cursor: pointer;
+}
+
+@media (min-width: 390px) {
+  .button_box {
+    margin-top: 15px;
+    width: 340px;
+    height: 135px;
+  }
+  .button_box p {
+    margin-left: 10px;
+    font-size: 17px;
+  }
+  .button_box .addList_btn {
+    height: 110px;
+    min-width: 110px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 412px) {
+  .button_box {
+    margin-top: 30px;
+    width: 360px;
+    height: 145px;
+  }
+  .button_box p {
+    font-size: 17.5px;
+  }
+  .button_box .addList_btn {
+    height: 125px;
+    min-width: 120px;
+    font-size: 16.5px;
+    line-height: 1.2;
+  }
 }/*# sourceMappingURL=NewListButton.module.css.map */

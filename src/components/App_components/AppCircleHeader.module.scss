@@ -37,7 +37,7 @@
 		-moz-box-shadow: -1px 12px 81px 2px rgba(0, 0, 0, 1);
 		box-shadow: -1px 2px 91px 2px rgba(0, 0, 0, 1);
 		z-index: 2;
-
+		
 		h1 {
 			font-size: 15px;
 		}
@@ -46,19 +46,18 @@
 		width: 90px;
 		height: 90px;
 	}
-
+	
 	.user_square {
 		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: start;
 		align-items: center;
-		width: 100px;
 		width: 200px;
 		height: 50px;
 		top: 120px;
 		z-index: 2;
-
+		
 		i {
 			margin-right: 10px;
 			font-size: 38px;
@@ -69,3 +68,48 @@
 		}
 	}
 }
+
+
+// RWD:
+
+// iPhone 14/15
+@media (min-width: 390px) {
+	.app_header {
+		.green_circle {
+			height: 310px;
+		}
+
+		.logo {
+			top: 55px;
+			transform: translate(-25%, -50%);
+			right: 0px;
+			min-width: 245px;
+			height: 60px;
+
+			h1 {
+				font-size: 17px;
+			}
+		}
+		.imgSize {
+			width: 105px;
+			height: 105px;
+		}
+	}
+}
+
+// Google Pixel 6
+@media (min-width: 412px) {
+	.app_header {
+		.logo {
+			transform: translate(-30%, -50%);
+		}
+		.user_square {
+			width: 210px;
+			
+			p {
+				margin-left: 5px;
+				font-size: 16.5px;
+			}
+		}
+	}
+} 

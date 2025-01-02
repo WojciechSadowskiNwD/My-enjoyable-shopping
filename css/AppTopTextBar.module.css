@@ -98,4 +98,10 @@
 .add_button:hover i {
   font-size: 32px;
   color: #fff;
+}
+
+@media (min-width: 375px) {
+  .position_shop_square {
+    right: 58%;
+  }
 }/*# sourceMappingURL=AppTopTextBar.module.css.map */

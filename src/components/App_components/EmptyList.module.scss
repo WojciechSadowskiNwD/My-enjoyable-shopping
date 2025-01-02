@@ -1,12 +1,13 @@
 .empty_list_box {
 	display: flex;
+	align-self: center;
 	align-items: center;
 	width: 95%;
 	height: 150px;
 	border-radius: 15px;
 	padding: 10px 20px;
 	background-color: #0000008a;
-	border: 4px solid #ffffff23;
+	border: 2px solid #ffffff23;
 
 	p {
 		font-family: "EB Garamond", system-ui;

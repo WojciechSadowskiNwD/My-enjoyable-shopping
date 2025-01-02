@@ -6,12 +6,11 @@ import ShopSquare from "./ShopSquare";
 function AllShopLists() {
 	const { dispatch, state } = useLists();
 
-	// Przekształcam obiekty w tablicę
+	// Convert obiect to array
 	const shopsData = Object.values(state);
 
-	// Filtrowanie na tylko sklepy z istniejącą listą (opcjonalne)
+	// Filter to array exist shops (optional)
 	const filteredShops = shopsData.filter((shop) => shop.listExist);
-	console.log(filteredShops.length);
 
 	return (
 		<div className={styles.section_shop_lists}>

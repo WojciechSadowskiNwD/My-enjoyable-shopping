@@ -21,4 +21,15 @@
   border: 1px solid rgba(255, 255, 255, 0.137254902);
   box-shadow: -1px 2px 61px 2px rgb(0, 0, 0);
   cursor: pointer;
+}
+
+@media (min-width: 412px) {
+  .logout_box {
+    height: 60px;
+  }
+  .logout_box .logout_btn {
+    width: 67%;
+    height: 50px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=LogoutBtn.module.css.map */

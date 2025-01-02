@@ -4,7 +4,7 @@
 	height: 50px;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	
+
 	.logout_btn {
 		position: absolute;
 		bottom: 5px;
@@ -20,15 +20,30 @@
 			rgba(168, 7, 39, 0.908) 0%,
 			rgba(220, 20, 60, 0.879) 30%,
 			crimson 67%,
-			rgba(168, 7, 39, 0.942)100%
-		); 
+			rgba(168, 7, 39, 0.942) 100%
+		);
 		border-radius: 15px;
 		border: none;
-		border: 1px solid #ffffff23;   //fajny borderek ghost
+		border: 1px solid #ffffff23; //fajny borderek ghost
 
 		-webkit-box-shadow: -1px 2px 61px 2px rgba(0, 0, 0, 1);
 		-moz-box-shadow: -1px 12px 61px 2px rgba(0, 0, 0, 1);
 		box-shadow: -1px 2px 61px 2px rgba(0, 0, 0, 1);
 		cursor: pointer;
+	}
+}
+
+// RWD
+
+// Google Pixel 6
+@media (min-width: 412px) {
+	.logout_box {
+		height: 60px;
+
+		.logout_btn {
+			width: 67%;
+			height: 50px;
+			font-size: 16px;
+		}
 	}
 }

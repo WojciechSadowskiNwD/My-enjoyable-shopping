@@ -8,7 +8,7 @@ function AllProducts({ listName }) {
 	const { getTypesCollection, state } = useLists();
 	const typesCollection = getTypesCollection(listName);
 	const listExist = state[listName].listExist;
-
+ 
 	return (
 		<div className={styles.list_box}>
 			{typesCollection.map(

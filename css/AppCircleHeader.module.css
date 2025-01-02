@@ -54,4 +54,29 @@
   padding: 10px;
   padding: 5px;
   border: 1px solid rgba(255, 255, 255, 0.4156862745);
+}
+
+@media (min-width: 390px) {
+  .app_header .green_circle {
+    height: 310px;
+  }
+  .app_header .logo {
+    top: 55px;
+    transform: translate(-25%, -50%);
+    right: 0px;
+    min-width: 245px;
+    height: 60px;
+  }
+  .app_header .logo h1 {
+    font-size: 17px;
+  }
+  .app_header .imgSize {
+    width: 105px;
+    height: 105px;
+  }
+}
+@media (min-width: 412px) {
+  .app_header .logo {
+    transform: translate(-30%, -50%);
+  }
 }/*# sourceMappingURL=AppCircleHeader.module.css.map */

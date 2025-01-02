@@ -4,18 +4,18 @@
 	justify-content: start;
 	margin: 10px;
 	width: 90%;
-	border-radius: 15px;
 	padding: 10px;
 	padding-bottom: 20px;
 	padding-left: 15px;
 	padding-right: 15px;
+	border-radius: 15px;
 	border-bottom-left-radius: 0px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 20px;
 	background-color: #d1d1d1e4;
-	border: 1px solid #ffffff23;   //test1
 	border: 2px solid #ffffff23;   //lub test2
+	border: 1px solid #ffffff23;   //test1
 
 	.card_title_box {
 		padding-top: 10px;
@@ -37,6 +37,25 @@
 			margin-bottom: 10px;
 			font-size: 22px;
             line-height: 20px;
+		}
+	}
+}
+
+
+// RWD
+
+// Google Pixel 6
+@media (min-width: 412px) {
+	.products_card {
+		margin: 14px;
+		
+		.card_title_box {
+			span {
+				width: 55px;
+				height: 55px;
+				line-height: 55px;
+				font-size: 30px;
+			}
 		}
 	}
 }

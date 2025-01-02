@@ -6,11 +6,13 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+	min-height: 220px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	padding: 10px;
 	padding-left: 6.5%;
 	padding-right: 6.5%;
 	border-radius: 15px;
-	// border: 1.6px solid #ffffff6e;
 	background-color: #17171769;
 
 	.empty_list_size {
@@ -39,9 +41,11 @@
 .shop_square_bottom {
 	position: relative;
 	display: flex;
+	align-self: center;
 	justify-content: start;
-	padding: 10px;
 	margin: 10px;
+	height: 105px;
+	padding: 10px;
 	background-color: #34820676;
 	border: 4px solid #34820676;
 	border-radius: 15px;
@@ -93,5 +97,23 @@
 	p {
 		font-size: 17px;
 		line-height: 75px;
+	}
+}
+
+
+// RWD
+
+// iPhone 14/15
+@media (min-width: 390px) {
+	.section_shop_lists {
+		margin-top: 10px;
+	}
+}
+
+// Google Pixel 6
+@media (min-width: 412px) {
+	.section_shop_lists {
+		min-height: 290px;
+		margin-bottom: 10px;
 	}
 }

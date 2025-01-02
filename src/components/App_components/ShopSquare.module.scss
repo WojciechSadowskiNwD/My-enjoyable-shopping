@@ -19,3 +19,17 @@ a .square_box {
 	background-repeat: no-repeat;
 	border: 5px solid rgba(255, 166, 0, 0.884);
 }
+
+// RWD
+
+// Google Pixel 6
+@media (min-width: 412px) {
+	a .square_box {
+		transform: translateX(30%);
+	}
+	.shop_square {
+		width: 75px;
+		min-width: 75px;
+		height: 75px;
+	}
+}

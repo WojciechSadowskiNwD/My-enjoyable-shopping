@@ -49,3 +49,21 @@
     font-size: 22px;
 	filter: brightness(150%);
 }
+
+
+// RWD
+
+// Google Pixel 6
+@media (min-width: 412px) {
+	.product_section{
+        .middle_box {
+            p{
+                font-size: 17px;
+                padding: 7px;
+            }
+            .grams {
+                font-size: 13px;
+            }
+        }
+    }
+}

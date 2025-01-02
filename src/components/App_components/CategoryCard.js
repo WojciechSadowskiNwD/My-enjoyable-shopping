@@ -7,7 +7,7 @@ function CategoryCard({
 	typeName,
 	typeImg,
 	bgColor,
-	productBgColor,
+	productBgColor, 
 	items,
 }) {
 	const {activeButton: sortBy} = useLists();

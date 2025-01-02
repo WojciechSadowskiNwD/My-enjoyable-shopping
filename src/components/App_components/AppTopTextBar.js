@@ -6,7 +6,7 @@ function AppTopTextBar({ img, name }) {
 	const navigate = useNavigate();
 
 	function goStepBack(){
-		navigate("../appStart", { replace: true });
+		navigate("../appStart", { replace: true }); 
 	}
 
 	return (
@@ -30,11 +30,6 @@ function AppTopTextBar({ img, name }) {
 					Add your favorite products and build your shopping list:
 				</p>
 			</div>
-			{/* <div className={styles.add_button}>
-				W momencie, gdy przycisk zostanie kliknięty, zmienię 'add' w 'collapse'
-                <p className={styles.add_button_text}>Add</p>
-                <i class="fa-solid fa-circle-plus"></i>
-            </div> */}
 		</div>
 	);
 }

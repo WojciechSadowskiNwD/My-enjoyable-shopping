@@ -3,11 +3,11 @@ import { useState } from "react";
 import { useLists } from "../../contexsts/ListsProvider";
 
 export default function ShoppingListTopBar() {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
     const {activeButton, setHowToSort} = useLists();
 
 	const handleToggle = () => {
-		setIsOpen((curr) => !curr);
+		setIsOpen((curr) => !curr); 
 	};
 
 	return (
@@ -18,7 +18,6 @@ export default function ShoppingListTopBar() {
 					<i className={`fa-solid fa-gear ${styles.icon}`}></i>
 				</div>
 			</div>
-
 			<div
 				className={`${styles.options} ${isOpen ? styles.options_open : ""} `}
 			>

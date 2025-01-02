@@ -6,7 +6,6 @@
   margin-top: 25px;
   margin-bottom: 20px;
   border-radius: 15px;
-  border: 3px solid rgba(255, 255, 255, 0.137254902);
   background-color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
@@ -18,6 +17,9 @@
   margin-bottom: 7px;
   padding: 5px;
   border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 3px solid #333;
   color: #fff;
   background-color: rgb(9, 105, 6);
 }
@@ -37,4 +39,19 @@
   margin-right: auto;
   padding-top: 10px;
   padding-bottom: 15px;
+}
+
+@media (min-width: 390px) {
+  .section_create_new_list {
+    margin-top: 60px;
+    width: 340px;
+    height: 135px;
+  }
+}
+@media (min-width: 412px) {
+  .section_create_new_list {
+    margin-top: 80px;
+    width: 360px;
+    height: 135px;
+  }
 }/*# sourceMappingURL=CreateShopList.module.css.map */

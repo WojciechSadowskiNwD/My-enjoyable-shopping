@@ -49,7 +49,6 @@
 		border-radius: 20px;
 		box-shadow: 0px 1px 11px 1px rgba(0, 0, 0, 0.5);
 		opacity: 1;
-		cursor: pointer;
 	}
 }
 .right {
@@ -114,7 +113,6 @@
 	background-color: rgba(0, 128, 0, 0.54);
 
 	.positionClass {
-		min-width: 180px;
 		min-width: 200px;
 		top: 50%;
 		left: 50%;
@@ -159,7 +157,7 @@ select:focus {
 	-webkit-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	-moz-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
-	border: 2px solid $green-focus;
+	// border: 2px solid $green-focus;
 	background-color: #fffffff1;
 }
 
@@ -169,4 +167,44 @@ option {
 	-moz-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	background-color: #fffffff1;
+}
+
+
+// RWD
+
+// Google Pixel 6
+@media (min-width: 412px) {
+	.product_form {
+		min-height: 200px;
+	}
+	.right{
+		.input_name {
+			width: 88%;
+			font-size: 15.5px;
+			letter-spacing: .8px;
+		}
+		.input_number {
+			font-size: 15.5px;
+			letter-spacing: .8px;
+		}
+		.checkbox_box {
+			width: 85px;
+		}
+		.checkbox {
+			width: 20px;
+			height: 20px;
+			margin-right: 7px;
+		}
+		.label_radio {
+			font-size: 15px;
+		}
+	}
+	.btn_box {
+		height: 65px;
+
+		.positionClass {
+			min-width: 210px;
+			font-size: 15px;
+		}
+	}
 }

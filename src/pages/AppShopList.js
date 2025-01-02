@@ -18,7 +18,6 @@ function AppShopList() {
 	const { isAuthenticated } = useLogin();
 	const thisList = state[name];
 	let totalProducts = thisList.shoppingList.length;
-	console.log(thisList.shoppingList);
 	const toCollected = thisList.shoppingList.filter((item) => item.isCollected === false );
 
 	// automatic redirect from here to Homepage if false
