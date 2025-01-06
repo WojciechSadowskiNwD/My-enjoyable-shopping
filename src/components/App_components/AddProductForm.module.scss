@@ -9,7 +9,6 @@
 	transition: 0.3s;
 }
 
-
 .accordion_height0 {
 	min-height: 0px;
 	height: 0px;
@@ -32,8 +31,7 @@
 	opacity: 1;
 	transform: translateY(0);
 	background-color: rgba(0, 103, 0, 0.764);
-	transition: .3s;
-
+	transition: 0.3s;
 }
 .left {
 	display: flex;
@@ -138,7 +136,7 @@
 
 .product_form,
 .accordion_height0 {
-    will-change: opacity, transform;
+	will-change: opacity, transform;
 }
 
 input[type="text"],
@@ -157,7 +155,6 @@ select:focus {
 	-webkit-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	-moz-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
 	box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
-	// border: 2px solid $green-focus;
 	background-color: #fffffff1;
 }
 
@@ -169,7 +166,6 @@ option {
 	background-color: #fffffff1;
 }
 
-
 // RWD
 
 // Google Pixel 6
@@ -177,15 +173,15 @@ option {
 	.product_form {
 		min-height: 200px;
 	}
-	.right{
+	.right {
 		.input_name {
 			width: 88%;
 			font-size: 15.5px;
-			letter-spacing: .8px;
+			letter-spacing: 0.8px;
 		}
 		.input_number {
 			font-size: 15.5px;
-			letter-spacing: .8px;
+			letter-spacing: 0.8px;
 		}
 		.checkbox_box {
 			width: 85px;
@@ -206,5 +202,30 @@ option {
 			min-width: 210px;
 			font-size: 15px;
 		}
+	}
+}
+
+// small
+@media (min-width: 576px) {
+	.form_container {
+		.product_form{
+			align-self: center;
+			width: 95%;
+			min-height: 205px;
+		}	
+	}
+	.btn_box {
+		height: 70px;
+
+		.positionClass {
+			height: 45px;
+		}
+		.positionClass:hover {
+			border: 5px solid rgba(255, 245, 235, 0.551);
+		}
+	}
+	.accordion_height0 {
+		align-self: center;
+		width: 95%;
 	}
 }

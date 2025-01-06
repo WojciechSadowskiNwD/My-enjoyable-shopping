@@ -33,3 +33,30 @@ a .square_box {
 		height: 75px;
 	}
 }
+
+// medium
+@media (min-width: 768px) {
+	a .square_box {
+		transform: translateX(20%);
+	}
+	.shop_square {
+		width: 80px;
+		height: 80px;
+	}
+} 
+// large
+@media (min-width: 992px) {
+	a .square_box {
+		transform: translateX(23%);
+	}
+}  
+// xl
+@media (min-width: 1200px) {
+	a .square_box {
+		transform: translateX(15%);
+	}
+	.shop_square {
+		width: 90px;
+		height: 90px;
+	}
+}  

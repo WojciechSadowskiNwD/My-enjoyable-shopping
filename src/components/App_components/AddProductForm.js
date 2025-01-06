@@ -62,7 +62,7 @@ function AddProductForm({ thisList }) {
 			productCategory: formData.productCategory,
 		});
 	}
-
+ 
 	//* * FORM ADD DATA TO STATES:
 	// selecting categories by image
 	const onSelectCategory = (e) => {

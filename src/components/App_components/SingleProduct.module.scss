@@ -33,21 +33,26 @@
         align-items: center;
         justify-content: center;
         width: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
     }
 }
 
 .is_collected {
     background-color: transparent;
+    cursor: pointer;
     
     p{
         color: #fff;
         text-decoration: line-through;
     }
-}
+} 
 
 .emptyCheckbox {
     font-size: 22px;
 	filter: brightness(150%);
+    cursor: pointer;
 }
 
 
@@ -63,6 +68,22 @@
             }
             .grams {
                 font-size: 13px;
+            }
+        }
+    }
+}
+
+// small
+@media (min-width: 576px) {
+    .product_section{
+        .right_box{
+            width: 40px;
+        }
+        .right_box:hover{
+            background-color: rgb(224, 56, 90);
+    
+            span {
+                color: white;
             }
         }
     }

@@ -5,16 +5,16 @@ import ShopSquare from "./ShopSquare";
 
 function AllShopLists() {
 	const { dispatch, state } = useLists();
-
+ 
 	// Convert obiect to array
 	const shopsData = Object.values(state);
 
 	// Filter to array exist shops (optional)
 	const filteredShops = shopsData.filter((shop) => shop.listExist);
-
+ 
 	return (
 		<div className={styles.section_shop_lists}>
-			{filteredShops.map((shop, index) => (
+			{filteredShops.map((shop, index) => ( 
 				<div className={styles.shop_square_bottom}>
 					<ShopSquare
 						key={index}

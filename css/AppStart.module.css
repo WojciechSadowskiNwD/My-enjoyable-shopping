@@ -35,4 +35,15 @@
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .section_addList {
+    height: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .section_addList {
+    height: 310px;
+  }
 }/*# sourceMappingURL=AppStart.module.css.map */

@@ -5,7 +5,7 @@ import Logo from '../Logo';
 
 function AppCircleHeader() {
 	const {user} = useLogin();
-
+ 
 	return (
 		<header className={styles.app_header}>
 			<div className={styles.green_circle}></div>

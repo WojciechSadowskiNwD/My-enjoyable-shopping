@@ -126,4 +126,16 @@
 }
 .btns_box .btn_active:hover {
   background-color: rgb(179, 116, 0);
+}
+
+@media (min-width: 412px) {
+  .text {
+    font-size: 19px;
+  }
+  .btns_box .btn_sortBy {
+    min-width: 125px;
+    height: 42px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+  }
 }/*# sourceMappingURL=ShoppingListTopBar.module.css.map */

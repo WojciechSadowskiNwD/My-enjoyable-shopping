@@ -37,7 +37,7 @@
 		-moz-box-shadow: -1px 12px 81px 2px rgba(0, 0, 0, 1);
 		box-shadow: -1px 2px 91px 2px rgba(0, 0, 0, 1);
 		z-index: 2;
-		
+
 		h1 {
 			font-size: 15px;
 		}
@@ -46,7 +46,7 @@
 		width: 90px;
 		height: 90px;
 	}
-	
+
 	.user_square {
 		position: relative;
 		display: flex;
@@ -57,7 +57,7 @@
 		height: 50px;
 		top: 120px;
 		z-index: 2;
-		
+
 		i {
 			margin-right: 10px;
 			font-size: 38px;
@@ -68,7 +68,6 @@
 		}
 	}
 }
-
 
 // RWD:
 
@@ -105,11 +104,132 @@
 		}
 		.user_square {
 			width: 210px;
-			
+
 			p {
 				margin-left: 5px;
 				font-size: 16.5px;
 			}
 		}
 	}
-} 
+}
+
+// small
+@media (min-width: 576px) {
+	.app_header {
+		.logo {
+			transform: translate(-42%, -50%);
+			min-width: 290px;
+			height: 65px;
+		}
+		.imgSize {
+			width: 115px;
+			height: 115px;
+		}
+	}
+}
+
+// medium
+@media (min-width: 768px) {
+	.app_header {
+		.green_circle {
+			height: 320px;
+		}
+
+		.logo {
+			top: 60px;
+			transform: translate(-50%, -50%);
+		}
+		.imgSize {
+			margin-left: -40px;
+			width: 120px;
+			height: 120px;
+		}
+		.user_square {
+			top: 130px;
+			width: 210px;
+
+			i {
+				font-size: 36px;
+			}
+
+			p {
+				margin-left: 5px;
+				font-size: 16.5px;
+			}
+		}
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.app_header {
+		.green_circle {
+			width: 130%;
+		}
+		.logo {
+			transform: translate(-75%, -50%);
+			max-width: 370px;
+
+			h1 {
+				font-size: 18px;
+			}
+		}
+		.imgSize {
+			margin-left: -85px;
+		}
+	}
+}
+
+// xl
+@media (min-width: 1200px) {
+	.app_header {
+		.green_circle {
+			width: 120%;
+			height: 325px;
+		}
+		.logo {
+			transform: translate(-102%, -50%);
+			max-width: 370px;
+
+			h1 {
+				font-size: 19px;
+			}
+		}
+		.imgSize {
+			margin-left: -85px;
+		}
+		.user_square {
+			top: 135px;
+		}
+	}
+}
+
+// xxl
+@media (min-width: 1400px) {
+	.app_header {
+		.green_circle {
+			height: 335px;
+		}
+		.logo {
+			transform: translate(-129%, -50%);
+			height: 70px;
+
+			h1 {
+				font-size: 20px;
+			}
+		}
+		.imgSize {
+			margin-left: -85px;
+			width: 125px;
+			height: 125px;
+		}
+		.user_square {
+			top: 145px;
+			
+			p {
+				margin-left: 7px;
+				font-size: 17.5px;
+			}
+		}
+	}
+}

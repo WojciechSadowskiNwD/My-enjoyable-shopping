@@ -47,3 +47,19 @@
 	}
 
 }
+
+
+// RWD
+
+// medium
+@media (min-width: 768px) {
+	.section_addList {
+		height: 280px;
+	}
+}
+// xl
+@media (min-width: 1200px) {
+	.section_addList {
+		height: 310px;
+	}
+}

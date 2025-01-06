@@ -6,4 +6,4 @@ export default function OrangePillHeader() {
 			<h2>Or choose one of the existing store lists</h2>
 		</div>
 	);
-}
+} 

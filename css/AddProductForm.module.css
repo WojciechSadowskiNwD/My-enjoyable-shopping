@@ -46,7 +46,6 @@
   border-radius: 20px;
   box-shadow: 0px 1px 11px 1px rgba(0, 0, 0, 0.5);
   opacity: 1;
-  cursor: pointer;
 }
 
 .right {
@@ -107,7 +106,6 @@
   background-color: rgba(0, 128, 0, 0.54);
 }
 .btn_box .positionClass {
-  min-width: 180px;
   min-width: 200px;
   top: 50%;
   left: 50%;
@@ -140,7 +138,6 @@ input[type=text]:focus,
 input[type=number]:focus,
 select:focus {
   box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
-  border: 2px solid rgb(0, 117, 45);
   background-color: rgba(255, 255, 255, 0.9450980392);
 }
 
@@ -148,4 +145,57 @@ select:focus,
 option {
   box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
   background-color: rgba(255, 255, 255, 0.9450980392);
+}
+
+@media (min-width: 412px) {
+  .product_form {
+    min-height: 200px;
+  }
+  .right .input_name {
+    width: 88%;
+    font-size: 15.5px;
+    letter-spacing: 0.8px;
+  }
+  .right .input_number {
+    font-size: 15.5px;
+    letter-spacing: 0.8px;
+  }
+  .right .checkbox_box {
+    width: 85px;
+  }
+  .right .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+  }
+  .right .label_radio {
+    font-size: 15px;
+  }
+  .btn_box {
+    height: 65px;
+  }
+  .btn_box .positionClass {
+    min-width: 210px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 576px) {
+  .form_container .product_form {
+    align-self: center;
+    width: 95%;
+    min-height: 205px;
+  }
+  .btn_box {
+    height: 70px;
+  }
+  .btn_box .positionClass {
+    height: 45px;
+  }
+  .btn_box .positionClass:hover {
+    border: 5px solid rgba(255, 245, 235, 0.551);
+  }
+  .accordion_height0 {
+    align-self: center;
+    width: 95%;
+  }
 }/*# sourceMappingURL=AddProductForm.module.css.map */

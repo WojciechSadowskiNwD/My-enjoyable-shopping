@@ -7,7 +7,7 @@ function AppTopTextBar({ img, name }) {
 
 	function goStepBack(){
 		navigate("../appStart", { replace: true }); 
-	}
+	} 
 
 	return (
 		<div className={styles.text_bar}>

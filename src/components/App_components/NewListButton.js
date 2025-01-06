@@ -7,8 +7,8 @@ function NewListButton({ onChange }) {
 			<button className={styles.addList_btn} onClick={onChange}>
 				+ Add new shopping list
 			</button>
-		</div>
+		</div> 
 	);
-}
+} 
 
-export default NewListButton;
+export default NewListButton;  

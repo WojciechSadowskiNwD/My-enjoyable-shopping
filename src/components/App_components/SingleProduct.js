@@ -7,7 +7,7 @@ function SingleProduct({ item, listName, bgColor, productBgColor = "" }) {
 	const { dispatch } = useLists();
 
 	return (
-		<div 
+		<div
 			style={!isCollected ? { backgroundColor: productBgColor } : undefined}
 			className={`${styles.product_section} ${
 				isCollected ? styles.is_collected : ""

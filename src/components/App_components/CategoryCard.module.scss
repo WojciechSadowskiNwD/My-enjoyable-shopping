@@ -47,7 +47,7 @@
 // Google Pixel 6
 @media (min-width: 412px) {
 	.products_card {
-		margin: 14px;
+		margin: 14px; 
 		
 		.card_title_box {
 			span {
@@ -55,6 +55,27 @@
 				height: 55px;
 				line-height: 55px;
 				font-size: 30px;
+			}
+		}
+	}
+}
+
+// small
+@media (min-width: 576px) {
+	.products_card {
+		margin: 14px; 
+		
+		.card_title_box {
+			margin-bottom: 10px;
+			justify-content: center;
+			span {
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				font-size: 35px;
+			}
+			h3 {
+				padding-top: 15px;
 			}
 		}
 	}

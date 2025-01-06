@@ -31,10 +31,14 @@
   align-items: center;
   justify-content: center;
   width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .is_collected {
   background-color: transparent;
+  cursor: pointer;
 }
 .is_collected p {
   color: #fff;
@@ -44,4 +48,26 @@
 .emptyCheckbox {
   font-size: 22px;
   filter: brightness(150%);
+  cursor: pointer;
+}
+
+@media (min-width: 412px) {
+  .product_section .middle_box p {
+    font-size: 17px;
+    padding: 7px;
+  }
+  .product_section .middle_box .grams {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) {
+  .product_section .right_box {
+    width: 40px;
+  }
+  .product_section .right_box:hover {
+    background-color: rgb(224, 56, 90);
+  }
+  .product_section .right_box:hover span {
+    color: white;
+  }
 }/*# sourceMappingURL=SingleProduct.module.css.map */

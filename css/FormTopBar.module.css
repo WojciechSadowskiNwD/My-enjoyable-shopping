@@ -36,4 +36,11 @@
 }
 .top_bar .box_icon:hover .icons {
   color: rgba(0, 111, 11, 0.877);
+}
+
+@media (min-width: 576px) {
+  .top_bar {
+    align-self: center;
+    width: 95%;
+  }
 }/*# sourceMappingURL=FormTopBar.module.css.map */

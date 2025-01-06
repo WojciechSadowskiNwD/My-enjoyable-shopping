@@ -104,4 +104,39 @@
   .position_shop_square {
     right: 58%;
   }
+}
+@media (min-width: 412px) {
+  .text_bar {
+    margin-top: 45px;
+  }
+  .text {
+    width: 65%;
+    padding-top: 10px;
+    font-size: 17.5px;
+    line-height: 1.2;
+  }
+  .position_shop_square {
+    right: 54%;
+  }
+}
+@media (min-width: 576px) {
+  .text_bar .arrow_back_box {
+    top: 8%;
+    left: 5%;
+  }
+  .text_bar .arrow_back_box .arrow_details {
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .text_bar .arrow_back_box:hover .arrow_details {
+    color: orange;
+  }
+  .top_bar {
+    margin-left: 7%;
+  }
+  .position_shop_square {
+    right: 46%;
+  }
 }/*# sourceMappingURL=AppTopTextBar.module.css.map */

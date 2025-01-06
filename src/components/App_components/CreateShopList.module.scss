@@ -46,7 +46,7 @@
 }
 
 
-// RWD
+// RWD 
 
 // iPhone 14/15
 @media (min-width: 390px) {
@@ -65,3 +65,72 @@
 		height: 135px;
 	}
 }
+
+// medium
+@media (min-width: 768px) {
+	.section_create_new_list {
+		justify-content: start;
+		width: 400px;
+		height: 180px;
+
+		.title_box {
+			justify-content: start;
+			padding-left: 4%;
+			gap: 12%;
+			margin-bottom: 15px;
+		}
+		h2 {
+			font-size: 17px;
+		}
+	}
+}
+// large
+@media (min-width: 992px) {
+	.section_create_new_list {
+		width: 500px;
+		height: 190px;
+
+		.slider {
+			width: 85%;
+		}
+
+		.title_box {
+			height: 55px;
+			padding-left: 4%;
+			gap: 16%;
+		}
+	}
+}
+// xl
+@media (min-width: 1200px) {
+	.section_create_new_list {
+		width: 550px;
+		height: 200px;
+
+		.slider {
+			width: 85%;
+		}
+
+		.title_box {
+			height: 60px;
+			gap: 20%;
+		}
+	}
+} 
+// xxl
+@media (min-width: 1400px) {
+	.section_create_new_list {
+		margin-top: 90px;
+		width: 550px;
+		height: 200px;
+
+		.slider {
+			width: 85%;
+		}
+
+		.title_box {
+			height: 60px;
+			gap: 20%;
+		}
+	}
+} 

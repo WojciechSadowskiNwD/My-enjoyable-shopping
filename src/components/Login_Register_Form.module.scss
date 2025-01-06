@@ -166,6 +166,9 @@
 	.login_margin {
 		margin-top: 170px;
 	}
+	.form:hover {
+		border: 1.6px solid rgb(255, 204, 110);
+	}
 }
 
 // medium
@@ -192,9 +195,6 @@
 		.checkbox_box {
 			width: 72%;
 		}
-	}
-	.form:hover {
-		border: 1.6px solid rgb(255, 204, 110);
 	}
 }
 

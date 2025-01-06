@@ -54,4 +54,61 @@
     width: 360px;
     height: 135px;
   }
+}
+@media (min-width: 768px) {
+  .section_create_new_list {
+    justify-content: start;
+    width: 400px;
+    height: 180px;
+  }
+  .section_create_new_list .title_box {
+    justify-content: start;
+    padding-left: 4%;
+    gap: 12%;
+    margin-bottom: 15px;
+  }
+  .section_create_new_list h2 {
+    font-size: 17px;
+  }
+}
+@media (min-width: 992px) {
+  .section_create_new_list {
+    width: 500px;
+    height: 190px;
+  }
+  .section_create_new_list .slider {
+    width: 85%;
+  }
+  .section_create_new_list .title_box {
+    height: 55px;
+    padding-left: 4%;
+    gap: 16%;
+  }
+}
+@media (min-width: 1200px) {
+  .section_create_new_list {
+    width: 550px;
+    height: 200px;
+  }
+  .section_create_new_list .slider {
+    width: 85%;
+  }
+  .section_create_new_list .title_box {
+    height: 60px;
+    gap: 20%;
+  }
+}
+@media (min-width: 1400px) {
+  .section_create_new_list {
+    margin-top: 90px;
+    width: 550px;
+    height: 200px;
+  }
+  .section_create_new_list .slider {
+    width: 85%;
+  }
+  .section_create_new_list .title_box {
+    height: 60px;
+    gap: 20%;
+  }
 }/*# sourceMappingURL=CreateShopList.module.css.map */

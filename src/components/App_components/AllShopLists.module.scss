@@ -72,15 +72,13 @@
 			height: 25px;
 			font-size: 14px;
 			border-radius: 5px;
-			background-color: rgba(0, 255, 51, 0.159);			
-			background-color: rgba(0, 44, 9, 0.329);			
-			transition: .3s;
+			background-color: rgba(0, 44, 9, 0.329);
+			transition: 0.3s;
 		}
 		.btn_delete:hover {
 			background-color: crimson;
 			cursor: pointer;
 		}
-
 	}
 
 	.square_position {
@@ -100,7 +98,6 @@
 	}
 }
 
-
 // RWD
 
 // iPhone 14/15
@@ -115,5 +112,106 @@
 	.section_shop_lists {
 		min-height: 290px;
 		margin-bottom: 10px;
+	}
+}
+
+// small
+@media (min-width: 576px) {
+	.section_shop_lists {
+		padding-left: 6.5%;
+		padding-left: 3.5%;
+	}
+}
+
+// medium
+@media (min-width: 768px) {
+	.section_shop_lists {
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		.shop_square_bottom {
+			width: 45%;
+			max-width: 300px;
+			height: 110px;
+			padding-left: 15px;
+		}
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.section_shop_lists {
+		width: 85%;
+		padding-left: 6%;
+		padding-right: 6%;
+
+		.shop_square_bottom {
+			height: 120px;
+
+			.square_position {
+				width: 90px;
+
+				.square_size {
+					width: 90px;
+					height: 90px;
+				}
+			}
+			.box_left_part {
+				p {
+					font-size: 18px;
+					line-height: 85px;
+					word-spacing: 3px;
+				}
+			}
+		}
+		.empty_list_size {
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+// xl
+@media (min-width: 1200px) {
+	.section_shop_lists {
+		padding-left: 8%;
+		padding-right: 8%;
+		width: 80%;
+
+		.shop_square_bottom {
+			height: 150px;
+			min-width: 330px;
+
+			.square_position {
+				width: 120px;
+
+				.square_size {
+					margin-bottom: 8%;
+					width: 100px;
+					height: 100px;
+					background-color: #fff;
+				}
+			}
+			.box_left_part {
+				p {
+					margin-left: 5px;
+					font-size: 19px;
+					line-height: 115px;
+					word-spacing: 5px;
+				}
+			}
+		}
+	}
+}
+// xxl
+@media (min-width: 1400px) {
+	.section_shop_lists {
+		padding-left: 10%;
+		padding-right: 10%;
+		width: 75%;
+
+		.shop_square_bottom {
+			background-color: #2e74068c;
+		}
 	}
 }

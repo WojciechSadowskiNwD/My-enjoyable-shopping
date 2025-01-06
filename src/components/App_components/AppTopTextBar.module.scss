@@ -131,3 +131,31 @@
 		right: 54%;
 	}
 }
+
+// small
+@media (min-width: 576px) {
+	.text_bar {
+		.arrow_back_box {
+			top: 8%;
+			left: 5%;
+	
+			.arrow_details {
+				font-size: 26px;
+				color: rgba(255, 255, 255, 0.9);
+				cursor: pointer;
+				transition: .3s;
+			}
+		}
+		.arrow_back_box:hover {
+			.arrow_details{
+				color: orange;
+			}
+		}
+	}
+	.top_bar {
+		margin-left: 7%;
+	}
+	.position_shop_square {
+		right: 46%;
+	}
+}

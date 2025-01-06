@@ -160,10 +160,7 @@ body {
 
 .slick-prev {
   left: -20px; /* Dostosuj położenie w zależności od potrzeb */
-}
-
-.slick-next {
-  right: -25px; /* Dostosuj położenie w zależności od potrzeb */
+  transition: 0.3s;
 }
 
 .no_opacity {
@@ -227,6 +224,10 @@ body {
   }
   .infoBlock_width {
     width: 83%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 36px;
   }
 }
 @media (min-width: 1200px) {

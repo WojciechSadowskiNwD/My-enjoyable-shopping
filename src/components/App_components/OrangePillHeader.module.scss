@@ -46,3 +46,49 @@
 		}
 	}
 }
+
+// small
+@media (min-width: 576px) {
+	.app_title {
+		margin-top: 50px;
+		
+		h2 {
+			font-size: 14.5px;
+		}
+	}
+}  
+
+// medium
+@media (min-width: 768px) {
+	.app_title {
+		width: 90%;
+
+		h2 {
+			font-size: 16px;
+			word-spacing: 1px;
+		}
+	}
+} 
+// large
+@media (min-width: 992px) {
+	.app_title {
+		width: 85%;
+
+		h2 {
+			font-size: 16px;
+			letter-spacing: .5px;
+			word-spacing: 1.5px;
+		}
+	}
+} 
+// xl
+@media (min-width: 1200px) {
+	.app_title {
+		margin-top: 65px;
+		width: 80%;
+
+		h2 {
+			font-size: 16.5px;
+		}
+	}
+} 

@@ -68,7 +68,6 @@
   height: 25px;
   font-size: 14px;
   border-radius: 5px;
-  background-color: rgba(0, 255, 51, 0.159);
   background-color: rgba(0, 44, 9, 0.329);
   transition: 0.3s;
 }
@@ -99,5 +98,86 @@
   .section_shop_lists {
     min-height: 290px;
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 576px) {
+  .section_shop_lists {
+    padding-left: 6.5%;
+    padding-left: 3.5%;
+  }
+}
+@media (min-width: 768px) {
+  .section_shop_lists {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section_shop_lists .shop_square_bottom {
+    width: 45%;
+    max-width: 300px;
+    height: 110px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .section_shop_lists {
+    width: 85%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .section_shop_lists .shop_square_bottom {
+    height: 120px;
+  }
+  .section_shop_lists .shop_square_bottom .square_position {
+    width: 90px;
+  }
+  .section_shop_lists .shop_square_bottom .square_position .square_size {
+    width: 90px;
+    height: 90px;
+  }
+  .section_shop_lists .shop_square_bottom .box_left_part p {
+    font-size: 18px;
+    line-height: 85px;
+    word-spacing: 3px;
+  }
+  .section_shop_lists .empty_list_size {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .section_shop_lists {
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 80%;
+  }
+  .section_shop_lists .shop_square_bottom {
+    height: 150px;
+    min-width: 330px;
+  }
+  .section_shop_lists .shop_square_bottom .square_position {
+    width: 120px;
+  }
+  .section_shop_lists .shop_square_bottom .square_position .square_size {
+    margin-bottom: 8%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+  }
+  .section_shop_lists .shop_square_bottom .box_left_part p {
+    margin-left: 5px;
+    font-size: 19px;
+    line-height: 115px;
+    word-spacing: 5px;
+  }
+}
+@media (min-width: 1400px) {
+  .section_shop_lists {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 75%;
+  }
+  .section_shop_lists .shop_square_bottom {
+    background-color: rgba(46, 116, 6, 0.5490196078);
   }
 }/*# sourceMappingURL=AllShopLists.module.css.map */

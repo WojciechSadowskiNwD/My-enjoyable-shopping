@@ -10,7 +10,7 @@ function ShopSquare({ img, name, thisList, position = "", itemSize="" }) {
 					style={{ backgroundImage: `url(${img})` }}
 				></div>
 			</div>
-		</Link>
+		</Link> 
 	);
 }
 

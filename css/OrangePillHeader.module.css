@@ -31,4 +31,40 @@
   .app_title h2 {
     font-size: 13.5px;
   }
+}
+@media (min-width: 576px) {
+  .app_title {
+    margin-top: 50px;
+  }
+  .app_title h2 {
+    font-size: 14.5px;
+  }
+}
+@media (min-width: 768px) {
+  .app_title {
+    width: 90%;
+  }
+  .app_title h2 {
+    font-size: 16px;
+    word-spacing: 1px;
+  }
+}
+@media (min-width: 992px) {
+  .app_title {
+    width: 85%;
+  }
+  .app_title h2 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+  }
+}
+@media (min-width: 1200px) {
+  .app_title {
+    margin-top: 65px;
+    width: 80%;
+  }
+  .app_title h2 {
+    font-size: 16.5px;
+  }
 }/*# sourceMappingURL=OrangePillHeader.module.css.map */
