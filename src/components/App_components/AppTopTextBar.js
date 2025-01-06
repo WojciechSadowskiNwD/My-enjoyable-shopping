@@ -9,7 +9,7 @@ function AppTopTextBar({ img, name }) {
 		navigate("../appStart", { replace: true }); 
 	} 
 
-	return (
+	return ( 
 		<div className={styles.text_bar}>
 			<div
 				className={styles.arrow_back_box}
@@ -18,6 +18,7 @@ function AppTopTextBar({ img, name }) {
 				<i className={`fa-solid fa-left-long ${styles.arrow_details}`}></i>
 			</div>
 			<h2>{name}</h2>
+			
 			<div className={styles.white_line}></div>
 			<div className={styles.top_bar}>
 				<ShopSquare

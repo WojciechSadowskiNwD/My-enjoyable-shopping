@@ -106,7 +106,6 @@
 	}
 }
 
-
 // RWD
 
 // Iphone SE
@@ -118,7 +117,7 @@
 
 // Google Pixel 6
 @media (min-width: 412px) {
-	.text_bar{
+	.text_bar {
 		margin-top: 45px;
 	}
 	.text {
@@ -137,17 +136,17 @@
 	.text_bar {
 		.arrow_back_box {
 			top: 8%;
-			left: 5%;
-	
+			left: 6%;
+
 			.arrow_details {
 				font-size: 26px;
 				color: rgba(255, 255, 255, 0.9);
 				cursor: pointer;
-				transition: .3s;
+				transition: 0.3s;
 			}
 		}
 		.arrow_back_box:hover {
-			.arrow_details{
+			.arrow_details {
 				color: orange;
 			}
 		}
@@ -157,5 +156,110 @@
 	}
 	.position_shop_square {
 		right: 46%;
+	}
+}
+
+// medium
+@media (min-width: 768px) {
+	.text_bar {
+		margin-top: 65px;
+
+		h2 {
+			font-size: 25px;
+		}
+
+		.arrow_back_box {
+			top: 8%;
+			left: 6%;
+
+			.arrow_details {
+				font-size: 28px;
+			}
+		}
+		.white_line {
+			width: 81%;
+		}
+	}
+	.top_bar {
+		width: 86%;
+		margin-left: 10%;
+
+		.text {
+			font-size: 18.5px;
+		}
+	}
+	.position_shop_square {
+		right: 34%;
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.text_bar {
+		margin-top: 75px;
+		width: 98%;
+		height: 190px;
+
+		h2 {
+			margin-top: 5px;
+			padding: 15px;
+		}
+
+		.arrow_back_box {
+			margin-top: 5px;
+
+			.arrow_details {
+				font-size: 30px;
+			}
+		}
+	}
+	.top_bar {
+		margin-left: 14%;
+
+		.text {
+			font-size: 19px;
+		}
+	}
+	.position_shop_square {
+		right: 36%;
+	}
+}
+
+// xl
+@media (min-width: 1200px) {
+	.text_bar {
+		margin-top: 80px;
+		width: 95%;
+		height: 195px;
+
+		.arrow_back_box {
+			left: 4%;
+		}
+
+		.white_line {
+			width: 80%;
+		}
+	}
+	.top_bar {
+		.text {
+			font-size: 19.5px;
+		}
+	}
+}
+// xxl
+@media (min-width: 1400px) {
+	.text_bar {
+		margin-top: 90px;
+		width: 90%;
+	}
+	.top_bar {
+		margin-left: 16%;
+
+		.text {
+			font-size: 20px;
+		}
+		.position_shop_square {
+			right: 38%;
+		}
 	}
 }
