@@ -1,13 +1,34 @@
 import styles from "./ShoppingListTopBar.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLists } from "../../contexsts/ListsProvider";
 
 export default function ShoppingListTopBar() {
-	const [isOpen, setIsOpen] = useState(false);
+
+	// if width < 992px isOpen = false
+	const [isOpen, setIsOpen] = useState(window.innerWidth >= 992);
     const {activeButton, setHowToSort} = useLists();
+	// check how width is now
+	
+	useEffect(() => { 
+			const handleResize = () => {
+				const nowIsLarge = window.innerWidth >=992;
+
+				// update isOpen when switching to large screen
+				if(nowIsLarge) {
+					setIsOpen(true);
+				}
+			};
+
+			window.addEventListener("resize", handleResize);
+	
+			return () => {
+				window.removeEventListener("resize", handleResize);
+			};
+		}, []);
+		
 
 	const handleToggle = () => {
-		setIsOpen((curr) => !curr); 
+		setIsOpen((curr) => !curr);  
 	};
 
 	return (

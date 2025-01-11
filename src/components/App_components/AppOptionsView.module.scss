@@ -1,0 +1,28 @@
+.options_view {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+// RWD
+
+// large
+@media (min-width: 992px) {
+    .options_view {
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        min-height: 320px;
+    }
+}
+
+// xl
+@media (min-width: 1200px){
+	.options_view{
+        margin-top: 20px;
+    }
+}
+
+// xxl
+@media (min-width: 1400px){}

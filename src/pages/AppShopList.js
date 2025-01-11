@@ -9,6 +9,7 @@ import ShoppingListTopBar from "../components/App_components/ShoppingListTopBar"
 import AllProducts from "../components/App_components/AllProducts";
 import LogoutBtn from "../components/App_components/LogoutBtn";
 import SummaryBar from "../components/App_components/SummaryBar";
+import AppOptionsView from "../components/App_components/AppOptionsView";
 
 function AppShopList() {
 	const location = useLocation();
@@ -18,7 +19,9 @@ function AppShopList() {
 	const { isAuthenticated } = useLogin();
 	const thisList = state[name];
 	let totalProducts = thisList.shoppingList.length;
-	const toCollected = thisList.shoppingList.filter((item) => item.isCollected === false );
+	const toCollected = thisList.shoppingList.filter(
+		(item) => item.isCollected === false
+	);
 
 	// automatic redirect from here to Homepage if false
 	useEffect(() => {
@@ -32,8 +35,10 @@ function AppShopList() {
 			<div className="shadow_bg bg_shadow">
 				<AppCircleHeader />
 				<AppTopTextBar img={img} name={name} />
-				<AddProductForm thisList={thisList} />
-				<ShoppingListTopBar />
+				<AppOptionsView>
+					<AddProductForm thisList={thisList} />
+					<ShoppingListTopBar />
+				</AppOptionsView>
 				<AllProducts listName={name} />
 				<SummaryBar total={totalProducts} toCollected={toCollected} />
 				<LogoutBtn />
@@ -43,5 +48,3 @@ function AppShopList() {
 }
 
 export default AppShopList;
-
-

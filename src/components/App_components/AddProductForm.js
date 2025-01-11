@@ -7,7 +7,7 @@ import FormTopBar from "./FormTopBar";
 function AddProductForm({ thisList }) {
 	const { dispatch } = useLists();
 	const [isOpen, setIsOpen] = useState(true); //do akordeonu
-
+ 
 	// toggle accordion: visible/unvisible
 	const handleToggle = () => setIsOpen((curr) => !curr);
 
@@ -94,7 +94,7 @@ function AddProductForm({ thisList }) {
 					isOpen ? styles.product_form : ""
 				}`}
 				onSubmit={handleSubmit}
-			>
+			> 
 				<div>
 					<div className={styles.left}>
 						<select
@@ -146,6 +146,9 @@ function AddProductForm({ thisList }) {
 					</ButtonLink>
 				</div>
 			</form>
+
+
+			<div className={`${styles.bottom_bar} ${!isOpen ? "" : "no_opacity"}`}></div>
 		</div>
 	);
 }

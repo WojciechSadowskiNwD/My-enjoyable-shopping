@@ -3,7 +3,6 @@
 	flex-direction: column;
 	align-items: center;
 	overflow-y: hidden;
-	// background-color: #fff;
 }
 
 .top_bar {
@@ -17,8 +16,6 @@
 	margin-bottom: 10px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-
-	// background-color: orange;
 	background: linear-gradient(
 		327deg,
 		rgba(255, 122, 0, 1) 0%,
@@ -66,8 +63,6 @@
 	height: 15px;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-
-	// background-color: orange;
 	background: linear-gradient(
 		327deg,
 		rgba(255, 122, 0, 1) 0%,
@@ -150,6 +145,7 @@
 	}
 }
 
+
 // RWD
 
 // Google Pixel 6
@@ -162,7 +158,78 @@
 			min-width: 125px;
 			height: 42px;
 			font-size: 14px;
-			letter-spacing: .6px;
+			letter-spacing: 0.6px;
+		}
+	}
+}
+
+// small
+@media (min-width: 576px) {
+	.options_open {
+		background: linear-gradient(
+			327deg,
+			rgba(255, 122, 0, 1) 0%,
+			rgba(255, 165, 0, 1) 30%,
+			rgba(255, 172, 0, 1) 67%,
+			rgba(255, 122, 0, 1) 100%
+		);
+	}
+}
+
+// medium
+@media (min-width: 768px) {
+	.btns_box {
+		.btn_sortBy {
+			margin-right: 20px;
+		}
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.tb_options_container {
+		width: 47%;
+	}
+	.top_bar{
+		height: 58px;
+
+		.title_bar {
+			margin-right: 0%;
+		}
+	}
+	.options_open {
+		height: 210px;
+	}
+}
+
+// xl
+@media (min-width: 1200px) {
+	.btns_box {
+		justify-content: center;
+
+		
+		.btn_sortBy {
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-bottom: 15px;
+		}
+	}
+	.text {
+		padding-top: 15px;
+	}
+}
+
+// xl
+@media (min-width: 1200px) {
+	.text {
+		padding-top: 0px;
+		padding-bottom: 12px;
+		font-size: 20px;
+		letter-spacing: .5px;
+	}
+	.btns_box {
+		.btn_sortBy {
+			letter-spacing: .8px;
 		}
 	}
 }
