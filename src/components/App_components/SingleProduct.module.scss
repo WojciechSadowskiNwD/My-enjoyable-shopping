@@ -1,90 +1,126 @@
-.product_section{
-    display: flex;
-    justify-content: start;
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: #ffffffed;
-    color: #000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.177);
-    transition: .3s;
+.product_section {
+	display: flex;
+	justify-content: start;
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #ffffffed;
+	color: #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+	transition: 0.3s;
 
-    .left_box {
-        display: flex;
-        align-items: center;
-        width: 40px;
-    }
-    .middle_box {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        padding-left: 7px;
+	.left_box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 30px;
+	}
+	.middle_box {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		padding-left: 7px;
 
-        p{
-            padding: 6px;
-            transition: .2s;
-        }
-        .grams {
-            font-size: 12px;
-        }
-        
-    }
-    .right_box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: .3s;
-    }
+		p {
+			padding: 6px;
+			transition: 0.2s;
+		}
+		.grams {
+			font-size: 12px;
+		}
+	}
+	.right_box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: 0.3s;
+	}
 }
 
 .is_collected {
-    background-color: transparent;
-    cursor: pointer;
-    
-    p{
-        color: #fff;
-        text-decoration: line-through;
-    }
-} 
+	background-color: transparent;
+	cursor: pointer;
 
-.emptyCheckbox {
-    font-size: 22px;
-	filter: brightness(150%);
-    cursor: pointer;
+	p {
+		color: #fff;
+		text-decoration: line-through;
+	}
 }
 
+.white_circle {
+	line-height: 1.5;
+	font-size: 22px;
+	color: white;
+	cursor: pointer;
+}
 
 // RWD
 
 // Google Pixel 6
 @media (min-width: 412px) {
-	.product_section{
-        .middle_box {
-            p{
-                font-size: 17px;
-                padding: 7px;
-            }
-            .grams {
-                font-size: 13px;
-            }
-        }
-    }
+	.product_section {
+		.middle_box {
+			p {
+				font-size: 17px;
+				padding: 7px;
+			}
+			.grams {
+				font-size: 13px;
+			}
+		}
+	}
 }
 
 // small
 @media (min-width: 576px) {
-    .product_section{
-        .right_box{
-            width: 40px;
-        }
-        .right_box:hover{
-            background-color: rgb(224, 56, 90);
-    
-            span {
-                color: white;
-            }
-        }
-    }
+	.product_section {
+		.right_box {
+			width: 40px;
+			height: 33px;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.right_box:hover {
+			background-color: rgb(224, 56, 90);
+
+			span {
+				color: white;
+			}
+		}
+	}
+}
+
+// medium
+@media (min-width: 768px) {
+	.product_section {
+		.middle_box {
+			p {
+				font-size: 15px;
+			}
+			.grams {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+// large
+@media (min-width: 992px) {
+	.product_section {
+        width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+        
+		.middle_box {
+			p {
+				font-size: 16px;
+			}
+			.grams {
+				font-size: 13px;
+			}
+		}
+	}
 }

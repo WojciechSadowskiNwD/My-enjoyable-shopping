@@ -24,7 +24,7 @@ function AllProducts({ listName }) {
 					/>
 				)
 			)}
-			{!listExist ? (
+			{!listExist ? ( 
 				<EmptyList>
 					<p>
 						This list is <span>empty</span>, add your first product.

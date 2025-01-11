@@ -5,10 +5,14 @@
     align-items: center;
     width: 100%;
     margin-top: 30px;
+}
 
-    h2 {
-        text-align: center;
-        margin-bottom: 30px;
+@media (min-width: 768px) {
+    .list_box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
+ 

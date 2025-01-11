@@ -12,7 +12,7 @@ function SingleProduct({ item, listName, bgColor, productBgColor = "" }) {
 			className={`${styles.product_section} ${
 				isCollected ? styles.is_collected : ""
 			}`}
-		>
+		> 
 			<div className={styles.left_box}>
 				{isCollected ? (
 					<img
@@ -35,9 +35,8 @@ function SingleProduct({ item, listName, bgColor, productBgColor = "" }) {
 								payload: { id: item.id, listName: listName },
 							})
 						}
-						className={styles.emptyCheckbox}
 					>
-						⚪
+						<i className={`fa-solid fa-circle ${styles.white_circle}`}></i>
 					</span>
 				)}
 			</div>

@@ -8,7 +8,7 @@ function CategoryCard({
 	typeImg,
 	bgColor,
 	productBgColor, 
-	items,
+	items, 
 }) {
 	const {activeButton: sortBy} = useLists();
 	let sortedItems = items;
@@ -36,7 +36,7 @@ function CategoryCard({
 						<span>{typeImg}</span>
 						<h3 className={styles.card_title}>{typeName}</h3>
 					</div>
-					{sortedItems.map((item) => (
+					{sortedItems.map((item) => ( 
 						<SingleProduct
 							key={item.id}
 							item={item}
