@@ -7,11 +7,22 @@
     margin-top: 30px;
 }
 
+// RWD
+
+// large
 @media (min-width: 768px) {
     .list_box {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+// xxl
+@media (min-width: 140px) {
+    .list_box {
+        width: 95%;
+        max-width: 1500px;
     }
 }
 

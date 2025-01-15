@@ -49,6 +49,7 @@
 
 		.card_title_box {
 			span {
+				left: 10%;
 				width: 55px;
 				height: 55px;
 				line-height: 55px;
@@ -61,12 +62,15 @@
 // small
 @media (min-width: 576px) {
 	.products_card {
+		position: relative;
 		margin: 14px;
+		max-width: 475px;
 
 		.card_title_box {
 			margin-bottom: 10px;
 			justify-content: center;
 			span {
+				left: 5%;
 				width: 60px;
 				height: 60px;
 				line-height: 60px;
@@ -82,7 +86,6 @@
 // medium
 @media (min-width: 768px) {
 	.products_card {
-		position: relative;
 		width: 45%;
 		min-height: 200px;
 
@@ -115,6 +118,7 @@
 @media (min-width: 1400px) {
 	.products_card {
 		width: 30%;
+		max-width: 490px;
 		margin: 15px;
 
 		.card_title_box {

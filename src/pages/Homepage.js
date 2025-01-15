@@ -10,8 +10,9 @@ import Footer from "../components/Footer";
 import StatsCounters from "../components/StatsCounters";
 import ButtonLink from "../components/ButtonLink";
 import NavigationBar from "../components/NavigationBar";
-import img1 from "../img/ai-generated-8261519_1280.png";
-import img2 from "../img/Bag_vegetables-_640.png";
+import img1 from "../img/photo_slide/Mobile_photo_app_big_panel.jpg";
+import img2 from "../img/photo_slide/slide_app_photo_1.jpg";
+import img3 from "../img/photo_slide/app_creaye_your_shop_lists_present.jpg";
 
 const faqs = [
 	{
@@ -53,24 +54,40 @@ function Homepage() {
 				<Headline>About this App</Headline>
 				<SlideInfoBlock direction="hidden_left">
 					Hello dear visitor. We are happy to introduce you to the amazing
-					opportunities that come with our great app!
+					opportunities that come with our great app! Create your own
+					collections of shopping lists for those stores you choose!
 				</SlideInfoBlock>
 				<SlideInfoBlock direction="hidden_right" type="images">
 					<img
-						className="infoBlock_img"
+						className="infoBlock_img rot_2"
+						src={img3}
+						alt="A few colorfull photos showing the appearance of the application"
+					/>
+				</SlideInfoBlock>
+				<SlideInfoBlock direction="hidden_left">
+					Tired of writing everything on pieces of paper that are easy to lose?
+					Here is your solution My Enjoyable Shopping. On your mobile device you
+					will gain the ability to monitor how many items you have already
+					collected, what is missing. See your products in beautifully divided
+					sections and categories. Manage them, create, delete, filter see how
+					easy it is. Create an account and make your shopping trips fun.
+				</SlideInfoBlock>
+				<SlideInfoBlock direction="hidden_right" type="images">
+					<img
+						className="infoBlock_img rot_1"
 						src={img1}
 						alt="A few colorfull photos showing the appearance of the application"
 					/>
 				</SlideInfoBlock>
 				<SlideInfoBlock direction="hidden_left">
-					At the thought of going shopping, does the annoying association come
-					into your head that you will have to sit down once again and create a
-					boring shopping list from scratch, on a simple piece of paper, which,
-					on top of that, can be easily lost?
+					Use on your smartphone and other mobile devices, desktops and laptops.
+					With a registered account, save your collections and use whenever you
+					need. All this is wrapped in a colorful pleasant design tailored to
+					each of your devices.
 				</SlideInfoBlock>
 				<SlideInfoBlock direction="hidden_right" type="images">
 					<img
-						className="infoBlock_img"
+						className="infoBlock_img rot_2"
 						src={img2}
 						alt="A few colorfull photos showing the appearance of the application"
 					/>
