@@ -138,4 +138,53 @@
     font-size: 14px;
     letter-spacing: 0.6px;
   }
+}
+@media (min-width: 576px) {
+  .options_open {
+    background: linear-gradient(327deg, rgb(255, 122, 0) 0%, rgb(255, 165, 0) 30%, rgb(255, 172, 0) 67%, rgb(255, 122, 0) 100%);
+  }
+}
+@media (min-width: 768px) {
+  .btns_box .btn_sortBy {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .tb_options_container {
+    width: 47%;
+    max-width: 720px;
+  }
+  .top_bar {
+    height: 58px;
+  }
+  .top_bar .title_bar {
+    margin-right: 0%;
+  }
+  .options_open {
+    height: 210px;
+  }
+}
+@media (min-width: 1200px) {
+  .btns_box {
+    justify-content: center;
+  }
+  .btns_box .btn_sortBy {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  .text {
+    padding-top: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .text {
+    padding-top: 0px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+  .btns_box .btn_sortBy {
+    letter-spacing: 0.8px;
+  }
 }/*# sourceMappingURL=ShoppingListTopBar.module.css.map */

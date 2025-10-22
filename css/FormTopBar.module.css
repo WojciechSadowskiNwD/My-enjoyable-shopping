@@ -1,4 +1,5 @@
 .top_bar {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,5 +43,14 @@
   .top_bar {
     align-self: center;
     width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  .top_bar h2 {
+    padding-right: 0%;
+    color: #fff;
+  }
+  .top_bar .box_icon {
+    right: 5%;
   }
 }/*# sourceMappingURL=FormTopBar.module.css.map */

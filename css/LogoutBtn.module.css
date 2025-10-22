@@ -39,4 +39,12 @@
   .logout_box .logout_btn {
     max-width: 400px;
   }
+}
+@media (min-width: 1400px) {
+  .logout_box {
+    margin-top: 55px;
+  }
+  .logout_box .logout_btn {
+    max-width: 420px;
+  }
 }/*# sourceMappingURL=LogoutBtn.module.css.map */

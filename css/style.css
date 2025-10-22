@@ -101,6 +101,19 @@ body {
   height: 100%;
   min-width: 310px;
   min-height: 250px;
+  border-radius: 25px;
+  border: 6px solid rgb(207, 207, 207);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.rot_1 {
+  transform: rotate(-5deg);
+}
+
+.rot_2 {
+  transform: rotate(5deg);
 }
 
 .logoDetails {
@@ -229,6 +242,20 @@ body {
   .slick-next:before {
     font-size: 36px;
   }
+  .infoBlock_img {
+    border: 10px solid rgb(207, 207, 207);
+    box-shadow: 0 28px 15px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 1024px) {
+  .pages_bgc {
+    min-height: 1370px;
+  }
+  .pages_bgc .bg_shadow {
+    padding-top: 5%;
+    justify-content: start;
+    min-height: 1370px;
+  }
 }
 @media (min-width: 1200px) {
   .infoBlock_width {
@@ -240,7 +267,6 @@ body {
 }
 @media (min-width: 1400px) {
   .large_style {
-    justify-content: space-around;
     justify-content: center;
   }
   .margin_top_large {
