@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-enjoyable-shopping/static/css/main.b7e7c235.css",
-    "main.js": "/My-enjoyable-shopping/static/js/main.d4ae49e6.js",
+    "main.js": "/My-enjoyable-shopping/static/js/main.2bd914ea.js",
     "static/media/BackgroundLarge.jpg": "/My-enjoyable-shopping/static/media/BackgroundLarge.e5402db7aaa5ea21340e.jpg",
     "static/media/BackgroundDownBig.jpg": "/My-enjoyable-shopping/static/media/BackgroundDownBig.dfbed9832b0d44ca3b38.jpg",
     "static/media/shopping_bag_big.jpg": "/My-enjoyable-shopping/static/media/shopping_bag_big.53f423a357db60b00338.jpg",
@@ -20,10 +20,10 @@
     "static/media/slick.woff": "/My-enjoyable-shopping/static/media/slick.295183786cd8a1389865.woff",
     "static/media/product-checkbox-checked.svg": "/My-enjoyable-shopping/static/media/product-checkbox-checked.55d67c52992f675b155d709ac5cefb13.svg",
     "main.b7e7c235.css.map": "/My-enjoyable-shopping/static/css/main.b7e7c235.css.map",
-    "main.d4ae49e6.js.map": "/My-enjoyable-shopping/static/js/main.d4ae49e6.js.map"
+    "main.2bd914ea.js.map": "/My-enjoyable-shopping/static/js/main.2bd914ea.js.map"
   },
   "entrypoints": [
     "static/css/main.b7e7c235.css",
-    "static/js/main.d4ae49e6.js"
+    "static/js/main.2bd914ea.js"
   ]
 }
