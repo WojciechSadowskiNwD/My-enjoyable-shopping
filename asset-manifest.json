@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/My-enjoyable-shopping/static/css/main.b7e7c235.css",
+    "main.js": "/My-enjoyable-shopping/static/js/main.d4ae49e6.js",
+    "static/media/BackgroundLarge.jpg": "/My-enjoyable-shopping/static/media/BackgroundLarge.e5402db7aaa5ea21340e.jpg",
+    "static/media/BackgroundDownBig.jpg": "/My-enjoyable-shopping/static/media/BackgroundDownBig.dfbed9832b0d44ca3b38.jpg",
+    "static/media/shopping_bag_big.jpg": "/My-enjoyable-shopping/static/media/shopping_bag_big.53f423a357db60b00338.jpg",
+    "static/media/BackgroundSmall.jpg": "/My-enjoyable-shopping/static/media/BackgroundSmall.7b5bce23c2d71ce42ec9.jpg",
+    "static/media/app_creaye_your_shop_lists_present.jpg": "/My-enjoyable-shopping/static/media/app_creaye_your_shop_lists_present.358424921373d7090996.jpg",
+    "static/media/ai-generated-8261519_1280.png": "/My-enjoyable-shopping/static/media/ai-generated-8261519_1280.f1791294845579ac05d0.png",
+    "static/media/Mobile_photo_app_big_panel.jpg": "/My-enjoyable-shopping/static/media/Mobile_photo_app_big_panel.7c3fa5889422e4544355.jpg",
+    "static/media/slide_app_photo_1.jpg": "/My-enjoyable-shopping/static/media/slide_app_photo_1.a445556fbf9c65c7745a.jpg",
+    "static/media/small_logo.png": "/My-enjoyable-shopping/static/media/small_logo.db7eac0e484e4609eebf.png",
+    "static/media/men-4451375_640.png": "/My-enjoyable-shopping/static/media/men-4451375_640.693c0125ddac9d5e7b2a.png",
+    "static/media/shopping_bag_small.jpg": "/My-enjoyable-shopping/static/media/shopping_bag_small.830398b4558a48781dd6.jpg",
+    "static/media/slick.svg": "/My-enjoyable-shopping/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/My-enjoyable-shopping/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/My-enjoyable-shopping/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/My-enjoyable-shopping/index.html",
+    "static/media/slick.woff": "/My-enjoyable-shopping/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/product-checkbox-checked.svg": "/My-enjoyable-shopping/static/media/product-checkbox-checked.55d67c52992f675b155d709ac5cefb13.svg",
+    "main.b7e7c235.css.map": "/My-enjoyable-shopping/static/css/main.b7e7c235.css.map",
+    "main.d4ae49e6.js.map": "/My-enjoyable-shopping/static/js/main.d4ae49e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7e7c235.css",
+    "static/js/main.d4ae49e6.js"
+  ]
+}
