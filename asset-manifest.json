@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-enjoyable-shopping/static/css/main.2b3b5e36.css",
-    "main.js": "/My-enjoyable-shopping/static/js/main.210b5871.js",
+    "main.css": "/My-enjoyable-shopping/static/css/main.21d71d04.css",
+    "main.js": "/My-enjoyable-shopping/static/js/main.9ea9f7e2.js",
     "static/media/orderCard_back.png": "/My-enjoyable-shopping/static/media/orderCard_back.f1791294845579ac05d0.png",
     "static/media/shopping_bag_big.webp": "/My-enjoyable-shopping/static/media/shopping_bag_big.eb23d3b1e71d6fe55052.webp",
     "static/media/BackgroundDownBig.webp": "/My-enjoyable-shopping/static/media/BackgroundDownBig.a25a5dff38e2a1e464e2.webp",
@@ -19,11 +19,11 @@
     "index.html": "/My-enjoyable-shopping/index.html",
     "static/media/slick.woff": "/My-enjoyable-shopping/static/media/slick.295183786cd8a1389865.woff",
     "static/media/checkbox-checked.svg": "/My-enjoyable-shopping/static/media/checkbox-checked.55d67c52992f675b155d709ac5cefb13.svg",
-    "main.2b3b5e36.css.map": "/My-enjoyable-shopping/static/css/main.2b3b5e36.css.map",
-    "main.210b5871.js.map": "/My-enjoyable-shopping/static/js/main.210b5871.js.map"
+    "main.21d71d04.css.map": "/My-enjoyable-shopping/static/css/main.21d71d04.css.map",
+    "main.9ea9f7e2.js.map": "/My-enjoyable-shopping/static/js/main.9ea9f7e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b3b5e36.css",
-    "static/js/main.210b5871.js"
+    "static/css/main.21d71d04.css",
+    "static/js/main.9ea9f7e2.js"
   ]
 }
