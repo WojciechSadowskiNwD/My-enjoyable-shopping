@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// Powoduje, że po kliknięciu w Link to="..." zawsze przekierowanie ustawia pozycję top=0px.
+// Causes the redirect to always set the position to top=0px when clicking on Link to="..."
 function ScrollToTop() {
 	const { pathname } = useLocation();
 

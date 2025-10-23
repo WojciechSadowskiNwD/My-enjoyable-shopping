@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import smallLogo from "../../img/small_logo.png";
 import styles from "./Logo.module.scss";
+import smallLogo from "../../img/small_logo.png";
+
 
 export default function Logo({
 	logoStyles = styles.logo,

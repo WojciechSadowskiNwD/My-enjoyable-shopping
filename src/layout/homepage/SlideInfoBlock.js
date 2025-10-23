@@ -8,7 +8,7 @@ function SlideInfoBlock({ children, direction, type="" }) {
  
 	const showElement = () => {
 		const element = revealRef.current;
-		const elementBottom = element.getBoundingClientRect().bottom; // Position of the bottom edge of the element
+		const elementBottom = element.getBoundingClientRect().bottom; // Pos. of the bottom edge of the element
 		const elementHeight = element.getBoundingClientRect().height; // Height element
 		const windowHeight = window.innerHeight;
 		const revealThreshold = elementHeight;

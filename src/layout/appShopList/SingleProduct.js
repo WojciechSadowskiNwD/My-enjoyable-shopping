@@ -2,6 +2,7 @@ import { useLists } from "../../contexsts/ListsProvider";
 import productCheckboxFill from "../../img/icons/checkbox-checked.svg";
 import styles from "./SingleProduct.module.scss";
 
+
 function SingleProduct({ item, listName, bgColor, productBgColor = "" }) {
 	const { name, quantity, isWeightInGrams, isCollected } = item;
 	const { dispatch } = useLists();

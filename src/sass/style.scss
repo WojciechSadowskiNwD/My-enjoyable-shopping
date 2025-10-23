@@ -182,7 +182,7 @@ body {
 }
 
 .slick-prev {
-	left: -20px; /* Dostosuj położenie w zależności od potrzeb */
+	left: -20px;
 	transition: 0.3s;
 }
 
@@ -191,7 +191,7 @@ body {
 	transition: 0.3s;
 }
 
-// RWD STYLES:
+// RWD:
 @media (min-width: 412px) {
 	.logoDetails {
 		height: 90px;

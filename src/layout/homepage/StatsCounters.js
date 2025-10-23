@@ -1,6 +1,6 @@
-import styles from "./StatsCounters.module.scss";
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import styles from "./StatsCounters.module.scss";
 
 const StatsCounters = () => {
   const [downloadsCount, setDownloadsCount] = useState(0);

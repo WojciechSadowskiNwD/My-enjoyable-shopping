@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styles from './AppLogo.module.scss';
 import smallLogo from "../../img/small_logo.png";
-import { Link } from "react-router-dom";
+
 
 export default function Logo() {
 	return (
