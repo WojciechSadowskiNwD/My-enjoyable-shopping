@@ -39,7 +39,7 @@ body {
 	justify-content: space-between;
 	width: 100%;
 	height: 100vh;
-	background-image: url("../img/BackgroundSmall.jpg");
+	background-image: url("../img/BackgroundSmall.webp");
 	background-size: cover;
 	background-position: 55%;
 	background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body {
 	width: 100%;
 	min-height: 50vh;
 	background-size: cover;
-	background-image: url("../img/BackgroundDownBig.jpg");
+	background-image: url("../img/BackgroundDownBig.webp");
 	background-position: center;
 	background-position: 55%;
 	background-repeat: no-repeat;
@@ -62,7 +62,7 @@ body {
 .pages_bgc {
 	position: relative;
 	height: 100%;
-	background-image: url("../img/shopping_bag_small.jpg");
+	background-image: url("../img/shopping_bag_small.webp");
 	background-size: cover;
 	background-position: 55%;
 	background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
-	background-image: url("../img/BackgroundLarge.jpg");
+	background-image: url("../img/BackgroundLarge.webp");
 	background-size: cover;
 	background-position: 5%;
 	background-repeat: no-repeat;
@@ -220,7 +220,7 @@ body {
 // medium
 @media (min-width: 768px) {
 	.header {
-		background-image: url("../img/BackgroundLarge.jpg");
+		background-image: url("../img/BackgroundLarge.webp");
 	}
 
 	.logoDetails {
@@ -236,7 +236,7 @@ body {
 // large
 @media (min-width: 992px) {
 	.pages_bgc {
-		background-image: url("../img/shopping_bag_big.jpg");
+		background-image: url("../img/shopping_bag_big.webp");
 	}
 
 	.button_position {

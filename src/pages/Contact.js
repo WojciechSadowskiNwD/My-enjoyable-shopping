@@ -5,6 +5,7 @@ import Hollow from "../layout/components/Hollow";
 import PreviousPage from "../layout/components/PreviousPage";
 import styles from "../sass/Contact.module.scss";
 
+
 function Contact() { 
 	return (
 		<div className="pages_bgc"> 

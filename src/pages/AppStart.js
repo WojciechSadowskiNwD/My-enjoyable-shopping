@@ -10,6 +10,7 @@ import AllShopLists from "../layout/components/AllShopLists";
 import LogoutBtn from "../layout/components/LogoutBtn";
 import styles from "../sass/AppStart.module.scss";
 
+
 function AppStart() {
 	const [isClickCreate, setIsClickCreate] = useState(false);
 	const [isExiting, setIsExiting] = useState(false); //transition param.

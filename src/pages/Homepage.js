@@ -10,9 +10,10 @@ import StatsCounters from "../layout/homepage/StatsCounters";
 import Accordion from "../layout/homepage/Accordion";
 import SubscribeForm from "../layout/homepage/SubscribeForm";
 import Footer from "../layout/homepage/Footer";
-import img1 from "../img/photo_slide/Mobile_photo_app_big_panel.jpg";
-import img2 from "../img/photo_slide/slide_app_photo_1.jpg";
-import img3 from "../img/photo_slide/app_creaye_your_shop_lists_present.jpg";
+
+import img1 from "../img/photo_slide/photo_1.webp";
+import img2 from "../img/photo_slide/photo_2.webp";
+import img3 from "../img/photo_slide/photo_3.webp";
 
 const faqs = [
 	{

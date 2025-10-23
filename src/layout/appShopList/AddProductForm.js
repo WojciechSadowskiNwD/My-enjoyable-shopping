@@ -9,10 +9,10 @@ function AddProductForm({ thisList }) {
 	const { dispatch } = useLists();
 	const [isOpen, setIsOpen] = useState(true); // accordion
 
-	// toggle accordion: visible/unvisible
+	// toggle accordion: visib./unvisible
 	const handleToggle = () => setIsOpen((curr) => !curr);
 
-	// Default object and later storing the data received from form
+	// Default obj and later storing the data received from form
 	const [formData, setFormData] = useState({
 		id: "",
 		productName: "",
@@ -23,7 +23,7 @@ function AddProductForm({ thisList }) {
 	});
 	const { productName, productCategory, productAmount, isGrams } = formData;
 
-	//FORM SEND DATA:
+	//F. SEND DATA:
 	function handleSubmit(e) {
 		e.preventDefault();
 
@@ -32,7 +32,7 @@ function AddProductForm({ thisList }) {
 			return alert("Complete all the fields");
 		}
 
-		// create object newProduct with values from form
+		// create obj newProduct with values from form
 		const newProduct = {
 			id: uuidv4(),
 			name: productName,

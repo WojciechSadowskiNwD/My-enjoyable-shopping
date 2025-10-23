@@ -11,6 +11,7 @@ import AllProducts from "../layout/appShopList/AllProducts";
 import SummaryBar from "../layout/appShopList/SummaryBar";
 import LogoutBtn from "../layout/components/LogoutBtn";
 
+
 function AppShopList() {
 	const location = useLocation();
 	const { img, name } = location.state || {};
@@ -23,7 +24,7 @@ function AppShopList() {
 		(item) => item.isCollected === false
 	);
 
-	// automatic redirect from here to Homepage if false
+	// auto redirect from here to Homepage if false
 	useEffect(() => {
 		if (isAuthenticated === false) {
 			navigate("/", { replace: true });

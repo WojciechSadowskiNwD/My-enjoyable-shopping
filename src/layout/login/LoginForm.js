@@ -22,7 +22,7 @@ function LoginForm() {
 		loginWalidation(login, password);
 	}
 
-	// automatic redirect from here to appStart if true, can be moved to homepage and will also work
+	// auto redirect from here to appStart if true, can be moved to homepage and will also work
 	useEffect(() => {
 		if (isAuthenticated === true) {
 			navigate("../appStart", { replace: true });

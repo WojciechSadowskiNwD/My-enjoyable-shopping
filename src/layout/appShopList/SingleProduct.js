@@ -1,5 +1,5 @@
 import { useLists } from "../../contexsts/ListsProvider";
-import productCheckboxFill from "../../img/icons/product-checkbox-checked.svg";
+import productCheckboxFill from "../../img/icons/checkbox-checked.svg";
 import styles from "./SingleProduct.module.scss";
 
 function SingleProduct({ item, listName, bgColor, productBgColor = "" }) {

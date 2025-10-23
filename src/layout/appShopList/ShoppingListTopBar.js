@@ -17,15 +17,14 @@ export default function ShoppingListTopBar() {
 					setIsOpen(true);
 				}
 			};
-
 			window.addEventListener("resize", handleResize);
 	
 			return () => {
 				window.removeEventListener("resize", handleResize);
 			};
 		}, []);
-		
 
+		
 	const handleToggle = () => {
 		setIsOpen((curr) => !curr);  
 	};

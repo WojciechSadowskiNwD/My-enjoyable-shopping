@@ -7,7 +7,7 @@ const initialShopList = {
 	biedronka: {
 		listExist: true,
 		name: "biedronka",
-		img: "shops_img/biedronka_1.png",
+		img: "shops_img/biedronka_1.webp",
 		shoppingList: [
 			{
 				id: 1,
@@ -102,7 +102,7 @@ const initialShopList = {
 	auchan: {
 		listExist: true,
 		name: "auchan",
-		img: "shops_img/auchan_1.png",
+		img: "shops_img/auchan_1.webp",
 		shoppingList: [
 			{
 				id: 1,
@@ -181,25 +181,25 @@ const initialShopList = {
 	lidl: {
 		listExist: false,
 		name: "lidl",
-		img: "shops_img/lidl_1.png",
+		img: "shops_img/lidl_1.webp",
 		shoppingList: [],
 	},
 	netto: {
 		listExist: false,
 		name: "netto",
-		img: "shops_img/netto_1.png",
+		img: "shops_img/netto_1.webp",
 		shoppingList: [],
 	},
 	carrefour: {
 		listExist: false,
 		name: "carrefour",
-		img: "shops_img/carrefour_1.jpg",
+		img: "shops_img/carrefour_1.webp",
 		shoppingList: [],
 	},
 	dino: {
 		listExist: false,
 		name: "dino",
-		img: "shops_img/dino_1.png",
+		img: "shops_img/dino_1.webp",
 		shoppingList: [],
 	},
 };
@@ -282,7 +282,7 @@ function reducer(state, action) {
 function ListsProvider({ children }) {
 	// useReducer
 	const [state, dispatch] = useReducer(reducer, initialShopList);
-	const [activeButton, setActiveButton] = useState(null);  //manage which button should be colored -- in sorting list buttons
+	const [activeButton, setActiveButton] = useState(null);
 
 	// example props: 'biedronka', 'cereal',and next type, ...
 	function filterProductsByType(listName, typeProduct) {
@@ -349,7 +349,7 @@ function ListsProvider({ children }) {
 	];
 	const setHowToSort = (buttonClicked) => {
 
-        // set button color to active
+        // set btn color to active
 		if (buttonClicked === "toPack") {
 			setActiveButton("toPack");
 		} else if (buttonClicked === "packed") {

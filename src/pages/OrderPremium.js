@@ -41,8 +41,7 @@ function OrderPremium() {
 						titleCard="Maximum Pack"
 						firstArgument="All from previous packs"
 						secondArgument="Total 4 Additional functionality or filters"
-						thirdArgument="Additional editable icons for colored cards and more
-										categories"
+						thirdArgument="Additional editable icons for colored cards and more categories"
 					>
 						Everything as in point 1 & 2. Everything as in point 1 and 2. In
 						addition, you can order additional 3 smaller functionalities and

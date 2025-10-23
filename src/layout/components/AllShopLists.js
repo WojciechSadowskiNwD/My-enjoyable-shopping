@@ -9,7 +9,7 @@ function AllShopLists() {
 	// Convert obiect to array
 	const shopsData = Object.values(state);
 
-	// Filter to array exist shops (optional)
+	// Filter to array exist shops
 	const filteredShops = shopsData.filter((shop) => shop.listExist);
 
 	return (

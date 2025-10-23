@@ -7,8 +7,8 @@ const StatsCounters = () => {
 	const [commentsCount, setCommentsCount] = useState(0);
 	const [moneyCount, setMoneyCount] = useState(0);
 	const { ref, inView } = useInView({
-		triggerOnce: true, // licznik uruchomi się tylko raz
-		threshold: 0.1, // aktywuje licznik, gdy 10% komponentu będzie widoczne
+		triggerOnce: true, // counter will start only one time
+		threshold: 0.1, // activate counter, when user see min. 10% component height
 	});  
  
 	useEffect(() => {  
@@ -17,11 +17,11 @@ const StatsCounters = () => {
 			let startComments = 0;
 			let startDownloads = 0;
       		let startMoneyCollected = 0;
-			const endComments = 800; // Liczba docelowa
-			const endDownloads = 1190; // Liczba docelowa pobrań
-			const endMoneyCollected = 100400; // Liczba docelowa pobrań
-			const duration = 800; // Czas trwania animacji w ms
-			const incTimeComments = Math.floor(duration / endComments); // Czas między inkrementacjami
+			const endComments = 800;
+			const endDownloads = 1190;
+			const endMoneyCollected = 100400;
+			const duration = 800;
+			const incTimeComments = Math.floor(duration / endComments);
 			const incTimeDownloads = Math.floor(duration / endDownloads);
       const incTimeMoneyCollected = Math.floor(duration/ endMoneyCollected);
 
@@ -31,7 +31,7 @@ const StatsCounters = () => {
 				setCommentsCount((prevCount) => {
 					if (prevCount >= endComments) {
 						clearInterval(timerComments);
-						return endComments; // Zatrzymanie licznika
+						return endComments; // stop counter
 					}
 					return prevCount + 2;
 				});
@@ -64,10 +64,9 @@ const StatsCounters = () => {
 				clearInterval(timerComments);
         clearInterval(timerDownloads);
         clearInterval(timerMoneyCollected);
-			}; // Wyczyść timery, jeśli komponenty zostaną odmontowane
+			}; // clear all timers
 		}
 	}, [inView]);
-
 
 
 	return (
@@ -76,7 +75,7 @@ const StatsCounters = () => {
 			className={styles.info_bar}
 			style={{
 				transition: "opacity 1s ease-out",
-				opacity: inView ? 1 : 0, // Efekt pojawiania się licznika
+				opacity: inView ? 1 : 0,
 			}}
 		> 
 			<div className={styles.counter_item}>

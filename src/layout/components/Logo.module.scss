@@ -41,13 +41,13 @@ div {
 	}
 }
 
-//W: Samsung Galaxy S8/S9, iPhone SE, iPhone 14/15, Samsung Galaxy S21/S22
+//Width for example: Samsung Galaxy S8/S9, iPhone 14/15
 @media (min-width: 390px) {
 	.logo{
 		transform: translateX(-5%) translateY(-50%);
 	}
 }
-//Width: Google Pixel 6,
+//Width: Google Pixel 6
 @media (min-width: 412px) {
 	.logo{
 		min-width: 340px;

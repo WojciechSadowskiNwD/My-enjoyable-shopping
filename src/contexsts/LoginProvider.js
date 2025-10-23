@@ -5,7 +5,7 @@ const LoginContext = createContext();
 const initialState = {
 	user: null,
 	isAuthenticated: false,
-	wrongData: false, //true oznacza że źle wypełniono pola logowania
+	wrongData: false,
 };
 
 // fake account, to "login"
@@ -15,7 +15,6 @@ const FAKE_USER = {
 	password: "Tomato123",
 };
 
-// reducer do obsługi logowania / wylogowania
 function reducer(state, action) {
 	switch (action.type) {
 		case "login":
@@ -41,11 +40,11 @@ function LoginProvider({ children }) {
 		initialState
 	);
 
-	// Aktualne dane z inputów usera:
+	// curr data from inputs:
 	const [login, setLogin] = useState(FAKE_USER.login);
 	const [password, setPassword] = useState(FAKE_USER.password);
 
-	// Obsługa wpisywania danych w inputy logowania:
+	// Handling data entry in login inputs:
 	function handleChangeLogin(e) {
 		setLogin(e.target.value);
 	}
@@ -53,13 +52,13 @@ function LoginProvider({ children }) {
 		setPassword(e.target.value);
 	}
 
-	// Walidacja danych logowania:
+	// Valid. data login:
 	function loginWalidation(login, password) {
 		if (login === FAKE_USER.login && password === FAKE_USER.password) {
-			// console.log("TAK dane są takie same");
+			// console.log("YES -- data are the same");
 			dispatch({ type: "login" });
 		} else {
-			// console.log("Nadal nie mamy zgodności danych");
+			// console.log("Your data aren't the same now!");
 			dispatch({ type: "wrongFill" });
 		}
 	}

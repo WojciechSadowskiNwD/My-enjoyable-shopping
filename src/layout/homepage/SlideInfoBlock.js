@@ -8,25 +8,22 @@ function SlideInfoBlock({ children, direction, type="" }) {
  
 	const showElement = () => {
 		const element = revealRef.current;
-		const elementBottom = element.getBoundingClientRect().bottom; // Pozycja dolnej krawędzi elementu
-		const elementHeight = element.getBoundingClientRect().height; // Wysokość elementu
+		const elementBottom = element.getBoundingClientRect().bottom; // Position of the bottom edge of the element
+		const elementHeight = element.getBoundingClientRect().height; // Height element
 		const windowHeight = window.innerHeight;
-
-		// 50% wysokości elementu
-		// const revealThreshold = elementHeight / 2;
 		const revealThreshold = elementHeight;
 
-		// Sprawdzamy, czy dolna krawędź ekranu jest powyżej 50% wysokości elementu
+		// Check if the bottom edge of the screen is above 50% of the element's height.
 		if (elementBottom - revealThreshold < windowHeight) {
 			setIsVisible(true);
 		}
 	};
 
 	useEffect(() => {
-		// Dodajemy event listener na scroll
+		// Add event listener on scroll
 		window.addEventListener("scroll", showElement);
 
-		// Usuwamy listener po demontażu komponentu
+		// Delete listener after unmount component
 		return () => {
 			window.removeEventListener("scroll", showElement);
 		};
