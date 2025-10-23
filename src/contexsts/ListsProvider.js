@@ -205,7 +205,7 @@ const initialShopList = {
 };
 // * * * shoppongLists data _END
 
-// reducer to build
+// reducer
 function reducer(state, action) {
 	switch (action.type) {
 		case "product/add_product":

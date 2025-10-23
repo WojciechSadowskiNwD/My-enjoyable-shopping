@@ -1,0 +1,118 @@
+@import "../../sass/colors";
+
+div {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+	width: 80%;
+	min-width: 310px;
+	height: 80px;
+	background-color: $logo-color;
+	border-radius: 5px;
+
+	-webkit-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
+	-moz-box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
+	box-shadow: -1px 5px 51px 4px rgba(0, 0, 0, 1);
+	z-index: 1;
+
+	.img_logo {
+		margin-left: -32px;
+		width: 130px;
+		height: 130px;
+	}
+
+	h1, a {
+		font-weight: 400;
+		text-transform: uppercase; 
+		font-size: 22px;
+		padding-left: 5px;
+		padding-right: 10px;
+		color: #fff;
+	}
+}
+
+//W: Samsung Galaxy S8/S9, iPhone SE, iPhone 14/15, Samsung Galaxy S21/S22
+@media (min-width: 390px) {
+	.logo{
+		transform: translateX(-5%) translateY(-50%);
+	}
+}
+//Width: Google Pixel 6,
+@media (min-width: 412px) {
+	.logo{
+		min-width: 340px;
+		height: 85px;
+
+		.img_logo { 
+			margin-left: -32px;
+			width: 135px;
+			height: 135px;
+		}
+		h1, a {
+			padding-left: 8px;
+			font-size: 23px;
+		}
+	}
+}
+@media (min-width: 576px) {
+	.logo{
+		right: 30px;
+		width: 68%;
+		max-width: 457px;
+		min-width: 340px;
+		height: 90px;
+		
+		.img_logo { 
+			margin-left: -32px;
+			width: 145px;
+			height: 145px;
+		}
+		h1, a {
+			padding-left: 12px;
+			line-height: 28px;
+			font-size: 23px;
+		}
+	}
+}
+// medium
+@media (min-width: 768px) {
+	.logo{
+		right: 40px;
+		width: 62%;
+		max-width: 465px;
+		min-width: 360px;
+		height: 90px;
+		
+		.img_logo { 
+			margin-left: -36px;
+			width: 150px;
+			height: 150px;
+		}
+		h1, a {
+			padding-left: 8px;
+			padding-right: 16px;
+		}
+	} 
+}
+// large
+@media (min-width: 992px) {
+	.logo{
+		width: 468px;
+	}
+}
+//extra extra large
+@media (min-width: 1400px) {
+	.logo {
+		right: 50px;
+	}
+}

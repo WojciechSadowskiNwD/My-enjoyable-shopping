@@ -1,0 +1,152 @@
+@import "../../sass/colors";
+
+.subscribe_form_box {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: $bg-shadow-ultra-light;
+
+	.subscribe_form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+		padding: 15px;
+		background-color: $green-shadow;
+
+		label {
+			margin-bottom: 25px;
+			padding-top: 5px;
+			text-align: center;
+			font-weight: 200;
+			font-size: 21px;
+		}
+		input[type="text"] {
+			width: 90%;
+			margin-bottom: 20px;
+			padding: 10px;
+			font-family: "Comfortaa", sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 21px;
+			border: none;
+			color: $input-font-gray;
+			outline: none;
+			border: 2px solid transparent;
+		}
+
+		input[type="text"]:focus {
+			-webkit-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
+			-moz-box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
+			box-shadow: 1px 1px 5px 0 rgb(167, 185, 174);
+			border: 2px solid $green-focus;
+			background-color: $input-subscribe-bg;
+		}
+
+		button {
+			width: 180px;
+			padding: 12px;
+			font-family: "Comfortaa", sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			border-radius: 25px;
+			text-transform: uppercase;
+			border: none;
+			cursor: pointer;
+		}
+	}
+}
+
+// small breakpoint
+@media (min-width: 576px) {
+	.subscribe_form_box {
+		margin-top: 60px;
+		margin-bottom: 100px;
+
+		.subscribe_form {
+			width: 88%;
+			padding: 30px;
+
+			label {
+				margin-bottom: 35px;
+				padding-top: 10px;
+				text-align: center;
+				font-size: 22px;
+			}
+			button {
+				margin-top: 10px;
+				width: 190px;
+				padding: 14px;
+				font-size: 19px;
+			}
+		}
+	}
+}
+// medium
+@media (min-width: 768px) {
+	.subscribe_form_box {
+		margin-bottom: 120px;
+
+		.subscribe_form {
+			width: 86%;
+			padding: 30px;
+		}
+	}
+}
+// large
+@media (min-width: 992px) {
+	.subscribe_form_box {
+		width: 72%;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.subscribe_form {
+			width: 100%;
+			padding: 35px;
+
+			label {
+				margin-bottom: 45px;
+				font-size: 23px;
+				line-height: 1.4;
+			}
+			button {
+				margin-top: 17px;
+			}
+		}
+	}
+}
+//extra large
+@media (min-width: 1200px) {
+	.subscribe_form_box {
+		width: 68%;
+		max-width: 805px;
+		margin-top: 90px;
+		margin-bottom: 140px;
+
+		.subscribe_form {
+			padding: 40px;
+
+			input[type="text"] {
+				width: 82%;
+				font-size: 24px;
+			}
+
+			button {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+//extra extra large
+@media (min-width: 1400px) {
+	.subscribe_form_box {
+		width: 68%;
+		max-width: 880px;
+		margin-top: 100px; 
+	}
+}

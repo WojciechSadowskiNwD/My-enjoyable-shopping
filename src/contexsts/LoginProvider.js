@@ -2,14 +2,13 @@ import { createContext, useContext, useReducer, useState } from "react";
 
 const LoginContext = createContext();
 
-// Domyślnie nie jest określony użytkownik, ponieważ nie jest on zalogowany jeszcze
 const initialState = {
 	user: null,
 	isAuthenticated: false,
 	wrongData: false, //true oznacza że źle wypełniono pola logowania
 };
 
-// Fałszywe konto, na które będziemy się "logować"
+// fake account, to "login"
 const FAKE_USER = {
 	name: "David",
 	login: "DavidDev16",

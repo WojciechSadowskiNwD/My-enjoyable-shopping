@@ -1,0 +1,63 @@
+@import "../../sass/colors";
+
+.downArrow {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 48px;
+	padding: 0px 10px 10px 10px;
+	width: 100px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: $bg-shadow-light;
+	-webkit-box-shadow: 0px 0px 74px 15px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 74px 15px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 74px 15px rgba(0, 0, 0, 1);
+
+	i {
+		margin: 1% 1% 0;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 38px;
+		animation: arrow_motion 3s ease-in-out infinite;
+		transition: 0.3s;
+	}
+}
+
+// animation:
+@keyframes arrow_motion {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+//// large
+@media (min-width: 992px) {
+	.downArrow {
+		padding: 0px 10px 20px 10px;
+		width: 120px;
+		-webkit-box-shadow: 0px 0px 100px 30px rgba(0, 0, 0, 1);
+		-moz-box-shadow: 0px 0px 100px 30px rgba(0, 0, 0, 1);
+		box-shadow: 0px 0px 100px 30px rgba(0, 0, 0, 1);
+
+		i {
+			font-size: 48px;
+		}
+	} 
+}
+
+//extra extra large
+@media (min-width: 1400px) {
+	.downArrow {
+		-webkit-box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 1);
+		-moz-box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 1);
+		box-shadow: 0px 0px 100px 25px rgba(0, 0, 0, 1);
+	}
+}

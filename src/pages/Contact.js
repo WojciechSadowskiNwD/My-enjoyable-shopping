@@ -1,11 +1,11 @@
-import styles from "./Contact.module.scss";
-import Logo from "../components/Logo";
-import SectionTitle from "../components/SectionTitle";
-import InfoBlock from "../components/InfoBlock";
-import PreviousPage from "../components/PreviousPage";
-import Hollow from "../components/Hollow";
+import Logo from "../layout/components/Logo";
+import SectionTitle from "../layout/components/SectionTitle";
+import InfoBlock from "../layout/components/InfoBlock";
+import Hollow from "../layout/components/Hollow";
+import PreviousPage from "../layout/components/PreviousPage";
+import styles from "../sass/Contact.module.scss";
 
-function Contact() {
+function Contact() { 
 	return (
 		<div className="pages_bgc"> 
 			<div className="bg_shadow"> 

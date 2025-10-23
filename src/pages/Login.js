@@ -1,10 +1,10 @@
-import Logo from "../components/Logo";
-import PreviousPage from "../components/PreviousPage";
-import Hollow from "../components/Hollow";
-import LoginForm from "../components/LoginForm";
-import RegisterForm from "../components/RegisterForm";
+import Logo from "../layout/components/Logo";
+import LoginForm from "../layout/login/LoginForm";
+import RegisterForm from "../layout/login/RegisterForm";
+import Hollow from "../layout/components/Hollow";
+import PreviousPage from "../layout/components/PreviousPage";
 
-function Login() {
+export default function Login() {
 	return (
 		<div className="pages_bgc">
 			<div className="bg_shadow">
@@ -19,5 +19,3 @@ function Login() {
 		</div>
 	);
 }
-
-export default Login;

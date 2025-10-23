@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useLogin } from "../contexsts/LoginProvider";
 import { useLists } from "../contexsts/ListsProvider";
-import AppCircleHeader from "../components/App_components/AppCircleHeader";
-import AppTopTextBar from "../components/App_components/AppTopTextBar";
-import AddProductForm from "../components/App_components/AddProductForm";
-import ShoppingListTopBar from "../components/App_components/ShoppingListTopBar";
-import AllProducts from "../components/App_components/AllProducts";
-import LogoutBtn from "../components/App_components/LogoutBtn";
-import SummaryBar from "../components/App_components/SummaryBar";
-import AppOptionsView from "../components/App_components/AppOptionsView";
+import CircleHeader from "../layout/components/CircleHeader";
+import TopTextBar from "../layout/appShopList/TopTextBar";
+import AppOptionsView from "../layout/appShopList/AppOptionsView";
+import AddProductForm from "../layout/appShopList/AddProductForm";
+import ShoppingListTopBar from "../layout/appShopList/ShoppingListTopBar";
+import AllProducts from "../layout/appShopList/AllProducts";
+import SummaryBar from "../layout/appShopList/SummaryBar";
+import LogoutBtn from "../layout/components/LogoutBtn";
 
 function AppShopList() {
 	const location = useLocation();
@@ -33,8 +33,8 @@ function AppShopList() {
 	return (
 		<div className="app">
 			<div className="shadow_bg bg_shadow">
-				<AppCircleHeader />
-				<AppTopTextBar img={img} name={name} />
+				<CircleHeader />
+				<TopTextBar img={img} name={name} />
 				<AppOptionsView>
 					<AddProductForm thisList={thisList} />
 					<ShoppingListTopBar />

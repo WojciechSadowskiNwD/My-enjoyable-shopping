@@ -1,0 +1,46 @@
+@import "../../sass/colors";
+
+.section_title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	padding: 15px;
+	width: 100%;
+	font-size: 17px;
+	text-transform: uppercase;
+	background-color: $bg-shadow-dark;
+	color: $logo-color;
+}
+
+// small breakpoint
+@media (min-width: 576px) {
+	.section_title {
+		margin-top: 170px;
+		font-size: 18px;
+		letter-spacing: 0.3px;
+		margin-bottom: 25px;
+	}
+}
+// medium
+@media (min-width: 768px) {
+	.section_title {
+		margin-top: 200px;
+		font-size: 19px;
+		margin-bottom: 30px;
+		padding: 20px;
+	}
+}
+// large
+@media (min-width: 992px) {
+	.section_title {
+		padding: 25px;
+	}
+}
+//extra large
+@media (min-width: 1200px) {
+	.section_title {
+		margin-bottom: 45px;
+	}
+}

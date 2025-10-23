@@ -1,9 +1,10 @@
-import Hollow from "../components/Hollow";
-import InfoBlock from "../components/InfoBlock";
-import Logo from "../components/Logo";
-import PreviousPage from "../components/PreviousPage";
-import SectionTitle from "../components/SectionTitle";
-import styles from "./AboutUs.module.scss";
+import Logo from "../layout/components/Logo";
+import SectionTitle from "../layout/components/SectionTitle";
+import InfoBlock from "../layout/components/InfoBlock";
+import Hollow from "../layout/components/Hollow";
+import PreviousPage from "../layout/components/PreviousPage";
+import styles from "../sass/AboutUs.module.scss";
+ 
 
 function AboutUs() {
 	return (
@@ -30,5 +31,4 @@ function AboutUs() {
 	);
 }
 
-export default AboutUs;
-   
+export default AboutUs;  
