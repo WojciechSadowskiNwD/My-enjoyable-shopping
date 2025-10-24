@@ -131,6 +131,7 @@ Follow the steps below to run the project locally:
 
  * The app will be available at: http://localhost:3000 
 
+
 4. **Build the project for production**
 
    ```bash
@@ -138,14 +139,12 @@ Follow the steps below to run the project locally:
    ```
    * This will create an optimized production build in the build/ directory.
 
-   ```
-
 5. **Deploy to GitHub Pages**
    The project is configured for deployment on GitHub Pages.
    To publish the latest version, run:
     ```bash
     npm run deploy
-
+    ```
 
 ## 📄 License
 
