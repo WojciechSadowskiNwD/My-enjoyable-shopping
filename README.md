@@ -119,17 +119,17 @@ Follow the steps below to run the project locally:
    npm install
    ```
 
-Or with yarn:
-   ```bash
-   yarn install
-   ```
+   Or with yarn:
+    ```bash
+    yarn install
+    ```
 
 3. **Start the development server**
    ```bash
    npm start
    ```
 
-The app will be available at: http://localhost:3000
+ * The app will be available at: http://localhost:3000 
 
 4. **Build the project for production**
 
