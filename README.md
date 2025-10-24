@@ -71,7 +71,7 @@ Below is an overview of React hooks, external libraries, custom hooks, and SCSS 
 
 ### Desktop views (Homepage)
 
-![Desktop 1](docs/screenshots/desktop_1.png)
+![Desktop 1](docs/screenshots/desktop_1.jpg)
 ![Desktop 2](docs/screenshots/desktop_2.jpg)
 ![Desktop 3](docs/screenshots/desktop_3.jpg)
 ![Desktop 4](docs/screenshots/desktop_4.jpg)
@@ -92,16 +92,19 @@ Below is an overview of React hooks, external libraries, custom hooks, and SCSS 
 
 ![Desktop 11](docs/screenshots/aboutUs_1.jpg)
 
+#### Login page
+![Desktop 12](docs/screenshots/desktop_login_1.jpg)
+![Desktop 13](docs/screenshots/desktop_login_2.jpg)
+
 #### App page
 
-![Desktop 12](docs/screenshots/app_1.jpg)
-![Desktop 13](docs/screenshots/app_2.jpg)
-![Desktop 14](docs/screenshots/app_3.jpg)
-![Desktop 15](docs/screenshots/app_4.jpg)
-![Desktop 16](docs/screenshots/app_5.jpg)
+![Desktop 14](docs/screenshots/app_1.jpg)
+![Desktop 15](docs/screenshots/app_2.jpg)
+![Desktop 16](docs/screenshots/app_3.jpg)
+![Desktop 17](docs/screenshots/app_4.jpg)
+![Desktop 18](docs/screenshots/app_5.jpg)
 
 ## Installation
-
 Follow the steps below to run the project locally:
 
 1. **Clone the repository**
@@ -109,7 +112,6 @@ Follow the steps below to run the project locally:
    ```bash
    git clone https://github.com/wojciechsadowskinwd/My-enjoyable-shopping.git
    cd My-enjoyable-shopping
-
    ```
 
 2. **Install dependencies**
@@ -118,24 +120,23 @@ Follow the steps below to run the project locally:
    ```
 
 Or with yarn:
-```bash
-yarn install
+   ```bash
+   yarn install
+   ```
 
 3. **Start the development server**
    ```bash
    npm start
    ```
 
-The app will be available at:
-```jsx
-http://localhost:3000
+The app will be available at: http://localhost:3000
 
 4. **Build the project for production**
 
    ```bash
    npm run build
-
-   *This will create an optimized production build in the build/ directory.
+   ```
+   * This will create an optimized production build in the build/ directory.
 
    ```
 
@@ -144,3 +145,10 @@ http://localhost:3000
    To publish the latest version, run:
     ```bash
     npm run deploy
+
+
+## 📄 License
+
+This project is open source and licensed under the MIT License.  
+You are free to use, modify, and distribute it under the terms of this license.
+* The project uses logos of well-known stores. The application is not intended for commercial use and serves educational purposes only, showcasing the author's skills.
